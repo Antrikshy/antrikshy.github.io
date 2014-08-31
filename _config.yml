@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Antriksh's Blog
+tagline:          'Notes, tinkerings, experiments'
+url:              http://blog.antrikshy.com
+paginate:         1
+baseurl:          /
+author:
+  name:           Antriksh Yadav
+  url:            https://antrikshy.com
+  email:          antrikshy@gmail.com
+
+# Custom vars
+github:
+  repo:           https://github.com/Antrikshy/antrikshy.github.io
+pages_list:       
+  Entries:        '/entries'
+  Feed:           '/atom.xml'

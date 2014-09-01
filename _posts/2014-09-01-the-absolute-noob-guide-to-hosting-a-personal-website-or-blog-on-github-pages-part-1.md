@@ -2,6 +2,7 @@
 layout: post
 title: "The Absolute Noob Guide To Hosting A Personal Website Or Blog On GitHub Pages - Part 1"
 permalink: "noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-1"
+excerpt_separator: <!--more-->
 ---
 
 So you have made a decision. You want a personal webpage. You want to look professional by including a link in your email signature, with your job application or on your resume. It can be a convenient place to showcase any work you have done. Or it can just function as a hub for downloads or links to your portfolios on other websites like 500px, GitHub, deviantART, Behance etc.
@@ -9,6 +10,8 @@ So you have made a decision. You want a personal webpage. You want to look profe
 Or maybe you have decided to go with a self-hosted personal blog. Instead of buying a domain name through WordPress.com or Blogger, you want more freedom in case you wish to migrate or change services later down the road.
 
 Maybe you want both.
+
+<!--more-->
 
 If all you have is this decision, building a website can seem like a daunting task. How much will it cost? Will I have to pay professional designers to get it right? Isn't web hosting expensive? There are so many hosting services. Which one should I pick!?
 
@@ -64,12 +67,14 @@ There are tons of guides on the Internet covering the nitty-gritties of Git and 
 
 **Create a GitHub account.** Use a sensible username. This username will decide your free website address. Unless you decide to buy a custom domain name and link it up with this GitHub Pages website, you will be stuck with *username*.github.io for the address. Besides, you can also use this account for any projects that you may work on in the future. 
 
->Tip: You should download the GitHub app for your platform if you are not comfortable with the command line.
+>Tip: You should download the GitHub app for your platform ([Mac](https://mac.github.com)/[Windows](https://windows.github.com)) if you are not comfortable with the command line.
 
-GitHub accounts contain repositories. Basically, these are folders that contain snapshots of all the previous versions of their contents that have been 'committed' to them. When synced, these reflect a folder on your computer. The GitHub app will help you **create a folder named *username*.github.io**, where *username* is your GitHub username. Choose a nice location for it, as Git may get confused if you move it around. **I will tell you what to put in this folder later.**
+GitHub accounts contain repositories. Basically, these are folders that contain snapshots of all the previous versions of their contents that have been 'committed' to them. When synced, these reflect a folder on your computer. The GitHub app will help you **create a folder named *username*.github.io**, where *username* is your GitHub username. Choose a nice location for it, as Git may get confused if you move it around. The name of this repository is special. When uploaded to GitHub, it is automatically recognized as a user website. **I will tell you what to put in this folder later.**
 
-**Whenever you have changes** you want to publish, type in a description of the changes you made and **hit the 'commit' button**. These changes can be new blog posts, changes in your resume, updated links, design updates or whatver. You can make multiple commits before before you are ready to publish. It will all be 'pushed' (uploaded) as one change. In the GitHub app, 'push' may be referred to as 'sync'. When you click it, your GitHub repo will reflect the folder you made using the GitHub app.
+**Whenever you have changes** you want to publish, type in a description of the changes you made and **hit the 'commit' button**. These changes can be new blog posts, changes in your resume, updated links, design updates or whatver. You can make multiple commits before before you are ready to publish. It will all be 'pushed' (uploaded) as one change. In the GitHub app, 'push' may be referred to as 'sync'. When you click it, your GitHub repo will reflect the folder you made using the GitHub app. If you have not initially published your repository on the website, a 'publish' button will appear in its place. At the time of writing, the sync/publish button is in the top-right corner of the GitHub app's window.
 
 >Tip: The commit functionality is hidden. The folder only looks like its latest version. You can work on it as usual. There is actually a hidden folder with all the snapshots, which the GitHub app uses to keep track of stuff, but you don't need to think about that.
 
-Now you understand how GitHub and GitHub Pages work. In part 2, you will make some choices about how you want to set your website up.
+---
+
+Now you understand how GitHub and GitHub Pages work. In [Part 2](http://blog.antrikshy.com/noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-2), you will make some choices about how you want to set your website up.

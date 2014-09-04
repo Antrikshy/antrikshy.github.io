@@ -17,7 +17,7 @@ If all you have is this decision, building a website can seem like a daunting ta
 
 Let me get you straight. You can set your own personal website up without coding or web design skills for cheap or free. While I will explore several options in this post, I will also tell you how get your site up and running, with a custom domain (like www.yourname.com) for **around US$10 a year**. If you are okay with a simple, elegant design (it's all the rage these days), it's even easier. **You can also have a personal blog inside it if you want.**
 
-In this two-part series, I will teach you how to set up a basic website using [Jekyll](http://jekyllrb.com), a blog-ready, static website framework that works really well with [GitHub Pages](http://pages.github.com), our host of choice.
+In this three-part series, I will teach you how to set up a basic website using [Jekyll](http://jekyllrb.com), a blog-ready, static website framework that works really well with [GitHub Pages](http://pages.github.com), our host of choice.
 
 If you have the skills to design a website on your own, you can still use this guide to learn how to host it on GitHub Pages for free and even link it with a custom domain.
 

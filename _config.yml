@@ -3,7 +3,7 @@ markdown:         redcarpet
 highlighter:      true
 
 # Permalinks
-permalink:        pretty
+permalink:        none
 
 # Setup
 title:            code.Antrikshy
@@ -20,5 +20,5 @@ author:
 github:
   repo:           https://github.com/Antrikshy/antrikshy.github.io
 pages_list:       
-  Entries:        '/entries'
+  Entries:        '/entries.html'
   Feed:           '/atom.xml'

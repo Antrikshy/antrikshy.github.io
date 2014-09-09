@@ -64,6 +64,12 @@ And now, for the platform of my choice. Out of all the options I am going over, 
 2. Static, multi-page websites (I'm not sure if the generator does these)
 3. Blogs with or without one of the other two.
 
+Jekyll is an engine that generates a static HTML website from a set of files and folders. This means that your pages and posts go into folders that Jekyll creates. Then you can tell Jekyll to generate a new snapshot of your website whenever you have updated them and are ready to publish.
+
+>Note: While I think Jekyll is very easy to use, it *may* not be everyone. If you host a WordPress blog, you get what you pay for. It's a more foolproof option as far as usability goes. Jekyll is *slightly* harder to use, but you also get more flexibility with it.
+
+Ordinarily, Jekyll requires a website folder with the data. When it is told to generate a new snapshot, it creates a `_site` folder with the contents of the website. The user uploads this to a server and the website is ready. With GitHub Pages, you don't need to do so. The website folder is synced with GitHub, which does all of the work of generating and publishing the site.
+
 First, let's set up Jekyll on your computer.
 
 ### Setting Your Computer Up For Jekyll

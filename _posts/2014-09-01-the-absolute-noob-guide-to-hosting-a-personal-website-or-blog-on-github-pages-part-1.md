@@ -29,9 +29,10 @@ If you have the skills to design a website on your own, you can still use this g
 
 ### Who these posts are for
 
-* I have tried my very best to make this guide easy to follow for everybody, Git-whiz programmers or not.
+* I have tried my very best to make this guide easy to follow for almost everybody, Git-whiz programmers or not. While you don't have to know your way around the command line, you will need to use it at one point. So I am assuming you are not afraid of it.
 * This post is not for you if you want to make a webapp or host a WordPress blog. Jekyll is a nice WordPress alternative that won't cost you hosting fees.
 * This guide is mainly focused on those who want to make a website about themselves and/or a personal blog.
+* This post is not written for those who are not willing to not tinker around, at least a little bit. The guide may not be very comprehensive.
 
 >Note: If you want to use Jekyll, keep in mind that as the time of this writing, it is not officially supported on Windows. While [it is possible](http://jekyllrb.com/docs/windows/) to get it working, this guide is written with Unix systems like Mac and Linux in mind. I have not used Jekyll on Windows, but I am guessing that the Terminal commands are similar to the ones used in this guide.
 

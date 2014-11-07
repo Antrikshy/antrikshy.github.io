@@ -10,6 +10,7 @@ title:            code.Antrikshy
 tagline:          'Notes, tinkerings, experiments'
 url:              http://blog.antrikshy.com
 paginate:         3
+excerpt_separator: "<!--more-->"
 baseurl:          /
 author:
   name:           Antriksh Yadav

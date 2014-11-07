@@ -2,7 +2,6 @@
 layout: post
 title: "Safari Extension Development: Set-Up Automatic Updates For Your Extension"
 permalink: "safari-extension-development-automatic-updates"
-excerpt_separator: <!--more-->
 ---
 
 If you are developing a Safari browser extension, you don't just want to release it. Later down the road, you may want to extend it further or just squash some bugs. You cannot expect your users to return to your website or the extension gallery to download updates manually.

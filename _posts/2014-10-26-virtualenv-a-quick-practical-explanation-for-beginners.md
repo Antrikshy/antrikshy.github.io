@@ -2,7 +2,6 @@
 layout: post
 title: "virtualenv - A Quick, Practical Explanation For Beginners"
 permalink: "virtualenv-quick-practical-explanation-beginners"
-excerpt_separator: <!--more-->
 ---
 
 As a budding Python dev, you must have read about virtualenv all over the place. Despite its popularity, I could not find a good, short explanation, written for beginners when I was getting started. I have figured out how it works, and now I can explain it to you.

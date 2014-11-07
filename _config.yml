@@ -9,7 +9,7 @@ permalink:        none
 title:            code.Antrikshy
 tagline:          'Notes, tinkerings, experiments'
 url:              http://blog.antrikshy.com
-paginate:         1
+paginate:         3
 baseurl:          /
 author:
   name:           Antriksh Yadav

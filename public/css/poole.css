@@ -60,14 +60,14 @@ html {
 
 body {
   color: #515151;
-  background-color: #fff;
+  background-color: #f4f5f5;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #FF6136;
   text-decoration: none;
 }
 a strong {
@@ -311,12 +311,12 @@ tbody tr:nth-child(odd) th {
   color: #505050;
 }
 .masthead-title a {
-  color: #505050;
+  color: #FF6136;
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #c0c0c0;
+  color: #043EC4;
   letter-spacing: 0;
 }
 
@@ -337,7 +337,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #0D3391;
 }
 .page-title,
 .post-title {
@@ -349,7 +349,7 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: #FF6136;
 }
 
 /* Related posts */

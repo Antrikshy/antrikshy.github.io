@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #313131;
+  color: #043EC4;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -130,10 +130,9 @@ dd {
 /* Misc */
 hr {
   position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
+  /*margin: 1.5rem 0;*/
+  border-top: 2px solid #0D3391;
+  /*border-bottom: 1px solid #fff;*/
 }
 
 abbr {
@@ -155,7 +154,7 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
+  color: #FF6136;
   background-color: #f9f9f9;
   border-radius: 3px;
 }
@@ -316,7 +315,7 @@ tbody tr:nth-child(odd) th {
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #043EC4;
+  color: #0D3391;
   letter-spacing: 0;
 }
 

@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -88,6 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 h1 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
 }
 h2 {
@@ -107,6 +108,7 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 strong {
@@ -131,7 +133,7 @@ dd {
 hr {
   position: relative;
   /*margin: 1.5rem 0;*/
-  border-top: 2px solid #0D3391;
+  border-top: 1px solid #0D3391;
   /*border-bottom: 1px solid #fff;*/
 }
 
@@ -300,20 +302,25 @@ tbody tr:nth-child(odd) th {
  */
 
 .masthead {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
+  background-color: rgba(0,0,0,0.15);
 }
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 1.2rem;
+  font-size: 1.2rem;
   color: #505050;
 }
 .masthead-title a {
   color: #FF6136;
 }
 .masthead-title small {
-  font-size: 75%;
+  font-size: 70%;
   font-weight: 400;
   color: #0D3391;
   letter-spacing: 0;

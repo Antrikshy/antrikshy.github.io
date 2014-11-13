@@ -5,22 +5,21 @@
   {% include analytics.html %}
 
   <body>
-
+    <div class="masthead">
+      <h3 class="masthead-title">
+        <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
+        <small>{{ site.tagline }}</small>
+        &nbsp;&nbsp;&nbsp;
+        {% for page in site.pages_list %}
+          &nbsp;
+          <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
+          &nbsp;
+        {% endfor %}
+          &nbsp;
+          <small><a href="http://antrikshy.com">Home</a></small>
+      </h3>
+    </div>
     <div class="container content">
-      <div class="masthead">
-        <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
-          <small>{{ site.tagline }}</small>
-          &nbsp;&nbsp;&nbsp;
-          {% for page in site.pages_list %}
-            &nbsp;
-            <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
-            &nbsp;
-          {% endfor %}
-            &nbsp;
-            <small><a href="http://antrikshy.com">Home</a></small>
-        </h3>
-      </div>
 
       {{ content }}
 

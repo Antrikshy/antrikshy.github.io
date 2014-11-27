@@ -22,6 +22,7 @@ In your JavaScript:
 
 $('.delete-important-data').click(function() {
     $(this).text('Sure?').removeClass('delete-important-data').addClass('delete-data-conf');
+    
     $('.delete-data-conf').click(function() {
         // Do stuff here
         $(this).fadeOut();  // Perhaps put this in a success callback
@@ -29,6 +30,8 @@ $('.delete-important-data').click(function() {
 });
 
 {% endhighlight %}
+
+>Tip: If you're using Bootstrap, you can change a `.btn-primary` to `.btn-danger` to make it red for the confirmation too.
 
 The functionality is very simple. On the first click, the button text is changed to confirmation text and the button class is swapped with one reserved for a button in the confirmation stage. Next, we have a listener for a click on the new button.
 

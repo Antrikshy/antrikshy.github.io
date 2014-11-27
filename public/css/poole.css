@@ -229,6 +229,7 @@ blockquote p:last-child {
 }
 
 img {
+  float: left;
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
@@ -307,7 +308,7 @@ tbody tr:nth-child(odd) th {
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  background-color: rgba(0,0,0,0.15);
+  background-color: rgba(0,0,0,0.10);
 }
 .masthead-title {
   margin-top: 0;

@@ -335,6 +335,10 @@ tbody tr:nth-child(odd) th {
  * page is wrapped in `.page` and is only used on the page layout.
  */
 
+.read-more-btn {
+
+}
+
 .page,
 .post {
   margin-bottom: 4em;
@@ -377,8 +381,7 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .related-posts li a:hover small {
   color: inherit;

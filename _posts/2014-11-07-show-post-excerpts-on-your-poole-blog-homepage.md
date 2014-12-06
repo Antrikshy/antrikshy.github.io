@@ -36,3 +36,5 @@ Once you're done adding the seperator in each post, make these two changes, assu
 2. In the `index.html` template template (also in root directory), change the line that adds `{{ "{{ post.content " }}}}` to your homepage to make it show `{{ "{{ post.excerpt " }}}}`.
 
 It's that simple.
+
+Update: You can add a read more button under each excerpt by simply adding `<a href="{{ "{{ post.url " }}}}"> Read more </a>` just under the `{{ "{{ post.excerpt " }}}}` line inside your loop.

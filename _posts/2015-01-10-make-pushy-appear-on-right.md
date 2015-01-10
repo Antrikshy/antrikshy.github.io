@@ -35,6 +35,9 @@ Now we get to the main part. There are several changes we need to make in the `p
 2. Change the selector `.pushy-left` to `.pushy-right`.
 3. Then set all the negative 200px values you see in the `transform` properties to positive.
 4. Under the `.container-push, .push-push` selector, change the positive 200px values to negative.
+5. Change the negative x-offset values for `box-shadow` properties under `.pushy` to make them positive. This will make sure that the website content's 'shadow' appears in the right direction when the menu is open.
+
+>Tip: I find the default shadow too prominent. For a flatter design, I chose `inset 5px 0px 3px -4px rgba(0, 0, 0, .7)`.
 
 Reload your page, and Pushy should now slide in from the right.
 

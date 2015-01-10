@@ -18,6 +18,8 @@ This article is a Pebble.js "getting started" for:
 
 I am not a master developer or anything like that. At the time of this writing, I have written one Pebble.js app and published it on the app store. I just want to share my experience to make it easy for other beginners and perhaps clear out a few things that I had to dig around to learn.
 
+>Note: I assume prior programming knowledge, especially in JavaScript.
+
 ## Who Should Use Pebble.js
 
 Let's get a few things out of the way first. Pebble.js is not intended to be a replacement for *all* C applications. To explain this, you should understand the three kinds of Pebble apps that currently exist (this includes watchfaces as well, becuase they are the same as apps in this regard):
@@ -74,7 +76,137 @@ Vibrations (`Vibe` module) are a great way to give feedback to the user to notif
 
 ### AppHookup App Overview
 
-The AppHookup app is built entirely over the pre-designed window elements included in Pebble.js. 
+You can find all of this code and more in context at the [AppHookup for Pebble GitHub repo](https://github.com/Antrikshy/AppHookup-for-Pebble).
+
+>Note: Some of the snippets in this post are edited versions of the real thing, so that it's easier to understand them without context.
+
+The AppHookup app is built entirely over the pre-designed window elements included in Pebble.js. At the top of the file, I include the `ui` module:
+
+{% highlight javascript %}
+var UI = require('ui');
+{% endhighlight %}
+
+The title screen is generated using the following code:
+
+{% highlight javascript %}
+var main = new UI.Card({
+  title: "/r/AppHookup",
+  body: "Press select to browse.\n\nShake to refresh."
+});
+
+main.show();
+{% endhighlight %}
+
+This is pretty much the entry point to the application. I make a new `UI.Card` element with a preset title and body. This automatically generates a card with the appropriate fonts. Just after this is shown, I query the reddit API for the last few posts from the AppHookup subreddit. While this is happening, I temporarily change the body of this card using:
+
+{% highlight javascript %}
+main.body("Press select to browse.\n\nLoading posts...");
+{% endhighlight %}
+
+It is changed back in the `ajax` callback function. Next, I have a listener for the 'select' button press on this screen:
+
+{% highlight javascript %}
+main.on('click', 'select', function(e) {
+  var appsList = parseApps(redditResponse);
+
+  var appMenu = new UI.Menu({
+    sections: [{
+      title: "Newest posts",
+      items: appsList
+    }]
+  });
+  
+  appMenu.show();
+  
+  appMenu.on('select', function(e) {
+    var appDetails = new UI.Card({
+      title: e.item.title,
+      body: e.item.subtitle + '\n' + e.item.body,
+      scrollable: true
+    });
+    
+    appDetails.show();
+  });
+});
+{% endhighlight %}
+
+There is quite a bit going on here, so I'll step through it for a bit. When the select button is pressed, the `parseApps` function processes reddit's response and generates an list that is passed into the `UI.Menu` constructor as you can see above. It is an array of JavaScript objects with a specific format. You can see this function below. Now the `appMenu` screen is ready and displayed. I only needed one section here, but you can add multiple if you want to segregate your menu items in the same menu.
+
+Next, I add a listener for the 'select' button on a menu item. Then I read data back from the previously created JS objects, which the `UI.Menu` exposes. Each app gets its own `UI.Card` (with preset titles and bodies) when it is clicked on.
+
+Check out the `parseApps` function, which returns an array of JS objects to pass into `UI.Menu`.
+
+{% highlight javascript %}
+function parseApps(data) {
+  var items = [];
+  
+  for (var i = 0; i < data.data.children.length; i++) {
+    if (data.data.children[i].data.is_self) continue;
+    
+    var postTitle = data.data.children[i].data.title;
+    postTitle = postTitle.replace("&amp;", "&");
+    postTitle = postTitle.replace("&lt;", "<");
+    postTitle = postTitle.replace("&gt;", ">");
+    
+    var titleArray = splitTitle(postTitle);
+    
+    var platform = titleArray[0];
+    var appName = titleArray[1];
+    var priceChange = titleArray[2];
+    var description = titleArray[3];
+    
+    if (description === undefined)
+      description = "";
+    else   
+      description = description + '\n\n';
+      
+    var user = data.data.children[i].data.author;
+    
+    items.push({
+      title: appName,
+      subtitle: platform,
+      body: '/u/' + user + '\n' + priceChange + '\n\n' + description
+    });
+  }
+  
+  return items;
+}
+{% endhighlight %}
+
+Much of the above code is specific to the reddit API response, so you don't need to think much about it. Here are a few things happening:
+
+* I use the `replace` function as a quick and dirty way of unescaping some of the common HTML characters in AppHookup posts. If anybody knows of a better way to do it, please post it in the comments.
+* `splitTitle` is a function that uses regular expressions to parse AppHookup post titles. The regex was contributed by Thanasis Grammatopoulos [from Stack Overflow](http://stackoverflow.com/a/26446394/2005759). You can check it out in the app's source, linked above.
+* After doing a bit of string manipulation to make corner-case stuff look pretty, I add a JS object to the array I shall be returning. Take note of the format. This is the array that is passed into the `UI.Menu` constructor.
+
+Now here's a final tidbit - basic accelerometer usage. Throughout the app, I employ the accelerometer (specifically the `accelTap` event) to refresh reddit data. On the main screen and in the menu, I have listeners waiting for this event like so:
+
+{% highlight javascript %}
+main.on('accelTap', function(e){
+  console.log('Shake detected.');
+  getPosts();
+});
+{% endhighlight %}
+
+`accelTap` is the event fires when the watch detects a firm tap or a shake of the wrist. This is the same motion as the one used to trigger the backlight. Put the snippet anywhere after `main.show()` and it should work. I added this after `appMenu.show()` to listen for the event on the menu screen too:
+
+{% highlight javascript %}
+appMenu.on('accelTap', function(e) {
+  console.log('Shake detected.');
+  appMenu.hide();
+  getPosts();
+});
+{% endhighlight %}
+
+This one takes the user back to the main screen as it refreshes. My `getPosts` function even vibrates the watch after a successful refresh like so (in the Ajax success callback):
+
+{% highlight javascript %}
+var Vibe = require('ui/vibe');   // Need to include this at the top
+Vibe.vibrate('short');
+{% endhighlight %}
+
+
+
 
 
 // How they are published on iOS

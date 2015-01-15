@@ -12,6 +12,7 @@ url:              http://blog.antrikshy.com
 paginate:         3
 excerpt_separator: "<!--more-->"
 baseurl:          /
+highlighter:         pygments
 author:
   name:           Antriksh Yadav
   url:            https://antrikshy.com

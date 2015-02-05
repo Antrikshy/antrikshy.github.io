@@ -1,10 +1,14 @@
 ---
 layout: post
 title: "Pebble.js Tutorial - A Guide To Writing Pebble Apps Using JavaScript"
-permalink: "pebble-js-tutorial-apps-using-javascript"
+permalink: "pebble-js-tutorial-a-guide-to-writing-pebble-apps-using-javascript"
 ---
 
-Apps for the Pebble smartwatch platform are traditionally written in C. A Pebble is a low-power computer with limited storage and memory. It does not come with a full-blown interpreter for Python or JavaScript. Hence, C was the only option for developers for a while.
+![AppHookup screenshot 1]({{ site.url }}/assets/apphookup-pebble-1.png)
+![AppHookup screenshot 2]({{ site.url }}/assets/apphookup-pebble-2.png)
+![AppHookup screenshot 3]({{ site.url }}/assets/apphookup-pebble-3.png)
+
+Apps for the Pebble smartwatch platform are traditionally written in C. A Pebble is a low-power computer with limited storage and memory. It does not come with a full-blown interpreter for Python or JavaScript. Hence, C was the only option for developers for quite some time.
 
 [Pebble.js](http://developer.getpebble.com/docs/pebblejs/), a framework for writing JavaScript applications was announced at JSConf 2014. It is mainly a framework intended to write apps that need an Internet connection to run. While it is not very limited in most ways, the framework may not be what you expect it to be. I'm writing this to clear up any confusion regarding the design of Pebble.js apps.
 
@@ -16,9 +20,11 @@ This article is a Pebble.js "getting started" for:
 * Developers who are writing an app that inherently requires an Internet connection
 * People who want to know the difference between C and JS apps, or just want to get started with an overview of the Pebble.js API.
 
-I am not a master developer or anything like that. At the time of this writing, I have written one Pebble.js app and published it on the app store. I just want to share my experience to make it easy for other beginners and perhaps clear out a few things that I had to dig around to learn.
+I am not a Pebble.js master developer. At the time of this writing, I have written one Pebble.js app and published it on the app store. I just want to share my experience to make it easy for other beginners and perhaps clear out a few things that I had to dig around and learn.
 
->Note: I assume prior programming knowledge, especially in JavaScript.
+This article is intended to be a deeper overview of Pebble.js and meant to complement the information in the [official tutorial](http://developer.getpebble.com/getting-started/pebble-js-tutorial/part1/) with a detailed explanation of actual code from an actual app available on the store.
+
+>Note: I assume prior programming knowledge, especially in JavaScript. Specifically, make sure you understand callback functions.
 
 ## Who Should Use Pebble.js
 
@@ -37,11 +43,15 @@ Pebble.js won't replace C apps in its current state, but that *does not* mean yo
 
 AppHookup is the official Pebble app for the [/r/AppHookup subreddit](http://www.reddit.com/r/AppHookup), a place where people contribute app deals and discounts on all platforms. It queries the reddit API for the last 35 posts on the subreddit and displays them in an easily-readable fashion.
 
-Pebble.js apps cannot function without a phone nearby. However, AppHookup cannot function without an Internet connection by design, so the user is not expected to run it without a phone. Thus, Pebble.js's biggest restriction automatically does not apply to this particular app.
+Pebble.js apps cannot function without a phone nearby. However, AppHookup cannot function without an Internet connection by design, so the user is not expected to use it without a phone around. Thus, Pebble.js's biggest restriction does not apply to this particular app.
 
 ## Writing A Pebble.js App
 
-Let's look into what the Pebble.js API provides you with. Then I will give you an overview of my AppHookup app. The [official Pebble.js documentation](http://developer.getpebble.com/docs/pebblejs/) covers all of the components of the SDK very well, but it is only generic documentation. In this post, I just aim to give you a basic overview that should be helpful if you're just getting started.
+Let's look into what the Pebble.js API provides you with. Then I will give you an overview of my AppHookup app. The [official Pebble.js documentation](http://developer.getpebble.com/docs/pebblejs/) covers all of the components of the SDK very well, but it is only generic documentation and there are few Pebble.js tutorials out there. In this post, I just aim to give you a basic overview that should be helpful if you're just getting started.
+
+### CloudPebble
+
+To write a Pebble.js app, go to [CloudPebble](http://www.cloudpebble.net), an amazing cloud-based IDE for writing Pebble apps. With it, there is no need to install anything on your computer. You can just write your code, hit the run button and the app is compiled and run on your watch pretty much instantly through your phone. The editor itself is great and it integrates with GitHub as well.
 
 ### Anatomy Of A Pebble.js App
 
@@ -78,7 +88,7 @@ Vibrations (`Vibe` module) are a great way to give feedback to the user to notif
 
 You can find all of this code and more in context at the [AppHookup for Pebble GitHub repo](https://github.com/Antrikshy/AppHookup-for-Pebble).
 
->Note: Some of the snippets in this post are edited versions of the real thing, so that it's easier to understand them without context.
+>Note: Some of the snippets in this post are adapted versions of the actual source code to make them easier to understand with less context.
 
 The AppHookup app is built entirely over the pre-designed window elements included in Pebble.js. At the top of the file, I include the `ui` module:
 
@@ -97,13 +107,35 @@ var main = new UI.Card({
 main.show();
 {% endhighlight %}
 
-This is pretty much the entry point to the application. I make a new `UI.Card` element with a preset title and body. This automatically generates a card with the appropriate fonts. Just after this is shown, I query the reddit API for the last few posts from the AppHookup subreddit. While this is happening, I temporarily change the body of this card using:
+This is pretty much the entry point to the application. I make a new `UI.Card` element with a preset title and body. This automatically generates a card with the appropriate fonts. With just these lines of code, we have a fully functioning app with one title screen.
+
+Just after this is shown, I query the reddit API for the last few posts from the AppHookup subreddit. While this is happening, I temporarily change the body of this card using:
 
 {% highlight javascript %}
 main.body("Press select to browse.\n\nLoading posts...");
 {% endhighlight %}
 
-It is changed back in the `ajax` callback function. Next, I have a listener for the 'select' button press on this screen:
+It is changed back in the `ajax` callback function, which is executed after the `ajax` module receives data from reddit, like so:
+
+{% highlight javascript %}
+ajax({ url: 'http://www.reddit.com/r/apphookup/new.json?sort=new&limit=35', type: 'json' },
+  function(data) {
+    redditResponse = data;  // Initialized earlier
+    
+    console.log('Received data.');
+    Vibe.vibrate('short');
+
+    main.body("Press select to browse.\n\nShake to refresh.");
+  },  // End of success callback
+
+  function(error) {
+    console.log('Error receiving reddit data.');  
+    main.body("Could not download posts.\n\nShake to try refreshing again.");
+  }   // End of error callback
+);
+{% endhighlight %}
+
+Next, I have a listener for the 'select' button press on this screen:
 
 {% highlight javascript %}
 main.on('click', 'select', function(e) {
@@ -179,7 +211,9 @@ Much of the above code is specific to the reddit API response, so you don't need
 * `splitTitle` is a function that uses regular expressions to parse AppHookup post titles. The regex was contributed by Thanasis Grammatopoulos [from Stack Overflow](http://stackoverflow.com/a/26446394/2005759). You can check it out in the app's source, linked above.
 * After doing a bit of string manipulation to make corner-case stuff look pretty, I add a JS object to the array I shall be returning. Take note of the format. This is the array that is passed into the `UI.Menu` constructor.
 
-Now here's a final tidbit - basic accelerometer usage. Throughout the app, I employ the accelerometer (specifically the `accelTap` event) to refresh reddit data. On the main screen and in the menu, I have listeners waiting for this event like so:
+Now here's a final tidbit - basic accelerometer usage. It is possible to get full accelerometer data through Pebble.js, but interpreting this data is very involved because the data points are raw values of 3D movement on the x, y and z axes. We won't delve into that in this article.
+
+Throughout my app, I employ the accelerometer (specifically the `accelTap` event) to refresh reddit data. On the main screen and in the menu, I have listeners waiting for this event like so:
 
 {% highlight javascript %}
 main.on('accelTap', function(e){
@@ -188,7 +222,7 @@ main.on('accelTap', function(e){
 });
 {% endhighlight %}
 
-`accelTap` is the event fires when the watch detects a firm tap or a shake of the wrist. This is the same motion as the one used to trigger the backlight. Put the snippet anywhere after `main.show()` and it should work. I added this after `appMenu.show()` to listen for the event on the menu screen too:
+`accelTap` is a special, pre-built event that fires when the watch detects a firm tap or a shake of the wrist. This is the same motion as the one used to trigger the watch's backlight. Put the snippet anywhere after `main.show()` and it should work. I added this after `appMenu.show()` to listen for the event on the menu screen too:
 
 {% highlight javascript %}
 appMenu.on('accelTap', function(e) {
@@ -205,8 +239,16 @@ var Vibe = require('ui/vibe');   // Need to include this at the top
 Vibe.vibrate('short');
 {% endhighlight %}
 
+## Publishing A Pebble.js App
 
+Once you have built your first app, the process of publishing it is very straightforward. Simply get the .pbw file from CloudPebble, capture a few screenshots, make some store graphics and fill out a form on [Pebble's dev portal](https://dev-portal.getpebble.com). The requirements can be found on the site.
 
+Your app should pretty much appear right away for Android users. However, because of some silly Apple rules, *all the JavaScript code* for *every single app* on the store has to be packaged inside the Pebble iOS app and released in an update through the App Store. Yes, you read that right. You may want to read it again just to make sure. I'll wait.
 
+This meant that before I could download my app from the Pebble app store, I had to wait for a few weeks for an update for the Pebble mobile app to show up. There's no getting around it. Just hope that your app's release matches the time when the latest Pebble app update is sent to Apple for approval. This is done specifically for app releases every couple of weeks to a month.
 
-// How they are published on iOS
+## Wrapping Up
+
+Now you have a basic overview of the Pebble.js SDK. Delve into the [official documentation](http://developer.getpebble.com/docs/pebblejs/), hit [CloudPebble](http://www.cloudpebble.net) and start hacking away on your smartwatch app idea! If you ended up finding this post useful - or better yet, made an app after reading this post - let me know in the comments! I would be delighted to read about your experiences.
+
+Good luck, and go design some cool stuff.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Implement A Countdown From A Specified Time In HTML With JavaScript"
-permalink: "implement-a-countdown-from-a-specified-time-in-html-with-javascript"
+title: "Write A Simple Countdown Timer In JavaScript"
+permalink: "write-a-simple-countdown-timer-in-javascript"
 ---
 
 There are libraries for all kinds of countdowns (from a specified time or leading up to a specific time or date) that you can use in your website's front-end. For **my chess timer project**, I wanted my own timer for several reasons:
@@ -72,4 +72,35 @@ function decorateZeroes(number) {
 
 It returns a string because that's what `tickDown` needs.
 
-// Starting and stopping countdown
+The last step is to write a layer of abstraction to control the `tickDown` function. Of course, if you do not need to control the timer later, you can just do away with all of this and only use the `setInterval` bit from `startCountdown`.
+
+I wrote two functions, `startCountdown` and `stopCountdown` to start and stop the timer. The main reason, however, was to set any variables that keep track of the running timer or perform any other tasks that need to be performed when starting or stopping the timer, all without cluttering up the `tickDown` method. Besides, we need to call `tickDown` every second.
+
+{% highlight javascript %}
+
+var timerIntId = null;
+var timerRunning = false;
+
+function startCountdown() {
+    if (!timerRunning) {
+        timerIntId = setInterval(tickDown, 1000);
+        timerRunning = true;
+    }
+}
+
+function stopCountdown() {
+    if (timerRunning) {
+        clearInterval(timerIntId);
+        timerRunning = false;
+    }
+}
+
+{% endhighlight %}
+
+`setInterval` is a JavaScript function that calls the function passed in as the first parameter over and over after a delay passed in as the second parameter (in milliseconds). Here, `tickDown` is called to decrement a second every 1000ms (1s).
+
+`timerIntId` is a global variable that keeps track of the `intervalID` object that `setInterval` returns. This way, `stopCountdown` can call `clearInterval` and kill the `setInterval` loop. `timerRunning` is just a variable I use to keep track of whether the timer is running and perform other tasks on the page accordingly.
+
+The only disadvantage to using `setInterval` to make a timer is that it has a rather low resolution. A delay of 1000ms keeps pretty accurate time. But if you use it to control the timer at millisecond level, the inaccuracy becomes noticeable. If you need to keep more accurate time, look into using some library that uses a more complex way of timekeeping. I learned this the hard way while working on the chess timer.
+
+// Conclude

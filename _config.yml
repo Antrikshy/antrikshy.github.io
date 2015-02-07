@@ -8,7 +8,7 @@ permalink:        none
 # Setup
 title:            code.Antrikshy
 tagline:          'Notes, tinkerings, experiments'
-url:              http://blog.antrikshy.com
+url:              http://code.antrikshy.com
 paginate:         3
 excerpt_separator: "<!--more-->"
 baseurl:          /

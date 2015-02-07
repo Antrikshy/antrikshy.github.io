@@ -77,4 +77,4 @@ GitHub accounts contain repositories. Basically, these are folders that contain 
 
 ---
 
-Now you understand how GitHub and GitHub Pages work. In [Part 2](http://blog.antrikshy.com/noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-2), you will make some choices about how you want to set your website up.
+Now you understand how GitHub and GitHub Pages work. In [Part 2](http://code.antrikshy.com/noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-2), you will make some choices about how you want to set your website up.

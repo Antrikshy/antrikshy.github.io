@@ -4,9 +4,9 @@ title: "Pebble.js Tutorial - A Guide To Writing Pebble Apps Using JavaScript"
 permalink: "pebble-js-tutorial-a-guide-to-writing-pebble-apps-using-javascript"
 ---
 
-![AppHookup screenshot 1]({{ site.url }}/assets/apphookup-pebble-1.png)
-![AppHookup screenshot 2]({{ site.url }}/assets/apphookup-pebble-2.png)
-![AppHookup screenshot 3]({{ site.url }}/assets/apphookup-pebble-3.png)
+<img src="{{ site.url }}/assets/apphookup-pebble-1.png" alt="AppHookup screenshot 1" style="max-width: 33%;">
+<img src="{{ site.url }}/assets/apphookup-pebble-2.png" alt="AppHookup screenshot 2" style="max-width: 33%;">
+<img src="{{ site.url }}/assets/apphookup-pebble-3.png" alt="AppHookup screenshot 3" style="max-width: 33%;">
 
 Apps for the Pebble smartwatch platform are traditionally written in C. A Pebble is a low-power computer with limited storage and memory. It does not come with a full-blown interpreter for Python or JavaScript. Hence, C was the only option for developers for quite some time.
 

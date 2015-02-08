@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pebble.js Tutorial - A Guide To Writing Pebble Apps Using JavaScript"
+title: "Pebble.js Tutorial - An In-Depth Guide To Writing Pebble Apps Using JavaScript"
 permalink: "pebble-js-tutorial-a-guide-to-writing-pebble-apps-using-javascript"
 ---
 

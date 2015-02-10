@@ -41,6 +41,10 @@ Now we get to the main part. There are several changes we need to make in the `p
 
 Reload your page, and Pushy should now slide in from the right.
 
+## The Result
+
+I use Pushy as an about-site panel on my in-progress chess timer app. Here is a [functioning example](http://code.antrikshy.com/ChessTimer/).
+
 ## Other Changes (Optional)
 
 By default, Pushy is 200px wide. If you want to change this, pick your width and replace all instances of 200px in this file.

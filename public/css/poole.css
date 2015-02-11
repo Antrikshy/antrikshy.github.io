@@ -76,7 +76,12 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  text-decoration: underline;
+  color: #FFF !important;
+  background-color: #FF6136;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 /* Headings */
@@ -326,7 +331,12 @@ tbody tr:nth-child(odd) th {
   color: #0D3391;
   letter-spacing: 0;
 }
-
+.masthead-title small a {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
 
 /*
  * Posts and pages
@@ -381,7 +391,6 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  text-decoration: underline;
 }
 .related-posts li a:hover small {
   color: inherit;
@@ -416,7 +425,7 @@ tbody tr:nth-child(odd) th {
 
 /* Only provide a hover state for linked pagination items */
 a.pagination-item:hover {
-  background-color: #f5f5f5;
+  background-color: #FF6136;
 }
 
 @media (min-width: 30em) {

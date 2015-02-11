@@ -258,6 +258,16 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
 
+/* Text selection */
+::selection {
+  color: #fff;
+  background-color: #0D3391;
+}
+::-moz-selection {
+  color: #fff;
+  background-color: #0D3391;
+}
+
 
 /*
  * Custom type

@@ -356,7 +356,9 @@ tbody tr:nth-child(odd) th {
  */
 
 .read-more-btn {
-
+  padding: 8px;
+  border: 2px solid;
+  border-radius: 3px;
 }
 
 .page,

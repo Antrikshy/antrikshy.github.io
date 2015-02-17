@@ -67,7 +67,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #FF6136;
+  color: #F53500;
   text-decoration: none;
 }
 a strong {
@@ -77,7 +77,7 @@ a strong {
 a:hover,
 a:focus {
   color: #FFF !important;
-  background-color: #FF6136;
+  background-color: #F53500;
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
@@ -161,7 +161,7 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #FF6136;
+  color: #F53500;
   background-color: #f9f9f9;
   border-radius: 3px;
 }
@@ -333,7 +333,11 @@ tbody tr:nth-child(odd) th {
   color: #505050;
 }
 .masthead-title a {
-  color: #FF6136;
+  color: #F53500;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .masthead-title small {
   font-size: 80%;
@@ -382,7 +386,7 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #FF6136;
+  color: #F53500;
 }
 
 /* Related posts */
@@ -437,7 +441,7 @@ tbody tr:nth-child(odd) th {
 
 /* Only provide a hover state for linked pagination items */
 a.pagination-item:hover {
-  background-color: #FF6136;
+  background-color: #F53500;
 }
 
 @media (min-width: 30em) {

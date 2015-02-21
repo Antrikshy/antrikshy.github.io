@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include personal_head.html %}
+  {% include analytics.html %}
+
+  <body>
+    <div class="masthead">
+      <h3 class="masthead-title">
+        <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
+        <small>{{ site.tagline }}</small>
+        &nbsp;&nbsp;&nbsp;
+        {% for page in site.pages_list %}
+          &nbsp;
+          <small><a href="{{ page[1] }}">{{ page[0] }}</a></small>
+          &nbsp;
+        {% endfor %}
+      </h3>
+    </div>
+    <div class="container content">
+
+      {{ content }}
+
+      <div class="footer">
+        <p>
+          &copy; {{ site.time | date: '%Y' }} Antriksh Yadav. All rights reserved.
+          <span style="float:right;"><a href="http://twitter.com/Antrikshy">@Antrikshy</a></span>
+          <br/><small>But you can feel free to reuse any code snippets in personal or commercial projects.</small>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

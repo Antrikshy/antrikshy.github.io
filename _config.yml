@@ -10,9 +10,10 @@ title:            code.Antrikshy
 tagline:          'Notes, tinkerings, experiments'
 url:              http://code.antrikshy.com
 paginate:         3
+paginate_path:    "/blog/page:num"
 excerpt_separator: "<!--more-->"
 baseurl:          /
-highlighter:         pygments
+highlighter:      pygments
 author:
   name:           Antriksh Yadav
   url:            https://antrikshy.com
@@ -24,3 +25,4 @@ github:
 pages_list:       
   Entries:        '/entries.html'
   Feed:           '/atom.xml'
+  Blog:           '/blog'

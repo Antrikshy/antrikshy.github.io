@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 
+small {
+  font-size: 85%;
+}
+
 .site-intro {
   height: 100vh;
   background-color: #252525;
@@ -28,13 +32,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: 27vmin 10vmin;
 }
 
-.scroll-prompter {
-  position: fixed;
+.featured-projects {
+  height: 100vh;
+}
+
+.featured-projects-content {
+  padding: 5vmin 10vmin;
+}
+
+.scroll-prompter a {
   padding: 0;
-  bottom: 5vh;
-  left: 50vw;
+  margin-left: -3vw;
   font-size: 2.2rem;
   z-index: 100;
+  color: #d5d5d5;
   -webkit-animation: bounceOnce 0.7s infinite;
   -moz-animation: bounceOnce 0.7s infinite;
   animation: bounceOnce 0.7s infinite;

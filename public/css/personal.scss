@@ -1,0 +1,137 @@
+---
+---
+
+$main-font: "Merriweather", serif;
+
+$main-color: #515151;
+$main-back-color: #f4f5f5;
+$site-intro-color: #d5d5d5;
+$site-intro-back-color: #252525;
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }  
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }  
+  @keyframes $animation-name {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  color: $main-color;
+  background-color: $main-back-color;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  font-family: $main-font;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+h2 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+strong {
+  color: #303030;
+}
+
+small {
+  font-size: 85%;
+}
+
+.site-intro {
+  height: 100vh;
+  background-color: $site-intro-back-color;
+  color: $site-intro-color;
+  font-size: 1.4rem;
+
+  .site-intro-content {
+    padding: 27vmin 10vmin;
+  }
+
+  .scroll-prompter a {
+    padding: 0;
+    margin-left: -3vw;
+    font-size: 2.2rem;
+    z-index: 100;
+    color: $site-intro-color;
+    @include animation(bounceOnce 0.7s infinite);
+  }
+}
+
+.featured-projects {
+  height: auto;
+
+  .featured-projects-content {
+    padding: 5vmin 10vmin;
+  }
+}
+
+.project-box {
+  padding: 1rem;
+  background-color: #d5d5d5;
+}
+
+/* Scroll prompter arrow bounce */
+@include keyframes(bounceOnce) {
+  0% { padding-bottom: 0; }
+  50% { padding-bottom: 10px; }
+  100% { padding-bottom: 0; }
+}
+
+/* Blinking typed.js cursor */
+.typed-cursor{
+  opacity: 1;
+  @include animation(blink 0.7s infinite);
+}
+@include keyframes(blink) {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}

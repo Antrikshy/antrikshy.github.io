@@ -22,5 +22,17 @@ title: Home
 <section class="featured-projects">
   <div class="featured-projects-content home-page-section-content">
     <h1 class="featured-projects-title">Featured Projects</h1>
+    {% for project in site.data.projects %}
+      {% if project.featured == true %}
+        <div class="row">
+          <div class="medium-12 large-10">
+            <div class="project-box">
+              <h2>{{ project.name }}</h2>
+              <p>{{ project.description }}</p>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </section>

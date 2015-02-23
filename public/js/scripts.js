@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    new FastClick(document.body);
+    
     $(".scroll-prompter a").hide();
 
     $(".intro-text-1").typed({

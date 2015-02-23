@@ -1,0 +1,17 @@
+- name: AppHookup for Pebble
+  type: Personal
+  description: Blah blah awesome app for smartwatch
+  repository: http://github.com/Antrikshy/AppHookup-for-Pebble
+  featured: yes
+
+- name: Minecraft Snaps
+  type: Personal
+  description: Blah blah awesome node-webkit app
+  repository: http://github.com/Antrikshy/Minecraft-Snaps
+  featured: yes
+
+- name: RecoverTabs
+  type: Personal
+  description: Blah blah awesome Safari extension
+  repository: http://github.com/Antrikshy/RecoverTabs
+  featured: yes

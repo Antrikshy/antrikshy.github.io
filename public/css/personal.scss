@@ -5,8 +5,13 @@ $main-font: "Merriweather", serif;
 
 $main-color: #515151;
 $main-back-color: #f4f5f5;
-$site-intro-color: #d5d5d5;
-$site-intro-back-color: #252525;
+$site-intro-color: #fff;
+// $site-intro-back-fromColor: #A058A1;
+// $site-intro-back-toColor: #614385;
+// $site-intro-back-fromColor: #5B335C;
+// $site-intro-back-toColor: #45305F;
+$site-intro-back-fromColor: #271B36;
+$site-intro-back-toColor: #412442;
 
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} { @content; }
@@ -16,12 +21,23 @@ $site-intro-back-color: #252525;
   @keyframes #{$name} { @content; } 
 }
 
-@mixin animation($str) {
-  -webkit-animation: #{$str};
-  -moz-animation: #{$str};
-  -ms-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};      
+@mixin animation($name) {
+  -webkit-animation: #{$name};
+  -moz-animation: #{$name};
+  -ms-animation: #{$name};
+  -o-animation: #{$name};
+  animation: #{$name};      
+}
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
 html, body {
@@ -65,19 +81,15 @@ p {
   font-size: 1rem;
 }
 
-strong {
-  color: #303030;
-}
-
 small {
   font-size: 85%;
 }
 
 .site-intro {
   height: 100vh;
-  background-color: $site-intro-back-color;
   color: $site-intro-color;
   font-size: 1.4rem;
+  @include linear-gradient($site-intro-back-toColor, $site-intro-back-fromColor);
 
   hr {
     border-color: $site-intro-color;
@@ -87,13 +99,18 @@ small {
     padding: 27vmin 10vmin;
   }
 
-  .scroll-prompter a {
+  .scroll-prompter-row {
+    margin-top: 13rem;
+    text-align: center;
+    @include animation(arrowBounce 0.7s infinite);
+  }
+
+  .scroll-prompter {
     padding: 0;
     margin-left: -3vw;
     font-size: 2.2rem;
     z-index: 100;
     color: $site-intro-color;
-    @include animation(bounceOnce 0.7s infinite);
   }
 }
 
@@ -115,10 +132,10 @@ small {
 }
 
 /* Scroll prompter arrow bounce */
-@include keyframes(bounceOnce) {
-  0% { padding-bottom: 0; }
-  50% { padding-bottom: 10px; }
-  100% { padding-bottom: 0; }
+@include keyframes(arrowBounce) {
+  0% { margin-top: 13rem; }
+  50% { margin-top: 12rem; }
+  100% { margin-top: 13rem; }
 }
 
 /* Blinking typed.js cursor */

@@ -6,9 +6,10 @@ title: Home
 <section class="site-intro">
   <div class="site-intro-content home-page-section-content">
     <h1 class="intro-greeting">Hi, I'm Antriksh.</h1>
-    <span class="intro-text-1"></span><br/><br class="hide-for-large-up"/>
-    <span class="intro-text-2"></span><br/><br class="hide-for-large-up"/>
-    <span class="intro-text-3"></span><br/><br class="hide-for-large-up"/>
+    <hr>
+    <span class="intro-text intro-text-1"></span><br/><br class="hide-for-large-up"/>
+    <span class="intro-text intro-text-2"></span><br/><br class="hide-for-large-up"/>
+    <span class="intro-text intro-text-3"></span><br/><br class="hide-for-large-up"/>
   </div>
   <div class="row scroll-prompter show-for-large-up">
     <div class="small-1 small-push-6 columns">
@@ -22,13 +23,14 @@ title: Home
 <section class="featured-projects">
   <div class="featured-projects-content home-page-section-content">
     <h1 class="featured-projects-title">Featured Projects</h1>
+    <hr>
     {% for project in site.data.projects %}
       {% if project.featured == true %}
         <div class="row">
           <div class="medium-12 large-10">
             <div class="project-box">
-              <h2>{{ project.name }}</h2>
-              <p>{{ project.description }}</p>
+              <h2 class="project-name">{{ project.name }}</h2>
+              <p class="project-description">{{ project.description }}</p>
             </div>
           </div>
         </div>

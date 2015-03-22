@@ -40,6 +40,12 @@ $site-intro-back-toColor: #412442;
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
+@mixin font-size-mq($min-width, $font-size) {
+  @media screen and (min-width: $min-width) {
+    html { font-size: $font-size; }
+  }
+}
+
 html, body {
   color: $main-color;
   background-color: $main-back-color;
@@ -49,6 +55,10 @@ html, body {
   font-size: 16px;
   line-height: 1.5;
 }
+
+@include font-size-mq(500px, 12px);
+@include font-size-mq(800px, 14px);
+@include font-size-mq(1000px, 16px);
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
@@ -85,6 +95,38 @@ small {
   font-size: 85%;
 }
 
+.right-off-canvas-toggle {
+  color: $site-intro-color;
+  font-size: 2rem;
+  padding: 0 10px;
+
+  &:hover {
+    color: $main-color;
+  }
+}
+
+#sidebar {
+  padding: 10vh 0;
+  text-align: center;
+
+  ul {
+    list-style: none;
+
+    li a {
+      color: $site-intro-color;
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 3vh;
+    }
+  }
+}
+
+.exit-off-canvas {
+  .move-left {
+    box-shadow: none;
+  }
+}
+
 .site-intro {
   height: 100vh;
   color: $site-intro-color;
@@ -102,12 +144,11 @@ small {
   .scroll-prompter-row {
     margin-top: 13rem;
     text-align: center;
-    @include animation(arrowBounce 0.7s infinite);
+    // @include animation(arrowBounce 0.7s infinite);
   }
 
   .scroll-prompter {
     padding: 0;
-    margin-left: -3vw;
     font-size: 2.2rem;
     z-index: 100;
     color: $site-intro-color;
@@ -127,15 +168,25 @@ small {
 }
 
 .project-box {
+  h2.project-name {
+    font-size: 1.5rem;
+  }
+
+  p.project-description {
+
+  }
+
   padding: 1rem;
-  background-color: #d5d5d5;
+  text-align: center;
+  background-color: $site-intro-back-toColor;
+  color: $site-intro-color;
 }
 
 /* Scroll prompter arrow bounce */
 @include keyframes(arrowBounce) {
-  0% { margin-top: 13rem; }
-  50% { margin-top: 12rem; }
-  100% { margin-top: 13rem; }
+  0% { margin-top: 28vmin; }
+  50% { margin-top: 25vmin; }
+  100% { margin-top: 28vmin; }
 }
 
 /* Blinking typed.js cursor */

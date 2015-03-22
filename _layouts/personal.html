@@ -5,8 +5,6 @@
   {% include analytics.html %}
 
   <body>
-    <!-- Off-canvas menu here -->
-
     <!-- <div class="masthead">
       <h3 class="masthead-title">
         <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
@@ -20,10 +18,21 @@
       </h3>
     </div> -->
 
-    <div class="content">
+    <div class="content off-canvas-wrap" data-offcanvas>
+      <main class="inner-wrap">
+        <a class="right-off-canvas-toggle right" href="#sidebar"><span>&#9776;</span></a>
+        <aside class="right-off-canvas-menu" id="sidebar">
+          <ul>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/design">Design</a></li>
+          </ul>
+        </aside>
 
-      {{ content }}
+        {{ content }}
 
+        <a class="exit-off-canvas"></a>
+      </main>
       <div class="row footer">
         <hr/>
         <p>

@@ -1,8 +1,8 @@
 $(document).ready(function() {
+    $(document).foundation();
     new FastClick(document.body);
     
     $(".scroll-prompter").hide();
-    $(".project-description").hide();
 
     $(".intro-greeting").hide().slideDown('slow', function() {
         $(".intro-text-1").typed({
@@ -26,16 +26,5 @@ $(document).ready(function() {
                 });
             }
         });
-    });
-
-    $(".scroll-prompter").click(function() {
-        $(".featured-projects").ScrollTo();
-    });
-
-    $(".project-box").hover(function() {
-        $(this).children(".project-description").slideDown('fast');
-    }, function() {
-        $(this).children().clearQueue();
-        $(this).children(".project-description").slideUp('fast');
     });
 });

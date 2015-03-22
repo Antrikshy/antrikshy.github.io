@@ -4,7 +4,7 @@ title: "Write A Simple Countdown Timer In JavaScript"
 permalink: "write-a-simple-countdown-timer-in-javascript"
 ---
 
-There are libraries for all kinds of countdowns (from a specified time or leading up to a specific time or date) that you can use in your website's front-end. For **my chess timer project**, I wanted my own timer for several reasons:
+There are libraries for all kinds of countdowns (from a specified time or leading up to a specific time or date) that you can use in your website's front-end. For [checkmt](http://code.antrikshy.com/checkmt/), I wanted my own timer for several reasons:
 
 1. Full control over code meant flexibility and maintainability.
 2. Loading a library for something as simple as this was not necessary.
@@ -103,4 +103,4 @@ function stopCountdown() {
 
 The only disadvantage to using `setInterval` to make a timer is that it has a rather low resolution. A delay of 1000ms keeps pretty accurate time. But if you use it to control the timer at millisecond level, the inaccuracy becomes noticeable. If you need to keep more accurate time, look into using some library that uses a more complex way of timekeeping. I learned this the hard way while working on the chess timer.
 
-// Conclude
+This timer is now live on my *still*-work-in-progress [checkmt](http://code.antrikshy.com/checkmt/).

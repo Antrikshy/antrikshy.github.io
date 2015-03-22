@@ -76,12 +76,16 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  color: #FFF !important;
+  color: #fff !important;
   background-color: #F53500;
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
+}
+
+.post a {
+  text-decoration: underline;
 }
 
 /* Headings */
@@ -363,6 +367,7 @@ tbody tr:nth-child(odd) th {
   padding: 8px;
   border: 2px solid;
   border-radius: 3px;
+  text-decoration: none !important;
 }
 
 .page,
@@ -375,6 +380,7 @@ tbody tr:nth-child(odd) th {
 .post-title,
 .post-title a {
   color: #0D3391;
+  text-decoration: none;
 }
 .page-title,
 .post-title {

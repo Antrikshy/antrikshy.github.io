@@ -367,6 +367,7 @@ tbody tr:nth-child(odd) th {
   padding: 8px;
   border: 2px solid;
   border-radius: 3px;
+  text-decoration: none !important;
 }
 
 .page,
@@ -379,6 +380,7 @@ tbody tr:nth-child(odd) th {
 .post-title,
 .post-title a {
   color: #0D3391;
+  text-decoration: none;
 }
 .page-title,
 .post-title {

@@ -29,6 +29,14 @@ $site-intro-back-toColor: #412442;
   animation: #{$name};      
 }
 
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
 @mixin linear-gradient($fromColor, $toColor) {
   background-color: $toColor; /* Fallback Color */
   background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
@@ -37,7 +45,6 @@ $site-intro-back-toColor: #412442;
   background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
   background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
   background-image:         linear-gradient(top, $fromColor, $toColor);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
 @mixin font-size-mq($min-width, $font-size) {
@@ -95,19 +102,28 @@ small {
   font-size: 85%;
 }
 
+ul {
+  margin-left: none !important;
+}
+
 .right-off-canvas-toggle {
   color: $site-intro-color;
   font-size: 2rem;
-  padding: 0 10px;
+  padding: 10px 25px;
+
+  @include transition(all, 0.6s, ease-out);
 
   &:hover {
-    color: $main-color;
+    color: $site-intro-color;
+    opacity: 0.5;
   }
 }
 
 #sidebar {
   padding: 10vh 0;
   text-align: center;
+  box-shadow: inset 6px 0 10px 1px #333; 
+  background-color: $main-color;
 
   ul {
     list-style: none;
@@ -138,11 +154,11 @@ small {
   }
 
   .site-intro-content {
-    padding: 27vmin 10vmin;
+    padding: 20vmin 10vmin;
   }
 
   .scroll-prompter-row {
-    margin-top: 13rem;
+    margin-top: 12rem;
     text-align: center;
     // @include animation(arrowBounce 0.7s infinite);
   }
@@ -168,18 +184,24 @@ small {
 }
 
 .project-box {
+  @include transition(all, 0.6s, ease-out);
+
   h2.project-name {
     font-size: 1.5rem;
   }
 
-  p.project-description {
-
+  small {
+    color: inherit;
   }
 
   padding: 1rem;
   text-align: center;
   background-color: $site-intro-back-toColor;
   color: $site-intro-color;
+
+  &:hover {
+    box-shadow: 0 6px 10px 1px $main-color;
+  }
 }
 
 /* Scroll prompter arrow bounce */

@@ -11,7 +11,7 @@ title: Home
     <span class="intro-text intro-text-2"></span><br/><br class="hide-for-large-up"/>
     <span class="intro-text intro-text-3"></span><br/><br class="hide-for-large-up"/>
     <div class="row scroll-prompter-row show-for-large-up">
-      <a href="#" class="scroll-prompter"><i class="fa fa-chevron-down"></i></a>
+      <span class="scroll-prompter"><i class="fa fa-chevron-down"></i></span>
     </div>
   </div>
 </section>
@@ -25,9 +25,15 @@ title: Home
     {% for project in site.data.projects %}
       {% if project.featured == true %}
         <div class="row">
-          <div class="medium-12 large-10">
+          <div class="xlarge-12">
             <div class="project-box">
-              <h2 class="project-name">{{ project.name }}</h2>
+              <h2 class="project-name">{{ project.name }}&nbsp;
+                <small>
+                  Type:&nbsp;{{ project.type }}
+                  {% if project.repository %}| <a href="{{ project.repository }}">Repo</a>{% endif %}
+                  {% if project.weblink %}| <a href="{{ project.weblink }}">Link</a>{% endif %}
+                </small>
+              </h2>
               <p class="project-description">{{ project.description }}</p>
             </div>
             <br/>

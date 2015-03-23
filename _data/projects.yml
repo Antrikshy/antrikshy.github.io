@@ -1,17 +1,20 @@
 - name: AppHookup for Pebble
   type: Personal
-  description: Blah blah awesome app for smartwatch
+  description: "Herp derpsum derpus herderder terp, me serp. Sherp ner herpem, perp derp ter berps berp. Derps derpy sherper, herpderpsmer berp me terp. Herpy herderder sherp, le derpsum? Tee sherpus, herp sherper me. Derp merp tee nerpy. Ler nerpy ner le berps sherlamer herpler terpus. Perper derperker der sherpus me mer. Herp herpem herpderpsmer mer terp. Derps herpsum perp derp nerpy der ter tee. Le derperker, herp perper mer derpy derp."
   repository: http://github.com/Antrikshy/AppHookup-for-Pebble
+  weblink: 
   featured: yes
 
 - name: Minecraft Snaps
   type: Personal
-  description: Blah blah awesome node-webkit app
+  description: "Herp derpsum derpus herderder terp, me serp. Sherp ner herpem, perp derp ter berps berp. Derps derpy sherper, herpderpsmer berp me terp. Herpy herderder sherp, le derpsum? Tee sherpus, herp sherper me. Derp merp tee nerpy. Ler nerpy ner le berps sherlamer herpler terpus. Perper derperker der sherpus me mer. Herp herpem herpderpsmer mer terp. Derps herpsum perp derp nerpy der ter tee. Le derperker, herp perper mer derpy derp."
   repository: http://github.com/Antrikshy/Minecraft-Snaps
+  weblink: 
   featured: yes
 
 - name: RecoverTabs
   type: Personal
-  description: Blah blah awesome Safari extension
+  description: "Herp derpsum derpus herderder terp, me serp. Sherp ner herpem, perp derp ter berps berp. Derps derpy sherper, herpderpsmer berp me terp. Herpy herderder sherp, le derpsum? Tee sherpus, herp sherper me. Derp merp tee nerpy. Ler nerpy ner le berps sherlamer herpler terpus. Perper derperker der sherpus me mer. Herp herpem herpderpsmer mer terp. Derps herpsum perp derp nerpy der ter tee. Le derperker, herp perper mer derpy derp."
   repository: http://github.com/Antrikshy/RecoverTabs
+  weblink: 
   featured: yes

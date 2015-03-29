@@ -4,7 +4,7 @@ title: "Converting XML From A URL To JSON Using Node.js"
 permalink: "fetch-xml-url-convert-to-json-nodejs"
 ---
 
-For a recent personal project, I needed to fetch an XML Atom feed from a URL and convert it to a JSON object to return through my API. Surprisingly, there was no clear-cut tutorial on how to do this. While it isn't very difficult, I figured I'd write one anyway to help any beginners out there looking for assistance. I'm not an expert at this, but feel free to ask my any questions in the comments below. Every single one of them is read.
+For a recent personal project, I needed to fetch an XML Atom feed from a URL and convert it to a JSON object to return through my API. Surprisingly, there was no clear-cut tutorial on how to do this. While it isn't very difficult, I figured I'd write one anyway to help any beginners out there looking for assistance. I'm not an expert at this, but feel free to ask me any questions in the comments below. Every single one of them is read.
 
 <!--more-->
 

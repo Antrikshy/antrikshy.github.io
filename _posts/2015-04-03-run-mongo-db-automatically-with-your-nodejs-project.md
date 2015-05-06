@@ -4,6 +4,8 @@ title: "Run MongoDB Automatically With Your Node.js Project"
 permalink: "run-mongodb-automatically-nodejs-project"
 ---
 
+>Update: The database isn't closed properly when tests fail, which causes some issues. I kind of gave up on this.
+
 I thought I'd share this quick tip I came up with for my own convenience while working with Node.js. Every time I work on a MongoDB-powered Node.js project, I open a separate tab in Terminal and start MongoDB using the `mongod` command so that it runs in the background while I develop and test my project.
 
 This is pretty inconvenient to do each time, so I thought I'd automate it as seamlessly as possible. Mostly, I wanted to keep my unit tests as independent from anything else as possible.

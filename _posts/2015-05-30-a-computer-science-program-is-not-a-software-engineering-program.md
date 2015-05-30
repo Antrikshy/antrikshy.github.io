@@ -24,6 +24,6 @@ Someone correct me if I'm wrong.
 
 <hr>
 
-**I'd like to add to this:**
+**I'd like to add some more to the original post:**
 
 At least in the US, most companies seem to require a "Bachelors in Computer Science or equivalent" degree for most software engineering positions. Now, I'm just a student, so take this with a grain of salt. But if you have a choice between a computer science program and a software engineering program, go with the former. Supplement it by learning software engineering, design patterns, programming etc. through personal projects and internships.

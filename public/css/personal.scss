@@ -127,20 +127,24 @@ ul {
 
   ul {
     list-style: none;
+    margin-left: 0;
 
     li a {
       color: $site-intro-color;
       font-size: 2rem;
       display: block;
       margin-bottom: 3vh;
+
+      &:hover {
+        background-color: $site-intro-back-toColor;
+      }
     }
   }
 }
 
-.exit-off-canvas {
-  .move-left {
-    box-shadow: none;
-  }
+.move-left .exit-off-canvas {
+  box-shadow: none;
+  background: none;
 }
 
 .site-intro {
@@ -160,14 +164,16 @@ ul {
   .scroll-prompter-row {
     margin-top: 12rem;
     text-align: center;
-    // @include animation(arrowBounce 0.7s infinite);
+    @include animation(arrowBounce 0.7s infinite);
   }
 
   .scroll-prompter {
     padding: 0;
     font-size: 2.2rem;
     z-index: 100;
-    color: $site-intro-color;
+    a {
+      color: $site-intro-color;
+    }
   }
 }
 

@@ -3,6 +3,15 @@ $(document).ready(function() {
     new FastClick(document.body);
     
     $(".scroll-prompter").hide();
+    $(".scroll-prompter a").click(function() {
+        $(this).fadeOut(200);
+        $.scrollTo(".featured-projects", {duration: 400});
+        $(window).scroll(function() {
+            if ($(this).scrollTop() == 0)
+                $(".scroll-prompter a").fadeIn(400);
+        });
+    });
+
 
     $(".intro-greeting").hide().slideDown('slow', function() {
         $(".intro-text-1").typed({

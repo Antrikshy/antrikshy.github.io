@@ -4,6 +4,10 @@ title: "Computer Science Programs Are Not Software Engineering Programs"
 permalink: "computer-science-programs-are-not-software-engineering-programs"
 ---
 
+<img src="http://abstrusegoose.com/strips/computer_science_major.png" style="max-width: 60%; float: center; margin: auto;"/>
+
+Comic source: [Abtruse Goose](http://abstrusegoose.com/206)
+
 This is something I realized after I was more than halfway through my computer science program at UC San Diego. This post is republished from a [reddit post](http://redd.it/37t3fj) I made that did fairly well.
 
 <!--more-->

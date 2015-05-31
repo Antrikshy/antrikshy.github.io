@@ -4,7 +4,7 @@ title: "Computer Science Programs Are Not Software Engineering Programs"
 permalink: "computer-science-programs-are-not-software-engineering-programs"
 ---
 
-<img src="http://abstrusegoose.com/strips/computer_science_major.png" style="max-width: 23rem; float: center; margin: auto; "/>
+<img src="http://abstrusegoose.com/strips/computer_science_major.png" style="max-width: 18rem; float: none; margin: 0 auto; "/>
 
 Comic source: [Abtruse Goose](http://abstrusegoose.com/206)
 

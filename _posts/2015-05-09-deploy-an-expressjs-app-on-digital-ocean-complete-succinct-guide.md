@@ -38,7 +38,7 @@ It would be nice to have some experience around the Unix command line, since we 
 
 Time to spin up a simple Digital Ocean Droplet (server), running the latest Ubuntu. You may use another distribution of Linux if you wish, but there is no guarantee that all of the following instructions will apply to your system. I highly recommend Ubuntu to keep things simple.
 
-<img src="/assets/do-server-config.png" alt="Digital Ocean config" style="float: center; margin: auto;">
+<img src="/assets/do-server-config.png" alt="Digital Ocean config" style="float: none; margin: 0 auto; ">
 
 Start by clicking the green Create Droplet button from anywhere on the Digital Ocean dashboard (after you register and log in).
 
@@ -227,7 +227,7 @@ When you hit Create Domain, you will be taken to a form where you can configure 
 - An `A` record with `@` for the Name field and your server's IP for the other.
 - (Optionally) A `CNAME` record with `*` (to route every subdomain) or `www` in the Name field and `quibbler.co.` (with the dot at the end) in the Hostname field.
 
-<img src="/assets/do-dns-config.png" alt="Digital Ocean DNS config" style="float: center; margin: auto;">
+<img src="/assets/do-dns-config.png" alt="Digital Ocean DNS config" style="float: none; margin: 0 auto; ">
 
 The second record will redirect all requests from `www.example.com` to `example.com`. If you use the asterisk, it will route any subdomain to your main website. It's mostly a style thing and totally up to you. I prefer to keep most domain names clean in the address bar for most addresses.
 

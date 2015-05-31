@@ -8,7 +8,7 @@ This is something I realized after I was more than halfway through my computer s
 
 <!--more-->
 
-**A computer science program is NOT a software engineering program.**
+**A computer science degree program is NOT a software engineering degree program.**
 
 1. Don't expect to use all of the stuff that you're learning in university, in a software engineering job. Sure, the programming and thinking skills transfer over to real software engineering, but the latter is easier (in my opinion) and pretty different from computer science.
 
@@ -26,6 +26,6 @@ Someone correct me if I'm wrong.
 
 **I'd like to add some more to the original post:**
 
-At least in the US, most companies seem to require a "Bachelors in Computer Science or equivalent" degree for most software engineering positions. Now, I'm just a student, so take this with a grain of salt. But if you have a choice between a computer science program and a software engineering program, go with the former. Supplement it by learning software engineering, design patterns, programming etc. through personal projects and internships.
+At least in the US, most companies seem to require a "Bachelors in Computer Science or equivalent" degree for most software engineering positions. I'm just a student, so take this with a grain of salt. But if you have a choice between a computer science program and a software engineering program, go with the former. Supplement it by learning software engineering, design patterns, programming etc. through personal projects and internships.
 
 As further reading, check out the discussion under [my reddit post](http://redd.it/37t3fj).

@@ -8,7 +8,7 @@ permalink:        none
 # Setup
 title:            code.Antrikshy
 tagline:          'Notes, tinkerings, experiments'
-url:              http://code.antrikshy.com
+# url:              http://antrikshy.com
 paginate:         3
 paginate_path:    "/blog/page:num"
 excerpt_separator: "<!--more-->"
@@ -23,6 +23,7 @@ author:
 github:
   repo:           https://github.com/Antrikshy/antrikshy.github.io
 pages_list:       
-  Entries:        '/entries.html'
+  Entries:        '/entries'
   Feed:           '/atom.xml'
   Blog:           '/blog'
+  Projects:       '/projects'

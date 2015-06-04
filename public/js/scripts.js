@@ -3,9 +3,11 @@ $(document).ready(function() {
     new FastClick(document.body);
     
     $(".scroll-prompter").hide();
+    $(".project-box .project-description").hide();
+
     $(".scroll-prompter a").click(function() {
         $(this).fadeOut(200);
-        $.scrollTo(".featured-projects", {duration: 400});
+        $.scrollTo(".skill-logos", {duration: 400});
         $(window).scroll(function() {
             if ($(this).scrollTop() == 0)
                 $(".scroll-prompter a").fadeIn(400);
@@ -35,5 +37,13 @@ $(document).ready(function() {
                 });
             }
         });
+    });
+
+    $(".project-box").hover(function() {
+        $(this).clearQueue().animate({"height": "12rem"});
+        $(this).children(".project-description").clearQueue().fadeIn();
+    }, function() {
+        $(this).clearQueue().animate({"height": "5.5rem"});
+        $(this).children(".project-description").clearQueue().fadeOut();
     });
 });

@@ -14,7 +14,6 @@ $(document).ready(function() {
         });
     });
 
-
     $(".intro-greeting").hide().slideDown('slow', function() {
         $(".intro-text-1").typed({
             strings: ["^1500Software developer with a voracious curiosity and a desire to learn everything.^1800"],

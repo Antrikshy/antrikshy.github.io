@@ -117,6 +117,9 @@ ul {
   color: $site-intro-color;
   font-size: 2rem;
   padding: 10px 25px;
+  position: absolute;
+  z-index: 100;
+  right: 0.1rem;
 
   @include transition(all, 0.6s, ease-out);
 
@@ -162,6 +165,7 @@ ul {
   height: 100vh;
   color: $site-intro-color;
   font-size: 1.4rem;
+  position: relative;
   @include linear-gradient($site-intro-back-toColor, $site-intro-back-fromColor);
 
   hr {
@@ -173,14 +177,15 @@ ul {
   }
 
   .scroll-prompter-row {
-    margin-top: 12rem;
+    position: absolute;
+    bottom: 3rem;
     text-align: center;
     @include animation(arrowBounce 0.7s infinite);
   }
 
   .scroll-prompter {
     padding: 0;
-    font-size: 2.2rem;
+    font-size: 2.7rem;
     z-index: 100;
     a {
       color: $site-intro-color;
@@ -264,9 +269,9 @@ ul {
 
 /* Scroll prompter arrow bounce */
 @include keyframes(arrowBounce) {
-  0% { margin-top: 28vmin; }
-  50% { margin-top: 25vmin; }
-  100% { margin-top: 28vmin; }
+  0% { bottom: 3rem; }
+  50% { bottom: 4rem; }
+  100% { bottom: 3rem; }
 }
 
 /* Blinking typed.js cursor */

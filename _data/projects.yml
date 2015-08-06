@@ -1,20 +1,71 @@
+- name: Quibbler
+  description: "Quibbler is an experimental Node.js web app powered by Socket.IO. People type messages anonymously, see them flash on the screen for a moment, only to permanently disappear forever. All messages are randomly inserted into a cloud of text, in real-time sync between all users."
+  repository: https://github.com/Antrikshy/Quibbler
+  weblink: http://quibbler.co
+  featured: yes
+
 - name: AppHookup for Pebble
-  type: Personal
-  description: "Herp derpsum derpus herderder terp, me serp. Sherp ner herpem, perp derp ter berps berp. Derps derpy sherper, herpderpsmer berp me terp. Herpy herderder sherp, le derpsum? Tee sherpus, herp sherper me. Derp merp tee nerpy. Ler nerpy ner le berps sherlamer herpler terpus. Perper derperker der sherpus me mer. Herp herpem herpderpsmer mer terp. Derps herpsum perp derp nerpy der ter tee. Le derperker, herp perper mer derpy derp."
+  description: "An app for the Pebble smartwatch platform written in JavaScript using the Pebble.js framework. Fetches app deals and discounts from the /r/AppHookup subreddit and displays them in an easy to digest list right on your wrist."
   repository: http://github.com/Antrikshy/AppHookup-for-Pebble
-  weblink: 
+  weblink: https://apps.getpebble.com/applications/54615fc3233941fc44000008
   featured: yes
 
 - name: Minecraft Snaps
-  type: Personal
-  description: "Herp derpsum derpus herderder terp, me serp. Sherp ner herpem, perp derp ter berps berp. Derps derpy sherper, herpderpsmer berp me terp. Herpy herderder sherp, le derpsum? Tee sherpus, herp sherper me. Derp merp tee nerpy. Ler nerpy ner le berps sherlamer herpler terpus. Perper derperker der sherpus me mer. Herp herpem herpderpsmer mer terp. Derps herpsum perp derp nerpy der ter tee. Le derperker, herp perper mer derpy derp."
+  description: "Mac app written using HTML5 technologies and Bootstrap using the NW.js framework. Lets Minecraft players easily save snapshots of saved worlds and quickly restore them to their previous state after testing and/or destroying creations."
   repository: http://github.com/Antrikshy/Minecraft-Snaps
   weblink: 
-  featured: yes
+  featured: no
 
 - name: RecoverTabs
-  type: Personal
-  description: "Herp derpsum derpus herderder terp, me serp. Sherp ner herpem, perp derp ter berps berp. Derps derpy sherper, herpderpsmer berp me terp. Herpy herderder sherp, le derpsum? Tee sherpus, herp sherper me. Derp merp tee nerpy. Ler nerpy ner le berps sherlamer herpler terpus. Perper derperker der sherpus me mer. Herp herpem herpderpsmer mer terp. Derps herpsum perp derp nerpy der ter tee. Le derperker, herp perper mer derpy derp."
+  description: "An implementation of a much sought after feature in Safari for OS X. Other browsers come with the Cmd+Shift+T shortcut to reopen previously closed tabs. Safari only comes with a mediocre counterpart and only reopens one closed tab. RecoverTabs is an extension that keeps track of multiple closed tabs and reopens them with the same familiar shortcut."
   repository: http://github.com/Antrikshy/RecoverTabs
-  weblink: 
+  weblink: https://extensions.apple.com/details/?id=com.Antrikshy.safari.RecoverTabs-37LH9G9R9R
   featured: yes
+
+- name: node-google-search-trends
+  description: "A small module to fetch Google Search Trends data (available via Atom feed) in JSON format through a Node.js app. Also allows the user to request various localized versions of Google's trends."
+  repository: https://github.com/Antrikshy/node-google-search-trends
+  weblink: 
+  featured: no
+
+- name: checkmt
+  description: "An elegant in-browser chess timer written using front-end frameworks as a practice project. Uses colors in a unique way to indicate the current player and comes with configurable color schemes."
+  repository: https://github.com/Antrikshy/checkmt
+  weblink: http://code.antrikshy.com/checkmt/
+  featured: no
+
+- name: nwjr
+  description: "A simple command line utility written in Node.js that lets NW.js developers quickly launch their HTML5-powered desktop apps in a snap using a saved copy of the NW.js runtime."
+  repository: https://github.com/Antrikshy/nwjr
+  weblink:
+  featured: no
+
+- name: /r/iPad subreddit CSS
+  description: "My very first subreddit redesign. I wrote custom CSS from scratch for the /r/iPad subreddit. I tried to replicate the colors and certain UI elements from Apple's website to match the iPad theme."
+  repository: https://github.com/Antrikshy/-r-iPad-CSS
+  weblink: https://www.reddit.com/r/iPad
+  featured: no
+
+- name: Netflix Roulette Node.js API
+  description: "A wrapper for the simple Netflix Roulette API for use in Node.js apps. Comes with simple functions that call Netflix Roulette endpoints to get content, actor and director data."
+  repository: https://github.com/Antrikshy/NetflixRoulette_NodeJS
+  weblink:
+  featured: no
+
+- name: x-poster
+  description: "I find myself cross-posting a lot of content between subreddits. This is a Safari extension I made for myself that makes it easy to do so. It adds a tiny 'xpost' button under a post on its comments page. Clicking it takes the user to a pre-filled reddit submission form with an 'x-post' tag and everything."
+  repository: https://github.com/Antrikshy/x-poster
+  weblink:
+  featured: no
+
+- name: reddit2Kindle
+  description: "A command-line Python program that can be used to convert text posts from reddit to a Kindle e-reader friendly format for later reading. User can specify subreddit, number of top posts etc."
+  repository: https://github.com/Antrikshy/reddit2Kindle
+  weblink: https://pypi.python.org/pypi/reddit2Kindle
+  featured: no
+
+- name: safcat
+  description: "A nifty tool for Safari-using gif-watchers using slow Internet connections. Tired of slow speeds, I developed this extension to quickly upload and display slow-loading animated gifs through gfycat. A single toolbar button quickly uploads the currently open gif to gfycat for faster webm streaming."
+  repository: https://github.com/Antrikshy/safcat
+  weblink: https://extensions.apple.com/details/?id=com.Antrikshy.safari.safcat-37LH9G9R9R
+  featured: no

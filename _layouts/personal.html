@@ -20,9 +20,15 @@
 
     <div class="content off-canvas-wrap" data-offcanvas>
       <main class="inner-wrap">
-        <a class="right-off-canvas-toggle right" href="#sidebar"><span>&#9776;</span></a>
+        <a class="right-off-canvas-toggle right" href="#sidebar"
+          {% if page.url == '/index.html' %}
+            style="color: #fff;" 
+          {% endif %}>
+          <span>&#9776;</span>
+        </a>
         <aside class="right-off-canvas-menu" id="sidebar">
           <ul>
+            <li><a href="/">Home</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/design">Design</a></li>

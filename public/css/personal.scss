@@ -1,16 +1,20 @@
 ---
 ---
 
-$main-font: "Merriweather", serif;
+$main-font: "Raleway", sans-serif;
+$heading-font: "Bitter", serif;
 
 $main-color: #515151;
+$link-color: #3C1642;
+$link-hover-color: #614385;
+
 $main-back-color: #f4f5f5;
 $site-intro-color: #fff;
-$project-box-back-color: #614385;
+$featured-project-box-back-color: #614385;
 // $site-intro-back-fromColor: #5B335C;
 // $site-intro-back-toColor: #45305F;
-$site-intro-back-fromColor: #271B36;
-$site-intro-back-toColor: #412442;
+$site-intro-back-fromColor: #4E1D55;
+$site-intro-back-toColor: #3C1642;
 
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} { @content; }
@@ -62,11 +66,11 @@ html, body {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
   font-family: $main-font;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
 }
 
-@include font-size-mq(500px, 12px);
+@include font-size-mq(500px, 13px);
 @include font-size-mq(800px, 14px);
 @include font-size-mq(1000px, 16px);
 
@@ -74,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  font-family: $main-font;
+  font-family: $heading-font;
   color: inherit;
   text-rendering: optimizeLegibility;
 }
@@ -95,6 +99,15 @@ hr {
   border-color: $main-color;
 }
 
+a {
+  color: $link-color;
+  @include transition(all, 0.6s, ease-out);
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -109,23 +122,29 @@ ul {
   margin-left: none !important;
 }
 
+.link-to-home {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  font-size: 1.2rem;
+}
+
 /*
  * Sidebar
  */
 
 .right-off-canvas-toggle {
-  color: $site-intro-color;
+  color: $link-color;
   font-size: 2rem;
   padding: 10px 25px;
   position: absolute;
   z-index: 100;
   right: 0.1rem;
 
-  @include transition(all, 0.6s, ease-out);
+  @include transition(all, 0.2s, ease-out);
 
   &:hover {
-    color: $site-intro-color;
-    opacity: 0.5;
+    color: $main-color;
   }
 }
 
@@ -177,6 +196,7 @@ ul {
   }
 
   .scroll-prompter-row {
+    width: 100vw;
     position: absolute;
     bottom: 3rem;
     text-align: center;
@@ -226,7 +246,6 @@ ul {
 }
 
 .employer-logos {
-  min-height: 50vh;
 
   .employer-logo-img {
     margin: 2.2rem 2rem;
@@ -246,7 +265,7 @@ ul {
   }
 }
 
-.project-box {
+.featured-project-box {
   @include transition(box-shadow, 0.6s, ease-out);
 
   h2.project-name {
@@ -259,7 +278,7 @@ ul {
 
   padding: 1rem;
   text-align: center;
-  background-color: $project-box-back-color;
+  background-color: $featured-project-box-back-color;
   color: $site-intro-color;
 
   &:hover {
@@ -281,9 +300,9 @@ ul {
 }
 
 @include keyframes(blink) {
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /*
@@ -291,10 +310,51 @@ ul {
  */
 
 .projects-intro {
-  height: 80vh;
-
   .projects-intro-content {
-    padding: 20vmin 10vmin;
+    padding: 10vh 5vw;
+    padding-top: 20vh;
   }
+}
 
+.projects-list {
+  width: 75vw;
+  padding-bottom: 10px;
+  margin-left: 5vw;
+  background-color: rgba(0,0,0,0.1);
+
+  .projects-list-content {
+    padding: 30px auto;
+    margin-bottom: 50px;
+
+    .project-box {
+      .project-description {
+        margin: 0;
+      }
+    }
+
+    .projects-divider {
+      margin: 30px 20vh;
+    }
+
+    .project-links {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .project-links {
+    .fa {
+      margin: 0.5rem;
+      margin-top: 5rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .project-links {
+    .fa {
+      margin-right: 5px;   
+    }
+  }
 }

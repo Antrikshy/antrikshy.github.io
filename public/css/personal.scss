@@ -101,7 +101,7 @@ hr {
 
 a {
   color: $link-color;
-  @include transition(all, 0.6s, ease-out);
+  @include transition(all, 0.3s, ease-out);
 
   &:hover {
     color: $link-hover-color;
@@ -136,10 +136,10 @@ ul {
 .right-off-canvas-toggle {
   color: $link-color;
   font-size: 2rem;
-  padding: 10px 25px;
   position: absolute;
   z-index: 100;
-  right: 0.1rem;
+  top: 4vh;
+  right: 4vw;
 
   @include transition(all, 0.2s, ease-out);
 
@@ -266,7 +266,11 @@ ul {
 }
 
 .featured-project-box {
-  @include transition(box-shadow, 0.6s, ease-out);
+  @include transition(box-shadow, 0.3s, ease-out);
+
+  a:hover {
+    color: #fff;
+  }
 
   h2.project-name {
     font-size: 1.5rem;
@@ -352,9 +356,15 @@ ul {
 }
 
 @media (max-width: 1000px) {
+  .projects-list {
+    width: auto;
+    margin: auto 5vw;
+  }
+
   .project-links {
     .fa {
       margin-right: 5px;   
+      margin-bottom: 20px;
     }
   }
 }

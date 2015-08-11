@@ -469,3 +469,19 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+/*
+ * GitHub Gist embed
+ */
+
+.gist-file {
+  border: none !important;
+}
+
+.gist-data {
+  border: none !important;
+}
+
+.gist-meta {
+  background-color: #f4f5f5 !important;
+}

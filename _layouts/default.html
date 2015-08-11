@@ -6,15 +6,18 @@
 
   <body>
     <div class="masthead">
+      <nav class="link-to-home">
+        <a href="/"><i class="fa fa-angle-left"></i>&nbsp;&nbsp;&nbsp;<strong>Antriksh</strong>Yadav</a>
+      </nav>
       <h3 class="masthead-title">
-        <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
+        <a href="{{ site.baseurl }}/blog" title="Blog">{{ site.title }}</a>
         <small>{{ site.tagline }}</small>
-        &nbsp;&nbsp;&nbsp;
+        <!-- &nbsp;&nbsp;&nbsp;
         {% for page in site.pages_list %}
           &nbsp;
           <small><a href="{{ page[1] }}">{{ page[0] }}</a></small>
           &nbsp;
-        {% endfor %}
+        {% endfor %} -->
       </h3>
     </div>
     <div class="container content">

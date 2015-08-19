@@ -3,7 +3,6 @@ $(document).ready(function() {
     new FastClick(document.body);
     
     $(".scroll-prompter").hide();
-    $(".featured-project-box .project-description").hide();
 
     $(".scroll-prompter a").click(function() {
         $(this).fadeOut(200);
@@ -39,13 +38,5 @@ $(document).ready(function() {
                 });
             }
         });
-    });
-
-    $(".featured-project-box").hover(function() {
-        $(this).clearQueue().animate({"height": "12rem"});
-        $(this).children(".project-description").clearQueue().fadeIn();
-    }, function() {
-        $(this).clearQueue().animate({"height": "5.5rem"});
-        $(this).children(".project-description").clearQueue().fadeOut();
     });
 });

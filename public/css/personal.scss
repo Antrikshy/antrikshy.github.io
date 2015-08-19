@@ -112,6 +112,10 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1rem;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 small {
@@ -127,6 +131,10 @@ ul {
   top: 5vh;
   left: 5vw;
   font-size: 1.2rem;
+}
+
+.text-indent {
+  text-indent: 50px;
 }
 
 /*
@@ -196,7 +204,7 @@ ul {
   }
 
   .scroll-prompter-row {
-    width: 100vw;
+    width: 92vw;
     position: absolute;
     bottom: 3rem;
     text-align: center;
@@ -346,6 +354,37 @@ ul {
   }
 }
 
+/*
+ * About
+ */
+
+.about-container {
+  .about-content {
+    padding: 10vh 5vw;
+    padding-top: 20vh;
+    margin-right: 5vw;
+
+    .about-greeting {
+      margin-bottom: 4rem;
+    }
+
+    .about-longform {
+      width: 60vw;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/*
+ * Error page
+ */
+
+.error-page-main {
+  height: 100vh;
+  padding: 40vh 5vw;
+  padding-right: 30vw;
+}
+
 @media (min-width: 1000px) {
   .project-links {
     .fa {
@@ -365,6 +404,48 @@ ul {
     .fa {
       margin-right: 5px;   
       margin-bottom: 20px;
+    }
+  }
+
+  .about-container {
+    .about-content {
+      .about-longform {
+        width: 90vw;
+      }
+    }
+  }
+
+  .footer {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 500px) {
+  html, body {
+    font-size: 14px;
+  }
+
+  .text-indent {
+    text-indent: 30px;
+  }
+
+  .skill-logos {
+    height: 100vh;
+
+    .skill-logo-img {
+      margin: 0.5rem 0.5rem;
+      height: 30px;
+    }
+
+    .skill-logo-row {
+      padding: 0.2rem 0;
+      font-size: 0.5rem;
+    }
+  }
+
+  .employer-logos {
+    .employer-logo-img {
+      margin: 2rem 0;
     }
   }
 }

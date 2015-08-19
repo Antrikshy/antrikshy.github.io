@@ -10,7 +10,7 @@ title: Home
     <span class="intro-text intro-text-1"></span><br/><br class="hide-for-medium-up"/>
     <span class="intro-text intro-text-2"></span><br/><br class="hide-for-medium-up"/>
     <span class="intro-text intro-text-3"></span><br/><br class="hide-for-medium-up"/>
-    <div class="row scroll-prompter-row show-for-large-up">
+    <div class="scroll-prompter-row show-for-large-up">
       <span class="scroll-prompter"><a><i class="fa fa-chevron-circle-down"></i></a></span>
     </div>
   </div>
@@ -32,7 +32,7 @@ title: Home
     </div>
     <div class="row skill-logo-row">
       <p>C/C++ &bull; Java &bull; Unix &bull; Express.js &bull; Mongoose.js &bull; Socket.IO &bull; Sass &bull; REST APIs</p>
-      <p>Object-oriented programming &bull; Data structures &bull; Algorithms &bull; Software testing &bull; Runtime analysis &bull; Computability theory</p>
+      <p>Object-oriented programming &bull; Data structures &bull; Algorithms &bull; Testing &bull; Runtime analysis &bull; Computability theory</p>
       <br/>
       <p>More coming...</p>
     </div>
@@ -61,6 +61,7 @@ title: Home
           <div class="xlarge-12 columns">
             <div class="featured-project-box">
               <h2 class="project-name">{{ project.name }}&nbsp;
+                <br class="hide-for-medium-up" />
                 <small>
                   Type:&nbsp;{{ project.type }}
                   {% if project.repository %}| <a href="{{ project.repository }}">Repo</a>{% endif %}

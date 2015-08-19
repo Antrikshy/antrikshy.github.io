@@ -324,25 +324,16 @@ tbody tr:nth-child(odd) th {
 .masthead {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  height: 8rem;
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  background-color: rgba(0,0,0,0.10);
+  background-color: rgba(0,0,0,0.05);
   position: relative;
 }
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 1.2rem;
-  font-size: 1.2rem;
+  padding-top: 2rem;
   color: #505050;
-}
-.masthead-title a {
-  color: #614385;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 .masthead-title small {
   font-size: 80%;
@@ -350,11 +341,17 @@ tbody tr:nth-child(odd) th {
   color: #4E1D55;
   letter-spacing: 0;
 }
-.masthead-title small a {
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+.masthead-links {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+@media (max-width: 38em) {
+  .masthead-links {
+    position: absolute;
+    top: 2rem;
+    right: 0.5rem;
+  }
 }
 
 /*
@@ -496,6 +493,11 @@ a.pagination-item:hover {
  */
 .link-to-home {
   position: absolute;
-  top: 2vh;
-  left: 2vw;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.link-to-home a:hover {
+  color: #614385 !important;
+  background-color: transparent;
 }

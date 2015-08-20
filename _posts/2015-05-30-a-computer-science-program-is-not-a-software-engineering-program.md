@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Computer Science Programs Are Not Software Engineering Programs"
-permalink: "computer-science-programs-are-not-software-engineering-programs"
+permalink: "/blog/computer-science-programs-are-not-software-engineering-programs"
 ---
 
 <img src="http://abstrusegoose.com/strips/computer_science_major.png" style="max-width: 18rem; float: none; margin: 0 auto; "/>

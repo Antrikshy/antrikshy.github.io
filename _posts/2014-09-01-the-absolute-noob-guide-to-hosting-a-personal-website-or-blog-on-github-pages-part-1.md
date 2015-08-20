@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Absolute Noob Guide To Hosting A Personal Website Or Blog On GitHub Pages - Part 1"
-permalink: "noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-1"
+permalink: "/blog/noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-1"
 ---
 
 So you have made a decision. You want a personal webpage. You want to look professional by including a link in your email signature, with your job application or on your resume. It can be a convenient place to showcase any work you have done. Or it can just function as a hub for downloads or links to your portfolios on other websites like 500px, GitHub, deviantART, Behance etc.

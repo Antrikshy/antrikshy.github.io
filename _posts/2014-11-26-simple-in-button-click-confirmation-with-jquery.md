@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simple In-Button Click Confirmation With jQuery"
-permalink: "simple-in-button-click-confirmation-with-jquery"
+permalink: "/blog/simple-in-button-click-confirmation-with-jquery"
 ---
 
 ![In-button confirmation](/assets/jquery-btn-confirm-gif.gif)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Absolute Noob Guide To Hosting A Personal Website Or Blog On GitHub Pages - Part 2"
-permalink: "noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-2"
+permalink: "/blog/noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-2"
 ---
 
 In [Part 1](http://code.antrikshy.com/noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-1), I explained the basics of setting up a GitHub repository for your GitHub Pages website. So far, you should have:

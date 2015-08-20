@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pebble.js Tutorial - An In-Depth Guide To Writing Pebble Apps Using JavaScript"
-permalink: "pebble-js-tutorial-a-guide-to-writing-pebble-apps-using-javascript"
+permalink: "/blog/pebble-js-tutorial-a-guide-to-writing-pebble-apps-using-javascript"
 ---
 
 <img src="{{ site.url }}/assets/apphookup-pebble-1.png" alt="AppHookup screenshot 1" style="max-width: 33%;">

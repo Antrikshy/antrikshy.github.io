@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Write A Simple Countdown Timer In JavaScript"
-permalink: "write-a-simple-countdown-timer-in-javascript"
+permalink: "/blog/write-a-simple-countdown-timer-in-javascript"
 ---
 
 There are libraries for all kinds of countdowns (from a specified time or leading up to a specific time or date) that you can use in your website's front-end. For [checkmt](http://code.antrikshy.com/checkmt/), I wanted my own timer for several reasons:

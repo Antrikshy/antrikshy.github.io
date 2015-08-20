@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Run MongoDB Automatically With Your Node.js Project"
-permalink: "run-mongodb-automatically-nodejs-project"
+permalink: "/blog/run-mongodb-automatically-nodejs-project"
 ---
 
 >Update: The database isn't closed properly when tests fail, which causes some issues. I kind of gave up on this.

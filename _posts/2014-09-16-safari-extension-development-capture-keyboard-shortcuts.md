@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Safari Extension Development: Capture Keyboard Shortcuts"
-permalink: "safari-extension-development-keyboard-shortcuts"
+permalink: "/blog/safari-extension-development-keyboard-shortcuts"
 ---
 
 Apple does not provide an API to make a Safari browser extension that listens to keyboard shortcuts of your choice. I could not find any guides on how to achieve this, so I decided to write about my experience with this when developing [RecoverTabs](http://antrikshy.com/Projects/recovertabs.htm). I hope it helps someone trying to implement this in their own extension.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Deploy Express.js On Digital Ocean (Ubuntu) - A Complete, Mostly Succinct Guide"
-permalink: "deploy-an-expressjs-app-on-digital-ocean-complete-succinct-guide"
+permalink: "/blog/deploy-an-expressjs-app-on-digital-ocean-complete-succinct-guide"
 ---
 
 In terms of pricing and configurability, I have not come across any host better than Digital Ocean for Node.js projects. Consider using [my referral link](https://www.digitalocean.com/?refcode=69c47bb531c2) to create your Digital Ocean account to earn $10 in credit and support me at the same time.

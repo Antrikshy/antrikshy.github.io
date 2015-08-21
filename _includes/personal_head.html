@@ -8,7 +8,16 @@
   <!-- Google webmasters site verification -->
   <meta name="google-site-verification" content="OeXzt5t60mfwuJkxhV5Bx0szL1OpQxNlioXceMXXOXQ" />
 
-  <title>Antriksh Yadav &middot; software + web developer</title>
+  <!-- Site description -->
+  <meta name="description" content="Portfolio and blog of Antriksh Yadav, software + web developer, computer science student from UC San Diego.">
+
+  <title>
+    {% if page.title == "Home" %}
+      Antriksh Yadav &middot; Software + Web Developer
+    {% else %}
+      {{ page.title }} &middot; Antriksh Yadav
+    {% endif %}
+  </title>
 
   <!-- Foundation -->
   <link rel="stylesheet" href="{{ site.baseurl }}public/foundation/css/normalize.css">

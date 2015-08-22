@@ -376,6 +376,30 @@ ul {
 }
 
 /*
+ * Resume
+ */
+
+.resume-container {
+  .resume-content {
+    padding: 10vh 5vw;
+    padding-top: 20vh;
+    margin-right: 5vw;
+
+    .resume-greeting {
+      margin-bottom: 2rem;
+    }
+
+    #resume-embed {
+      height: 140rem;
+      width: 53rem;
+      max-width: 90vw;
+      border: none;
+      box-shadow: 0 0 5px $main-color;
+    }
+  }
+}
+
+/*
  * Error page
  */
 
@@ -420,7 +444,7 @@ ul {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   html, body {
     font-size: 14px;
   }

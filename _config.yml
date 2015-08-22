@@ -27,6 +27,7 @@ blog_masthead_pages:
   Feed:           '/atom.xml'
   About:          '/about'
   Projects:       '/projects'
+  Resume:         '/resume'
 personal_external_links:
   linkedin:        'https://www.linkedin.com/profile/view?id=AAIAAAUKQGYBw5-mPuOlHHK_eit5XwiREBrMxzM'
   twitter:         'https://twitter.com/Antrikshy'

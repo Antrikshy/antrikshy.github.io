@@ -10,7 +10,7 @@ title:            code.Antrikshy
 tagline:          'Notes, tinkerings, experiments'
 url:              http://antrikshy.com
 paginate:         3
-paginate_path:    "antrikshy.com/blog/page:num"
+paginate_path:    "blog/page:num"
 excerpt_separator: "<!--more-->"
 baseurl:          /
 highlighter:      pygments

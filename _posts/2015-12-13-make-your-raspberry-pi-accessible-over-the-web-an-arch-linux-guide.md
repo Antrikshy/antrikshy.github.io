@@ -106,3 +106,11 @@ If *everything* so far was set up without a hitch, you should be able to SSH int
 For troubleshooting, you can add a `-v` flag to ask the `ssh` command to output debug messages.
 
 In case I have forgotten to mention a crucial step, leaving you stuck, write to me in the comments. I will read every single one, although I can't guarantee help.
+
+## Security
+
+After I published this post, several people on reddit mentioned some security concerns with leaving port 22 open to the Internet. Here are a few things you should explore to keep your Pi safe and at least out of the risk of being DOS'd by bots that scour the Internet for servers to break into.
+
+- Don't leave default user account names and passwords unchanged, if there are any that come with your Linux installation.
+- [Disable root SSH](https://wiki.archlinux.org/index.php/Secure_Shell#Configuration) access (requiring keyboard to be plugged straight into the Pi for root account login).
+- [Install `fail2ban`](https://wiki.archlinux.org/index.php/Fail2ban#Installation), a program that scans and bans IP addresses that try to brute force their way into your Pi over SSH.

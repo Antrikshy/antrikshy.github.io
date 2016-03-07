@@ -34,6 +34,12 @@
   weblink: http://code.antrikshy.com/checkmt/
   featured: no
 
+- name: CringeType
+  description: "Front-end web app that does some simple text modification to make input text look like it was typed by an annoying 12-year old in Twitch chat."
+  repository: https://github.com/Antrikshy/CringeType
+  weblink: http://antrikshy.com/CringeType
+  featured: no
+
 - name: nwjr
   description: "A simple command line utility written in Node.js that lets NW.js developers quickly launch their HTML5-powered desktop apps in a snap using a saved copy of the NW.js runtime."
   repository: https://github.com/Antrikshy/nwjr

@@ -298,6 +298,18 @@ ul {
   }
 }
 
+.blog-link {
+  a {
+    color: $site-intro-color;
+  }
+  background-color: $site-intro-back-fromColor;
+  height: 30vh;
+  text-align: center;
+  font-size: 4rem;
+  padding: 5rem 0;
+  margin-bottom: 5vh;
+}
+
 /* Scroll prompter arrow bounce */
 @include keyframes(arrowBounce) {
   0% { bottom: 3rem; }

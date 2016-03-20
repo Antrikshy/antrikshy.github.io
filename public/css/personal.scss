@@ -195,6 +195,10 @@ ul {
   position: relative;
   @include linear-gradient($site-intro-back-toColor, $site-intro-back-fromColor);
 
+  a {
+    color: $site-intro-color;
+  }
+
   hr {
     border-color: $site-intro-color;
   }

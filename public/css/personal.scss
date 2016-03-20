@@ -301,13 +301,15 @@ ul {
 .blog-link {
   a {
     color: $site-intro-color;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
   }
   background-color: $site-intro-back-fromColor;
   height: 30vh;
   text-align: center;
   font-size: 4rem;
-  padding: 5rem 0;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 
 /* Scroll prompter arrow bounce */

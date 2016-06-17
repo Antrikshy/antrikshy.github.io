@@ -99,11 +99,11 @@ Pebble.addEventListener('showConfiguration', function() {
 });
 
 Pebble.addEventListener('webviewclosed', function(e) {
-  // Decode the user's preferences
-  var options = JSON.parse(decodeURIComponent(e.response));
+// Decode the user's preferences
+var options = JSON.parse(decodeURIComponent(e.response));
   
-  // Send to watchface
-  Pebble.sendAppMessage(options, function() {
+// Send to watchface
+Pebble.sendAppMessage(options, function() {
     console.log('Config data sent successfully!');
   }, function(e) {
     console.log('Error sending config data!\n' + JSON.stringify(e));

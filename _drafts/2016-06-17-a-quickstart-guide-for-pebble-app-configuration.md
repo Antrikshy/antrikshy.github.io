@@ -189,3 +189,5 @@ static void inbox_received_callback(DictionaryIterator *iterator, void *context)
 As mentioned above, booleans in JS are converted to `int16_t` values by the Pebble SDK, which is stored in the field named `int16` in `ic->value`.
 
 For further reference, take a look at [this table](https://developer.pebble.com/guides/communication/sending-and-receiving-data/#data-types) to learn what the various fields in a `Tuple.value` union are named.
+
+

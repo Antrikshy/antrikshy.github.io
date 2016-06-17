@@ -175,7 +175,7 @@ Say you want to access a boolena value that's expected in a key named `invertCol
 // Your callback, registered above
 static void inbox_received_callback(DictionaryIterator *iterator, void *context) {
 
-  // MESSAGE_KEY_invertColors refers to a key defined as invertColors
+  // MESSAGE_KEY_invertColors is an enum that refers to a key defined as invertColors
   // Prefix is added automatically and helps distinguish a key from a local variable
   Tuple *ic = dict_find(iterator, MESSAGE_KEY_invertColors);
   if (ic) {

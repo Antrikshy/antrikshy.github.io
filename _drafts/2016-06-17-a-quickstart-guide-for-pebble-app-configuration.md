@@ -1,7 +1,7 @@
 ---
 published: false
 ---
-I recently decided to try my hand at Pebble development in C, with a native watchface. I won't go into the details of my project, but the watchface involves taking input from users in the form of strings (through the Pebble app on the user's phone) and saving them using Pebble's local storage. The set-up required to accept user configuration is spread across various pages of Pebble's official documentation, and even after reading through it all, I needed external help.
+I recently decided to try my hand at Pebble development in C, with a native watchface. I won't go into the details of my project, but the watchface involves taking input from users in the form of strings (through the Pebble app on the user's phone) and saving them using Pebble's local storage. The set-up required to accept user configuration is spread across various pages of Pebble's official documentation. This is because there is a lot of overlap between user configuration and watch-to-phone communication in general. Even after reading through it all, I needed external help.
 
 So I decided to summarize all the components that you need to set up to allow for user configuration in a native Pebble watchapp or watchface, written in C. I really hope this helps someone out there visualize the flow better.
 
@@ -35,6 +35,31 @@ Most likely, you will want to incorporate some sort of form into your page to ac
 
 On your HTML page, you need to handle the first two steps of this process. The key functionality is summarized really well in the following code snippet that I have lifted from Pebble's documentation on [this page](https://developer.pebble.com/guides/user-interfaces/app-configuration/).
 
+{% highlight javascript %}
 
+// Determine the correct return URL (emulator vs real watch)
+    function getQueryParam(variable, defaultValue) {
+      var query = location.search.substring(1);
+      var vars = query.split('&');
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (pair[0] === variable) {
+          return decodeURIComponent(pair[1]);
+        }
+      }
+      return defaultValue || false;
+    }
+    var return_to = getQueryParam('return_to', 'pebblejs://close#');
+
+    // Encode and send the data when the page closes
+    document.location = return_to + encodeURIComponent(JSON.stringify(options));
+
+{% endhighlight %}
+
+In the above code, it is assumed that the `options` variable contains a JS object/dict that holds the user's data that you want to transfer to the user's watch.
+
+As mentioned in a comment above, a lot of the above code handles detecting whether or not the destnation is an actual Pebble app runtime or an emulator. In production, the above code will set `document.location` to `pebblejs://close#<options>`, where `<options>` is a URL-encoded JSON string.
+
+> Note: You need not worry too much about the format of this `options` variable because it is going to be read by more JavaScript code, only this time in your PebbleKit JS code, which will come later.
 
 ## Pebble JS 

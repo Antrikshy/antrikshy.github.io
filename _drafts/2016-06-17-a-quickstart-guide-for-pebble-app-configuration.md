@@ -33,6 +33,8 @@ Most likely, you will want to incorporate some sort of form into your page to ac
 2. Your config webpage compiles this information into a simple JS object and transfers it into the PebbleKit JS component of your app (all of this happens in the Pebble app, once the settings view holding your page closes).
 3. The PebbleKit JS component of your app executes in the Pebble app on the user's phone, which should handle catching this information and transmitting it to the watchapp/face. More on this in the next section.
 
-On your HTML page, you need to handle the first two steps of this process. 
+On your HTML page, you need to handle the first two steps of this process. The key functionality is summarized really well in the following code snippet that I have lifted from Pebble's documentation on [this page](https://developer.pebble.com/guides/user-interfaces/app-configuration/).
+
+
 
 ## Pebble JS 

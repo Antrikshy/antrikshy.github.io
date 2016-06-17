@@ -176,7 +176,7 @@ Say you want to access a boolena value that's expected in a key named `invertCol
 static void inbox_received_callback(DictionaryIterator *iterator, void *context) {
 
   // MESSAGE_KEY_invertColors refers to a key defined as invertColors
-  // Prefix is added automatically
+  // Prefix is added automatically and helps distinguish a key from a local variable
   Tuple *ic = dict_find(iterator, MESSAGE_KEY_invertColors);
   if (ic) {
     handle_color_inversion(ic->value->int16);

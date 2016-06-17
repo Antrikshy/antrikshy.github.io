@@ -79,6 +79,7 @@ This bit is relatively straightforward. It's a good idea to organize your `optio
 
 {% highlight javascript %}
 
+// REPLACE THIS WITH YOUR CONFIG PAGE PUBLIC URL
 var url = "http://example.com/watch_config.html"
 
 Pebble.addEventListener('showConfiguration', function() {
@@ -87,10 +88,10 @@ Pebble.addEventListener('showConfiguration', function() {
 
 Pebble.addEventListener('webviewclosed', function(e) {
   // Decode the user's preferences
-  var configData = JSON.parse(decodeURIComponent(e.response));
+  var options = JSON.parse(decodeURIComponent(e.response));
   
   // Send to watchface
-  Pebble.sendAppMessage(configData, function() {
+  Pebble.sendAppMessage(options, function() {
     console.log('Config data sent successfully!');
   }, function(e) {
     console.log('Error sending config data!\n' + JSON.stringify(e));
@@ -98,3 +99,5 @@ Pebble.addEventListener('webviewclosed', function(e) {
 });
 
 {% endhighlight %}
+
+The above code is completely valid, and can be placed as-is into `app.js`, assuming the

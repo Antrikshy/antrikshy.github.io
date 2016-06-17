@@ -125,3 +125,24 @@ On the C side of things, at the very least, you need to make sure that you:
 1. Open AppMessage.
 2. Register a message-received callback function.
 3. Handle incoming message in aforementioned callback.
+
+Assuming a simple configuration setup, here are some *suggestions* on how to do this and where in your code:
+
+### Open AppMessage
+
+In your `init` function, add:
+
+{% highlight c %}
+
+// Largest expected inbox and outbox message sizes
+const uint32_t inbox_size = 30;
+const uint32_t outbox_size = 0;
+
+// Open AppMessage
+app_message_open(inbox_size, outbox_size);
+
+{% endhighlight %}
+
+You can add this after you're done setting up your main window.
+
+Be sure to set your inbox and outbox sizes properly. Assuming your app only takes user input and never sends data *back* to the phone, your outbox size can be 0. As for inbox size, think about the size of the largest possible settings object your config page can generate, in *bytes*, after conversion to C types.

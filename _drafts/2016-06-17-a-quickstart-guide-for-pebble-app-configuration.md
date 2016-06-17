@@ -177,10 +177,11 @@ static void inbox_received_callback(DictionaryIterator *iterator, void *context)
 
   Tuple *ic = dict_find(iterator, MESSAGE_KEY_invertColors);
   if (ic) {
-    handle_color_inversion(ic);
+    handle_color_inversion(ic->value->int16);
   }
 
 }
+
 {% endhighlight %}
 
 

@@ -62,4 +62,6 @@ As mentioned in a comment above, a lot of the above code handles detecting wheth
 
 > Note: You need not worry too much about the format of this `options` variable because it is going to be read by more JavaScript code, only this time in your PebbleKit JS code, which will come later.
 
-## Pebble JS 
+## PebbleKit JS
+
+

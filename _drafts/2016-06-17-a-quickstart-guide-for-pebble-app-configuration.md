@@ -168,4 +168,19 @@ app_message_register_inbox_received(inbox_received_callback);
 
 In a simple case, the `iterator` pointer is all you need to access values from your configuration webpage in C code. This is the final step.
 
+Say you want to access a boolena value that's expected in a key named `invertColors` and pass it into a function named `handle_color_inversion` that you have defined elsewhere in your code. The following code would handle that:
+
+{% highlight c %}
+
+// Your callback, registered above
+static void inbox_received_callback(DictionaryIterator *iterator, void *context) {
+
+  Tuple *ic = dict_find(iterator, MESSAGE_KEY_invertColors);
+  if (ic) {
+    handle_color_inversion(ic);
+  }
+
+}
+{% endhighlight %}
+
 

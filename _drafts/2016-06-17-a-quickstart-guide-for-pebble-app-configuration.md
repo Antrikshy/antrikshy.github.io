@@ -161,3 +161,7 @@ app_message_register_inbox_received(inbox_received_callback);
 {% endhighlight %}
 
 `inbox_received_callback` is of course, a function you define that will handle your users' settings once they are caught by your watchapp/face.
+
+### Handling incoming messages
+
+

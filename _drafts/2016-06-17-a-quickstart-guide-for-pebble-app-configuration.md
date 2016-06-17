@@ -116,7 +116,7 @@ The above code is completely valid, and can be placed as-is into `app.js`, assum
 
 ## Catching Data On Watch
 
-This section corresponds to step 4 in the user-configuration flow above.
+This section corresponds to step 4 in the user-configuration flow above. It is not written as a complete substitute for the documentation. Since I may have forgotten to include some minor details, refer to [this section](https://developer.pebble.com/guides/communication/sending-and-receiving-data/#reading-an-incoming-message) of the documentation for further help.
 
 This is the point where Pebble's SDK will handle converting your JavaScript object into convenient C types, and pass the data to you through your app message subscription. Be sure to look into [Pebble's type conversions](https://developer.pebble.com/guides/communication/using-pebblekit-js/#type-conversion) to avoid any surprises.
 

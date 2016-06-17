@@ -79,7 +79,7 @@ This bit is relatively straightforward. It's a good idea to organize your `optio
 
 {% highlight javascript %}
 
-// REPLACE THIS WITH YOUR CONFIG PAGE PUBLIC URL
+// REPLACE THIS WITH YOUR CONFIG WEBPAGE'S PUBLIC URL
 var url = "http://example.com/watch_config.html"
 
 Pebble.addEventListener('showConfiguration', function() {
@@ -100,4 +100,4 @@ Pebble.addEventListener('webviewclosed', function(e) {
 
 {% endhighlight %}
 
-The above code is completely valid, and can be placed as-is into `app.js`, assuming the
+The above code is completely valid, and can be placed as-is into `app.js`, assuming the `options` object is well-structured when it comes from your config webpage.

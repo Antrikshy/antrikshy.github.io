@@ -11,9 +11,11 @@ So I decided to summarize all the components that you need to set up to allow fo
 
 Before you can get started with user configuration in your Pebble project, you need to define some message keys that your C code should expect when it catches communication headed to it from your phone. For example, you may want to have an `invertColors` field if you want to allow the user to invert black and white colors on your watchface.
 
-For the sake of simplicity, I assume you're using CloudPebble and/or are aware of where to set `appMessage` keys in the `package.json` file that goes with your app.
+For the sake of simplicity, I assume you're using CloudPebble and/or are aware of where to set AppMessage keys in the `package.json` file that goes with your app.
 
 In CloudPebble - once you have planned out your message keys - click Settings (in the left sidebar of your project). Then set names for these keys under "PebbleKit JS Message Keys". Be sure to mark the app as "Configurable" at the bottom.
+
+Refer to [this section](https://developer.pebble.com/guides/communication/using-pebblekit-js/#defining-keys) of the documentation for more.
 
 > Note: You **need not worry** about the lengths of these fields. Just set them to be 1, even if they are going to be strings. The "Key Array Length" has nothing to do with the max length of any strings.
 
@@ -32,7 +34,7 @@ To help you visualize what happens when a user saves your settings, here's the o
 1. User indicates submission intent on your form (usually by hitting a save/submit button.
 2. Your config webpage compiles this information into a simple JS object and transfers it into the PebbleKit JS component of your app (all of this happens in the Pebble app, once the settings view holding your page closes).
 3. The PebbleKit JS component of your app executes in the Pebble app on the user's phone, which should handle catching this information and transmitting it to the watchapp/face. More on this in the next section.
-4. // TODO: 
+4. Watchapp/face catches this data as an AppMessage, where you (the developer) can access various fields using message keys that you defined above.
 
 > Note: From now on, I shall refer to the above as **the flow**.
 
@@ -112,4 +114,12 @@ Pebble.addEventListener('webviewclosed', function(e) {
 
 The above code is completely valid, and can be placed as-is into `app.js`, assuming the `options` object is well-structured when it comes from your config webpage. What do I mean by well structured? I mean the keys correspond exactly with the message keys you defined in the section above titled "Message Keys". If your object is not structured in the right way, feel free to process it here, before passing it into `Pebble.sendAppMessage`.
 
+## Catching Data On Watch
 
+This section corresponds to step 4 in the user-configuration flow above.
+
+This is the point where Pebble's SDK will handle converting your JavaScript object into convenient C types, and pass the data to you through your app message subscription. Be sure to look into [Pebble's type conversions](https://developer.pebble.com/guides/communication/using-pebblekit-js/#type-conversion) to avoid any surprises.
+
+On the C side of things, you need to handle:
+
+1. Opening `AppMessage`

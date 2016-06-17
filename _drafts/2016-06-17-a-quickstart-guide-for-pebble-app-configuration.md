@@ -146,3 +146,5 @@ app_message_open(inbox_size, outbox_size);
 You can add this after you're done setting up your main window.
 
 Be sure to set your inbox and outbox sizes properly. Assuming your app only takes user input and never sends data *back* to the phone, your outbox size can be 0. As for inbox size, think about the size of the largest possible settings object your config page can generate, in *bytes*, after conversion to C types.
+
+For example, the above size of 30 would work if I expect the user to manually type in three strings on my settings page of length 10 characters max. Anything that your config webpage generates that falls outside this limit may be discarded.

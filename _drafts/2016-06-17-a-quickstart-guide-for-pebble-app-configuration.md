@@ -14,8 +14,17 @@ I'm assuming you are writing a native app or watchface in C, as opposed to using
 To add configuration options accessible through the Pebble app on the user's phone, you will need to write the following components:
 
 1. The app itself, usually in a `main.c` file.
-2. A JavaScript file, run through Pebble JS inside the Pebble app on the user's end. Call this one something like `app.js`, and place it alongside `main.c` if you're using CloudPebble. This is the PebbleKit JS component of your app.
+2. A JavaScript file, run through Pebble JS inside the Pebble app on the user's end. Call this one something like `app.js`, and place it alongside `main.c` if you're using CloudPebble. This is the PebbleKit JS component of your watchapp/face.
 3. A static webpage that you will host yourself somewhere (on GitHub Pages, Amazon S3 or wherever else you can find free or inexpensive hosting).
+
+To help you visualize what happens when a user saves your settings, here's the overall flow to help you visualize this:
+
+1. User indicates submission intent on your form (usually by hitting a save/submit button.
+2. Your config webpage compiles this information into a simple JS object and transfers it into the PebbleKit JS component of your app (all of this happens in the Pebble app, once the settings view holding your page closes).
+3. The PebbleKit JS component of your app executes in the Pebble app on the user's phone, which should handle catching this information and transmitting it to the watchapp/face. More on this in the next section.
+4. 
+
+> Note: From now on, I shall refer to this as **the flow**.
 
 ## Self-Hosted Webpage
 
@@ -27,13 +36,9 @@ This component can be as simple as a single HTML file with inline JavaScript cod
 
 When you are building this configuration webpage, feel free to use any front-end libraries that you want (as long as the end result is compatible with web view systems in iOS and Android).
 
-Most likely, you will want to incorporate some sort of form into your page to accept the user's configuration. What your page does *once* the user submits this form is what's important here. Here's the overall flow to help you visualize this:
+Most likely, you will want to incorporate some sort of form into your page to accept the user's configuration. What your page does *once* the user submits this form is what's important here. Refer to the 4-step flow in the previous section.
 
-1. User indicates submission intent on your form (usually by hitting a save/submit button.
-2. Your config webpage compiles this information into a simple JS object and transfers it into the PebbleKit JS component of your app (all of this happens in the Pebble app, once the settings view holding your page closes).
-3. The PebbleKit JS component of your app executes in the Pebble app on the user's phone, which should handle catching this information and transmitting it to the watchapp/face. More on this in the next section.
-
-On your HTML page, you need to handle the first two steps of this process. The key functionality is summarized really well in the following code snippet that I have lifted from Pebble's documentation on [this page](https://developer.pebble.com/guides/user-interfaces/app-configuration/).
+On your HTML page, you need to handle the first two steps of the flow. The key functionality is summarized really well in the following code snippet that I have lifted from Pebble's documentation on [this page](https://developer.pebble.com/guides/user-interfaces/app-configuration/).
 
 {% highlight javascript %}
 
@@ -62,6 +67,34 @@ As mentioned in a comment above, a lot of the above code handles detecting wheth
 
 > Note: You need not worry too much about the format of this `options` variable because it is going to be read by more JavaScript code, only this time in your PebbleKit JS code, which will come later.
 
-## PebbleKit JS
+## PebbleKit JS Component
 
+In a JS file that goes with your watchapp/face, you need to write code to accept data sent via your self-hosted config page in the previous section, and perform any translations necessary before sending it to your watchapp/face via `Pebble.sendAppMessage`. 
 
+This JS code will be executed inside the Pebble app on the user's phone, and you have access to the `Pebble` object, containing functionality that allows your JS code to communicate with a Pebble watch.
+
+Take a moment to scroll up to the flow and re-read step 3. I'll wait.
+
+This bit is relatively straightforward. It's a good idea to organize your `options` object (from the HTML page) before sending it to this component. That way, all you need to do is capture the options data, parse it back into a JS object and pass it over to the watchapp/face.
+
+{% highlight javascript %}
+
+var url = "http://example.com/watch_config.html"
+
+Pebble.addEventListener('showConfiguration', function() {
+  Pebble.openURL(url);
+});
+
+Pebble.addEventListener('webviewclosed', function(e) {
+  // Decode the user's preferences
+  var configData = JSON.parse(decodeURIComponent(e.response));
+  
+  // Send to watchface
+  Pebble.sendAppMessage(configData, function() {
+    console.log('Config data sent successfully!');
+  }, function(e) {
+    console.log('Error sending config data!\n' + JSON.stringify(e));
+  });
+});
+
+{% endhighlight %}

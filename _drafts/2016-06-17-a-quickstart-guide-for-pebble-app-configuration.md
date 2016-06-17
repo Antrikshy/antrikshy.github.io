@@ -110,4 +110,4 @@ Pebble.addEventListener('webviewclosed', function(e) {
 
 {% endhighlight %}
 
-The above code is completely valid, and can be placed as-is into `app.js`, assuming the `options` object is well-structured when it comes from your config webpage. What do I mean by well structured? I mean the keys correspond exactly with the message keys you defined in the section above titled "Message Keys".
+The above code is completely valid, and can be placed as-is into `app.js`, assuming the `options` object is well-structured when it comes from your config webpage. What do I mean by well structured? I mean the keys correspond exactly with the message keys you defined in the section above titled "Message Keys". If your object is not structured in the right way, feel free to process it here before passing it into `Pebble.sendAppMessage`.

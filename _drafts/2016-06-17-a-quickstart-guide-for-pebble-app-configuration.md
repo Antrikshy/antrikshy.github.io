@@ -75,7 +75,7 @@ In the above code, it is assumed that the `options` variable contains a JS objec
 
 As mentioned in a comment above, a lot of the above code handles detecting whether or not the destnation is an actual Pebble app runtime or an emulator. In production, the above code will set `document.location` to `pebblejs://close#<options>`, where `<options>` is a URL-encoded JSON string.
 
-Note: It's a good idea to structure your `options` object to match the configuration variables you defined earlier in CloudPebble.
+> Note: It's a good idea to structure your `options` object to match the configuration variables you defined earlier in the "Message Keys" section.
 
 ## PebbleKit JS Component
 
@@ -110,4 +110,4 @@ Pebble.addEventListener('webviewclosed', function(e) {
 
 {% endhighlight %}
 
-The above code is completely valid, and can be placed as-is into `app.js`, assuming the `options` object is well-structured when it comes from your config webpage.
+The above code is completely valid, and can be placed as-is into `app.js`, assuming the `options` object is well-structured when it comes from your config webpage. What do I mean by well structured? I mean the keys correspond exactly with the message keys you defined in the section above titled "Message Keys".

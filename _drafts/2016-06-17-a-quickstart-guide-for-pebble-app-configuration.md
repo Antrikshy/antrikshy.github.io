@@ -120,6 +120,8 @@ This section corresponds to step 4 in the user-configuration flow above.
 
 This is the point where Pebble's SDK will handle converting your JavaScript object into convenient C types, and pass the data to you through your app message subscription. Be sure to look into [Pebble's type conversions](https://developer.pebble.com/guides/communication/using-pebblekit-js/#type-conversion) to avoid any surprises.
 
-On the C side of things, you need to handle:
+On the C side of things, at the very least, you need to make sure that you:
 
-1. Opening `AppMessage`
+1. Open AppMessage.
+2. Register a message-received callback function.
+3. Handle incoming message in aforementioned callback.

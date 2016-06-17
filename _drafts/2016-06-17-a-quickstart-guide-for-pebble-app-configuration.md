@@ -1,9 +1,30 @@
 ---
 published: false
 ---
-I recently decided to try my hand at Pebble development in C, with a native watchface. I won't go into the details of my project, but the watchface involves taking input from users in the form of strings and saving them using Pebble's local storage. The set-up required to accept user configuration is spread across various pages of Pebble's official documentation, and even after reading through it all, I needed external help.
+I recently decided to try my hand at Pebble development in C, with a native watchface. I won't go into the details of my project, but the watchface involves taking input from users in the form of strings (through the Pebble app on the user's phone) and saving them using Pebble's local storage. The set-up required to accept user configuration is spread across various pages of Pebble's official documentation, and even after reading through it all, I needed external help.
 
 So I decided to summarize all the components that you need to set up to allow for user configuration in a native Pebble watchapp or watchface, written in C.
 
 <!--more-->
 
+## Code Structure
+
+I'm assuming you are writing a native app or watchface in C, as opposed to using Pebble.js, which performs all the processing on the user's phone instead of the watch. In that case, this procedure may be different, and I haven't looked into it.
+
+To add configuration options accessible through the Pebble app on the user's phone, you will need to write the following components:
+
+1. The app itself, usually in a `main.c` file.
+2. A JavaScript file, run through Pebble JS inside the Pebble app on the user's end. Call this one something like `app.js`, and place it alongside `main.c` if you're using CloudPebble.
+3. A static webpage that you will host yourself somewhere (on GitHub Pages, Amazon S3 or wherever else you can find free or inexpensive hosting).
+
+## Self-Hosted Webpage
+
+This component can be as simple as a single HTML file with inline JavaScript code and as complex as a web app. But it doesn't need to be much to be functional in this case. If you're thinking of integrating it into an existing web app that you may own, keep in mind:
+
+- This is the page that will be loaded as the settings page for your app for the user on their Pebble app.
+- The page needs to be viewable in an iOS or Android web browser.
+- The page needs to have functionality that allows it to set the web view's `document.location` to a special `pebblejs://` URL that tells the Pebble app to accept configuration. More on this below.
+
+
+
+## Pebble JS 

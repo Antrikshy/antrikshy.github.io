@@ -164,4 +164,8 @@ app_message_register_inbox_received(inbox_received_callback);
 
 ### Handling incoming messages
 
+`app_message_register_inbox_received` will expect a function with a signature equivalent to `void inbox_received_callback(DictionaryIterator *iterator, void *context);`
+
+In a simple case, the `iterator` pointer is all you need to access values from your configuration webpage in C code. This is the final step.
+
 

@@ -7,6 +7,16 @@ So I decided to summarize all the components that you need to set up to allow fo
 
 <!--more-->
 
+## Message Keys
+
+Before you can get started with user configuration in your Pebble project, you need to define some message keys that your C code should expect when it catches communication headed to it from your phone. For example, you may want to have an `invertColors` field if you want to allow the user to invert black and white colors on your watchface.
+
+For the sake of simplicity, I assume you're using CloudPebble and/or are aware of where to set `appMessage` keys in the `package.json` file that goes with your app.
+
+In CloudPebble - once you have planned out your message keys - click Settings (in the left sidebar of your project). Then set names for these keys under "PebbleKit JS Message Keys". Be sure to mark the app as "Configurable" at the bottom.
+
+> Note: You **need not worry** about the lengths of these fields. Just set them to be 1, even if they are going to be strings. The "Key Array Length" has nothing to do with the max length of any strings.
+
 ## Code Structure
 
 I'm assuming you are writing a native app or watchface in C, as opposed to using Pebble.js, which performs all the processing on the user's phone instead of the watch. In that case, this procedure may be different, and I haven't looked into it.
@@ -22,9 +32,9 @@ To help you visualize what happens when a user saves your settings, here's the o
 1. User indicates submission intent on your form (usually by hitting a save/submit button.
 2. Your config webpage compiles this information into a simple JS object and transfers it into the PebbleKit JS component of your app (all of this happens in the Pebble app, once the settings view holding your page closes).
 3. The PebbleKit JS component of your app executes in the Pebble app on the user's phone, which should handle catching this information and transmitting it to the watchapp/face. More on this in the next section.
-4. 
+4. // TODO: 
 
-> Note: From now on, I shall refer to this as **the flow**.
+> Note: From now on, I shall refer to the above as **the flow**.
 
 ## Self-Hosted Webpage
 
@@ -65,7 +75,7 @@ In the above code, it is assumed that the `options` variable contains a JS objec
 
 As mentioned in a comment above, a lot of the above code handles detecting whether or not the destnation is an actual Pebble app runtime or an emulator. In production, the above code will set `document.location` to `pebblejs://close#<options>`, where `<options>` is a URL-encoded JSON string.
 
-> Note: You need not worry too much about the format of this `options` variable because it is going to be read by more JavaScript code, only this time in your PebbleKit JS code, which will come later.
+Note: It's a good idea to structure your `options` object to match the configuration variables you defined earlier in CloudPebble.
 
 ## PebbleKit JS Component
 

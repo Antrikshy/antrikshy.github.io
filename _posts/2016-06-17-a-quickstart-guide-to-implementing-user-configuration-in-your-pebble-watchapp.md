@@ -1,7 +1,10 @@
 ---
-published: false
+layout: post
+title: "A Quickstart Guide To Implementing User Configuration In Your Pebble Watchapp"
+permalink: "/blog/quickstart-guide-implementing-user-configuration-pebble-watchapp-watchface"
 ---
-I recently decided to try my hand at Pebble development in C, with a native watchface. I won't go into the details of my project, but the watchface involves taking input from users in the form of strings (through the Pebble app on the user's phone) and saving them using Pebble's local storage. The set-up required to accept user configuration is spread across various pages of Pebble's official documentation. This is because there is a lot of overlap between user configuration and watch-to-phone communication in general. Even after reading through it all, I needed external help.
+
+I recently decided to try my hand at Pebble development in C, with a native watchface. Documentation about accepting user configuration is a bit messy. This is because there is a lot of overlap between user configuration and watch-to-phone communication in general. Even after reading through it all, I needed external help and there were few resources that laid everything out in an easily digestible way.
 
 So I decided to summarize all the components that you need to set up to allow for user configuration in a native Pebble watchapp or watchface, written in C. I really hope this helps someone out there visualize the flow better.
 
@@ -9,7 +12,9 @@ So I decided to summarize all the components that you need to set up to allow fo
 
 ## Message Keys
 
-Before you can get started with user configuration in your Pebble project, you need to define some message keys that your C code should expect when it catches communication headed to it from your phone. For example, you may want to have an `invertColors` field if you want to allow the user to invert black and white colors on your watchface.
+Before you can get started with user configuration in your Pebble project, you need to define some message keys that your C code should expect when it catches communication headed to it from your phone.
+
+For example, you may want to have an `invertColors` field if you want to allow the user to invert black and white colors on your watchface.
 
 For the sake of simplicity, I assume you're using CloudPebble and/or are aware of where to set AppMessage keys in the `package.json` file that goes with your app.
 
@@ -17,11 +22,11 @@ In CloudPebble - once you have planned out your message keys - click Settings (i
 
 Refer to [this section](https://developer.pebble.com/guides/communication/using-pebblekit-js/#defining-keys) of the documentation for more.
 
-> Note: You **need not worry** about the lengths of these fields. Just set them to be 1, even if they are going to be strings. The "Key Array Length" has nothing to do with the max length of any strings.
+> Note: You **need not worry** about the lengths of these fields. Just set them to be 1, even if they are going to be strings. The "Key Array Length" field has nothing to do with the max length of any strings.
 
 ## Code Structure
 
-I'm assuming you are writing a native app or watchface in C, as opposed to using Pebble.js, which performs all the processing on the user's phone instead of the watch. In that case, this procedure may be different, and I haven't looked into it.
+I'm assuming you are writing a native app or watchface in C, as opposed to using Pebble.js, which performs all the processing on the user's phone instead of the watch. In the latter case, this procedure may be different, and I haven't looked into it.
 
 To add configuration options accessible through the Pebble app on the user's phone, you will need to write the following components:
 
@@ -31,8 +36,8 @@ To add configuration options accessible through the Pebble app on the user's pho
 
 To help you visualize what happens when a user saves your settings, here's the overall flow to help you visualize this:
 
-1. User indicates submission intent on your form (usually by hitting a save/submit button.
-2. Your config webpage compiles this information into a simple JS object and transfers it into the PebbleKit JS component of your app (all of this happens in the Pebble app, once the settings view holding your page closes).
+1. User indicates submission intent on your form (usually by hitting a save/submit button).
+2. Your config webpage compiles this information into a simple JS object and transfers it into the PebbleKit JS component of your app (this happens in the Pebble app, when your settings webpage closes).
 3. The PebbleKit JS component of your app executes in the Pebble app on the user's phone, which should handle catching this information and transmitting it to the watchapp/face. More on this in the next section.
 4. Watchapp/face catches this data as an AppMessage, where you (the developer) can access various fields using message keys that you defined above.
 
@@ -40,7 +45,7 @@ To help you visualize what happens when a user saves your settings, here's the o
 
 ## Self-Hosted Webpage
 
-This component can be as simple as a single HTML file with inline JavaScript code and as complex as a web app. But it doesn't need to be much to be functional in this case. If you're thinking of integrating it into an existing web app that you may own, keep in mind:
+This component can be as simple as a single HTML file with inline JavaScript code and as complex as a web app. But it doesn't need to be much to be functional in this case. If you're thinking of integrating it into an existing web app that you own, keep in mind:
 
 - This is the page that will be loaded as the settings page for your app for the user on their Pebble app.
 - The page needs to be viewable in an iOS or Android web browser.
@@ -48,32 +53,34 @@ This component can be as simple as a single HTML file with inline JavaScript cod
 
 When you are building this configuration webpage, feel free to use any front-end libraries that you want (as long as the end result is compatible with web view systems in iOS and Android).
 
-Most likely, you will want to incorporate some sort of form into your page to accept the user's configuration. What your page does *once* the user submits this form is what's important here. Refer to the 4-step flow in the previous section.
+Most likely, you will want to incorporate some sort of form into your page to accept the user's configuration. What your page does *once* the user submits this form is what's important here. Refer to the flow in the previous section.
 
 On your HTML page, you need to handle the first two steps of the flow. The key functionality is summarized really well in the following code snippet that I have lifted from Pebble's documentation on [this page](https://developer.pebble.com/guides/user-interfaces/app-configuration/).
 
 {% highlight javascript %}
 
 // Determine the correct return URL (emulator vs real watch)
-    function getQueryParam(variable, defaultValue) {
-      var query = location.search.substring(1);
-      var vars = query.split('&');
-      for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split('=');
-        if (pair[0] === variable) {
-          return decodeURIComponent(pair[1]);
-        }
-      }
-      return defaultValue || false;
+function getQueryParam(variable, defaultValue) {
+  var query = location.search.substring(1);
+  var vars = query.split('&');
+  for (var i = 0; i < vars.length; i++) {
+    var pair = vars[i].split('=');
+    if (pair[0] === variable) {
+      return decodeURIComponent(pair[1]);
     }
-    var return_to = getQueryParam('return_to', 'pebblejs://close#');
+  }
+  return defaultValue || false;
+}
+var return_to = getQueryParam('return_to', 'pebblejs://close#');
 
-    // Encode and send the data when the page closes
-    document.location = return_to + encodeURIComponent(JSON.stringify(options));
+// Encode and send the data when the page closes
+document.location = return_to + encodeURIComponent(JSON.stringify(options));
 
 {% endhighlight %}
 
 In the above code, it is assumed that the `options` variable contains a JS object/dict that holds the user's data that you want to transfer to the user's watch.
+
+Place this code inside the save/submit button click handler, after you have constructed the `options` object.
 
 As mentioned in a comment above, a lot of the above code handles detecting whether or not the destnation is an actual Pebble app runtime or an emulator. In production, the above code will set `document.location` to `pebblejs://close#<options>`, where `<options>` is a URL-encoded JSON string.
 
@@ -102,6 +109,8 @@ Pebble.addEventListener('webviewclosed', function(e) {
 // Decode the user's preferences
 var options = JSON.parse(decodeURIComponent(e.response));
   
+// Perform any translations, other processing here
+
 // Send to watchface
 Pebble.sendAppMessage(options, function() {
     console.log('Config data sent successfully!');
@@ -116,9 +125,9 @@ The above code is completely valid, and can be placed as-is into `app.js`, assum
 
 ## Catching Data On Watch
 
-This section corresponds to step 4 in the user-configuration flow above. It is not written as a complete substitute for the documentation. Since I may have forgotten to include some minor details, refer to [this section](https://developer.pebble.com/guides/communication/sending-and-receiving-data/#reading-an-incoming-message) of the documentation for further help.
+This section corresponds to step 4 in the flow above. It is not written as a substitute for the official documentation. Since I may have forgotten to include some minor details, refer to [this section](https://developer.pebble.com/guides/communication/sending-and-receiving-data/#reading-an-incoming-message) of the documentation for further help if something doesn't work as expected.
 
-This is the point where Pebble's SDK will handle converting your JavaScript object into convenient C types, and pass the data to you through your app message subscription. Be sure to look into [Pebble's type conversions](https://developer.pebble.com/guides/communication/using-pebblekit-js/#type-conversion) to avoid any surprises.
+This is the point where Pebble's SDK will handle conversion of your JavaScript object into C types, and will pass the data to your app through your AppMessage subscription (more on this below). Be sure to look into [Pebble's type conversions](https://developer.pebble.com/guides/communication/using-pebblekit-js/#type-conversion) to avoid any surprises.
 
 On the C side of things, at the very least, you need to make sure that you:
 
@@ -126,7 +135,7 @@ On the C side of things, at the very least, you need to make sure that you:
 2. Register a message-received callback function.
 3. Handle incoming message in aforementioned callback.
 
-Assuming a simple configuration setup, here are some *suggestions* on how to do this and where in your code:
+Assuming a simple configuration setup, here are some *suggestions* on how to do this and where in your code (assuming a very straightforward existing code structure):
 
 ### Open AppMessage
 
@@ -145,9 +154,9 @@ app_message_open(inbox_size, outbox_size);
 
 You can add this after you're done setting up your main window.
 
-Be sure to set your inbox and outbox sizes properly. Assuming your app only takes user input and never sends data *back* to the phone, your outbox size can be 0. As for inbox size, think about the size of the largest possible settings object your config page can generate, in *bytes*, after conversion to C types.
+Be sure to set your inbox and outbox sizes properly. Assuming your app only takes user input and never sends data *back* to the phone *anywhere else in the app*, your outbox size can be 0. As for inbox size, think about the size of the largest possible settings object your config page can generate, in *bytes*, after conversion to C types.
 
-For example, the above size of 30 would work if I expect the user to manually type in three strings on my settings page of length 10 characters max. Anything that your config webpage generates that falls outside this limit may be discarded.
+For example, the above size of 30 would work if you expect the user to manually type in three strings on the settings page of length 10 characters max. Anything that your config webpage generates that falls outside this limit may be discarded.
 
 ### Register Callback
 
@@ -166,9 +175,11 @@ app_message_register_inbox_received(inbox_received_callback);
 
 `app_message_register_inbox_received` will expect a function with a signature equivalent to `void inbox_received_callback(DictionaryIterator *iterator, void *context);`
 
-In a simple case, the `iterator` pointer is all you need to access values from your configuration webpage in C code. This is the final step.
+In a simple case, the `iterator` pointer is all you need to access values from your configuration webpage in C code.
 
-Say you want to access a boolena value that's expected in a key named `invertColors` and pass it into a function named `handle_color_inversion` that you have defined elsewhere in your code. The following code would handle that:
+This is the final step.
+
+Say you want to access a boolean value that's expected in a key named `invertColors` and pass it into a function named `handle_color_inversion` that you have defined elsewhere in your code. The following code would handle that:
 
 {% highlight c %}
 
@@ -182,6 +193,7 @@ static void inbox_received_callback(DictionaryIterator *iterator, void *context)
     handle_color_inversion(ic->value->int16);
   }
 
+  // Handle other configurations here
 }
 
 {% endhighlight %}
@@ -191,3 +203,11 @@ static void inbox_received_callback(DictionaryIterator *iterator, void *context)
 As mentioned above, booleans in JS are converted to `int16_t` values by the Pebble SDK, which is stored in the field named `int16` in `ic->value`.
 
 For further reference, take a look at [this table](https://developer.pebble.com/guides/communication/sending-and-receiving-data/#data-types) to learn what the various fields in a `Tuple.value` union are named. And take a look at [this](https://developer.pebble.com/docs/c/Foundation/Dictionary/#Tuple) if you're curious about what a `Tuple` looks like.
+
+## Conclusion
+
+I hope this helps someone out there get a better grasp on Pebble app configuration. If this article helped you, be sure to let me know in the comments. It makes my day. 
+
+If you face any trouble or have questions about anything I have described here, feel free to ask me in the comments or directly on Twitter, and I will try to help you out personally.
+
+Thanks for reading!

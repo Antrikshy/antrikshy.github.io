@@ -1,5 +1,5 @@
 var greetingLine1 = "Software developer with a voracious curiosity and a desire to learn everything.";
-var greetingLine2 = "Computer science student at the University of California, San Diego.";
+var greetingLine2 = "Computer Science graduate from University of California, San Diego.";
 var greetingLine3 = "I believe in not just <em>writing code</em>, but designing <em>great experiences</em>.";
 
 $(document).ready(function() {
@@ -44,17 +44,15 @@ $(document).ready(function() {
         });
     });
 
-    $(".intro-text").click(function(e) {
-        e.preventDefault();
-
+    $(".site-intro").click(function(e) {
+        // Hides all three lines and breaks in one go
         $(".intro-text-1").parent().hide();
-        $(".intro-text-2").parent().hide();
-        $(".intro-text-3").parent().hide();
 
         $(".intro-text-1-skipped").html(greetingLine1);
         $(".intro-text-2-skipped").html(greetingLine2);
         $(".intro-text-3-skipped").html(greetingLine3);
 
         $(".scroll-prompter").fadeIn("slow");
+        $(".typed-cursor").hide();
     });
 });

@@ -8,6 +8,18 @@
   description: "An app for the Pebble smartwatch platform written in JavaScript using the Pebble.js framework. Fetches app deals and discounts from the /r/AppHookup subreddit and displays them in an easy to digest list right on your wrist."
   repository: http://github.com/Antrikshy/AppHookup-for-Pebble
   weblink: https://apps.getpebble.com/applications/54615fc3233941fc44000008
+  featured: no
+
+- name: Habitual for Pebble
+  description: "A simple and smart-looking watchface that aims to help pick up habits. It allows users to use their Pebble app to type up to five reminders, which will rotate throughout the day, so they glance at them whenever they check the time or date."
+  repository: https://github.com/Antrikshy/Habitual-for-Pebble
+  weblink: https://apps.getpebble.com/applications/576783f03feaee4aa30002e0
+  featured: yes
+
+- name: The MCU Index
+  description: "The MCUi is a React-based static, single-page website that uses The Movie Database to find actors who have appeared in the Marvel Cinematic Universe."
+  repository: https://github.com/Antrikshy/The-MCU-Index
+  weblink: http://antrikshy.com/The-MCU-Index/
   featured: yes
 
 - name: Minecraft Snaps

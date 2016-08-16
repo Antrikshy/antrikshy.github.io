@@ -17,10 +17,22 @@
   featured: yes
 
 - name: The MCU Index
-  description: "The MCUi is a React-based static, single-page website that uses The Movie Database to find actors who have appeared in the Marvel Cinematic Universe."
+  description: "The MCUi is a React-based, static, single-page website that uses The Movie Database to find actors who have appeared in the Marvel Cinematic Universe."
   repository: https://github.com/Antrikshy/The-MCU-Index
   weblink: http://antrikshy.com/The-MCU-Index/
   featured: yes
+
+- name: Tinseltown.js
+  description: "Tinseltown.js is a very lightweight front-end CSS/JS library that allows designers to add faux flashy loading effects that we see in Hollywood movies and hacker TV shows. Requires minimal code, animations are CSS-based, and timings are flexible through Sass variables."
+  repository: https://github.com/Antrikshy/Tinseltown.js
+  weblink: http://antrikshy.com/Tinseltown.js
+  featured: yes
+
+- name: ignr.py
+  description: "ignr is a Python-based command line utility that allows programmers to download .gitignore templates from gitignore.io. Also supports .gitignore previews, backing up of existing file and listing all available templates via the API."
+  repository: https://github.com/Antrikshy/ignr.py
+  weblink:
+  featured: no
 
 - name: Minecraft Snaps
   description: "Mac app written using HTML5 technologies and Bootstrap using the NW.js framework. Lets Minecraft players easily save snapshots of saved worlds and quickly restore them to their previous state after testing and/or destroying creations."

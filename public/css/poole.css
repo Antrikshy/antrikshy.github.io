@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: "Merriweather", serif;
+  font-family: "Asap", serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -59,8 +59,8 @@ html {
 }
 
 body {
-  color: #515151;
-  background-color: #f4f5f5;
+  color: #353535;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-family: 'Open Sans', 'Helvetica Neue' sans-serif;
+  font-family: 'Bitter', 'Helvetica Neue' sans-serif;
   font-size: 2rem;
 }
 h2 {
@@ -322,14 +322,13 @@ tbody tr:nth-child(odd) th {
  */
 
 .masthead {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Asap', sans-serif;
   text-align: center;
   height: 8rem;
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  background-color: rgba(0,0,0,0.05);
-  position: relative;
+  background-color: rgba(0,0,0,0.10);
 }
 .masthead-title {
   padding-top: 2rem;
@@ -366,6 +365,8 @@ tbody tr:nth-child(odd) th {
   border: 2px solid;
   border-radius: 3px;
   text-decoration: none !important;
+  position: relative;
+  top: 20px;
 }
 
 .read-more-btn:hover {
@@ -432,7 +433,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Asap', 'Helvetica Neue', Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }

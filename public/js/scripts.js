@@ -1,5 +1,5 @@
 var greetingLine1 = "Software developer with a voracious curiosity and a desire to learn everything.";
-var greetingLine2 = "Computer Science graduate from University of California, San Diego.";
+var greetingLine2 = "Computer Science graduate from University of California San Diego.";
 var greetingLine3 = "I believe in not just <em>writing code</em>, but designing <em>great experiences</em>.";
 
 $(document).ready(function() {

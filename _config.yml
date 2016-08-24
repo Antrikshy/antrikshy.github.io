@@ -1,7 +1,7 @@
 # Dependencies
 markdown:         kramdown
 highlighter:      true
-gems:             [jekyll-paginate]
+gems:             [jekyll-paginate, jekyll-seo-tag]
 
 # Permalinks
 permalink:        none
@@ -19,6 +19,7 @@ author:
   name:           Antriksh Yadav
   url:            https://antrikshy.com
   email:          antrikshy@gmail.com
+  twitter:        Antrikshy
 
 # Custom vars
 github:

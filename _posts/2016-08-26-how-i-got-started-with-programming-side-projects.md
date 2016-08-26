@@ -4,6 +4,8 @@ title: "How I Got Started With Programming Side Projects"
 permalink: "/blog/how-i-got-started-with-programming-side-projects"
 ---
 
+![In-button confirmation](/assets/side-projects-screenshot.png)
+
 Like most of the other students in the computer science program at UC San Diego, I went through a couple of years simply coasting through classes. I had never been good *nor* bad academically, and my GPA was fairly average. I was enjoying programming classes, with their deliciously challenging assignments; calculus, not so much.
 
 In this non-technical blog post (for a change), I would like to walk through my experience with my open-source projects, which later helped me out immensely in getting internships (including one at Amazon), despite my average grades.

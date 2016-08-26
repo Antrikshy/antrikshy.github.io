@@ -2,6 +2,7 @@
 layout: post
 title: "How I Got Started With Programming Side Projects"
 permalink: "/blog/how-i-got-started-with-programming-side-projects"
+description: "My experience with personal open-source projects as a computer science major, and some advice to newcomers in the field, based on my observations of my peers."
 ---
 
 ![In-button confirmation](/assets/side-projects-screenshot.png)

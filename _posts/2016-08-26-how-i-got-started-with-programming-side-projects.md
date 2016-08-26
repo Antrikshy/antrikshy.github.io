@@ -31,7 +31,7 @@ Back in the day, I hadn't *fully* realized how much pet projects would broaden m
 
 The summer break after my second year was when I gathered momentum. That was when I started my adventure in the world of open-source software. Still, I placed too much importance in knowing *more* programming languages. This sentiment would change with time, but it didn't hurt. So far, I had worked with Java, C and C++ in course-assigned projects. I had also dabbled a bit with Python on Codecademy and through a [simple reddit bot](https://github.com/Antrikshy/InternetLyingPolice_reddit_bot) project previously.
 
-I decided to go out and teach myself more programming languages over the summer break so I had more space to fill on my resume.
+I decided to go out and teach myself more programming languages over the summer break so I could make my resume appear more substantial.
 
 I focused on JavaScript and Python, and a little bit of PHP. I'm glad **I kept my dreams limited in scope** and worked on tiny projects. I made [safcat](https://github.com/Antrikshy/safcat), [x-poster](https://github.com/Antrikshy/x-poster) and [RecoverTabs](https://github.com/Antrikshy/RecoverTabs), which were all Safari extensions that fulfilled some of my wants. RecoverTabs became my first popular project on GitHub; it added Cmd+Shift+T functionality to Safari, which all other browsers ship with, while Safari comes with sort of half-baked functionality.
 

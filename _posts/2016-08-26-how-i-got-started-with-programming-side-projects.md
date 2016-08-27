@@ -128,7 +128,7 @@ This very much comes down to personal preference, but I don't like to learn prog
 1. They seldom represent what real-life development with that technology is like.
 2. They don't involve the challenges that you will often face in practice.
 
-I have found that I learn better by just making real, useful things. It's very hard to come up with original ideas; so don't believe that you're not alone in that. Yet, it's what I find to be the best way to stay motivated with a project.
+I have found that I learn better by just making real, useful things. It's very hard to come up with original ideas; so don't believe that you're alone in that. Yet, it's what I find to be the best way to stay motivated with a project.
 
 In general, I *only* build things that have never been built before. It's new-idea-or-bust for me.
 

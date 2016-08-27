@@ -109,7 +109,7 @@ While working together on side projects can be beneficial, I barely ever did it 
 
 When picking partners, consider skills and motivation. If you have people who are on the same page as you, go for it! If this is not the case, you may fall into a laziness cycle. Side projects are already extra work. The project will be hard to get off the ground. Everyone will offload hard work onto others. A lot of time will be spent waiting for others to finish their bits. Group members who have more experience will be forced to lag behind, which will be a waste of their time.
 
-Working alone means you can set your own time aside to work. Becuase you have no one to offload work to, you end up learning all the parts involved. You face more problems and possible dead-ends to figure out on your own, which means more learning.
+Working alone means you can set your own time aside to work. Because you have no one to offload work to, you end up learning all the parts involved. You face more problems and possible dead-ends to figure out on your own, which means more learning.
 
 Either way, I am of the opinion that you should **try making something on your own at some point**.
 
@@ -119,7 +119,7 @@ Designing for the open-source community also comes with responsibilities. Over t
 
 It is good practice to actively maintain any software in general. Even if your software is not open-source, but has a lot of users, it's a good idea to not let it go stale. Users may expect new features from time to time.
 
-Maintainence does not stop there. Be aware of all the **costs you may face even *after* you finish a project**. Building an iOS app to distribute on the App Store means paying $99/year for a developer membership. If you get into web design like me, you may have to pay for server time to keep your projects afloat and viewable by potential employers (who likes dead links on a portfolio?). If you plan to experiment with Amazon Web Services, be doubly sure to estimate the costs beforehand. While some of their products can be used for free or at minimal cost, some are only cost-effective when used at scale.
+Maintenance does not stop there. Be aware of all the **costs you may face even *after* you finish a project**. Building an iOS app to distribute on the App Store means paying $99/year for a developer membership. If you get into web design like me, you may have to pay for server time to keep your projects afloat and viewable by potential employers (who likes dead links on a portfolio?). If you plan to experiment with Amazon Web Services, be doubly sure to estimate the costs beforehand. While some of their products can be used for free or at minimal cost, some are only cost-effective when used at scale.
 
 ### Say No To Canned Textbook Projects
 

@@ -30,7 +30,7 @@ Back in the day, I hadn't *fully* realized how much pet projects would broaden m
 
 ## Stepping Stones
 
-The summer break after my second year was when I gathered momentum. That was when I started my adventure in the world of open-source software. Still, I placed too much importance in knowing *more* programming languages. This sentiment would change with time, but it didn't hurt. So far, I had worked with Java, C and C++ in course-assigned projects. I had also dabbled a bit with Python on Codecademy and through a [simple reddit bot](https://github.com/Antrikshy/InternetLyingPolice_reddit_bot) project previously.
+The summer break after my second year was when I gathered momentum. That was when I started my adventure in the world of open-source software. Still, I placed too much importance in knowing *more* programming languages. This sentiment would change with time, but it didn't hurt. So far, I had worked with Java, C and C++ in course-assigned projects. I had also dabbled a bit with Python on Codecademy and through a [simple Reddit bot](https://github.com/Antrikshy/InternetLyingPolice_reddit_bot) project previously.
 
 I decided to go out and teach myself more programming languages over the summer break so I could make my resume appear more substantial.
 
@@ -149,6 +149,12 @@ If nothing else, every failed programming project will help you build mental res
 
 Lastly, you should **strive to finish and ship at least one stable version of every project**. Do not build a GitHub portfolio consisting entirely of 20 different forks and stubs of ideas that never went anywhere. It does not look nice. Employers like to see a portfolio which shows that you are competent and confident enough to ship things. Properly packaging, distributing, maintaining and updating apps, web apps and services is not easy, and is a skill of its own.
 
+### BONUS: Show Your Projects Off
+
+This post got fairly popular after I shared it on a couple of subreddits ([/r/compsci](https://redd.it/4zoftv), [/r/cscareerquestions](https://redd.it/4zooyv)).
+
+Reddit user [/u/k3q3](https://www.reddit.com/user/k3q3) brought up a very good point [in a response](https://www.reddit.com/r/cscareerquestions/comments/4zooyv/how_i_got_started_with_programming_side_projects/d6xmlpb) to this post. You should **definitely show your projects off prominently, at the top of your resume**, especially if you don't have any work experience. Your projects will make you more employable than pretty much anything else (courses, grades, GPA) that you could put above the fold on your resume, except *relevant* work experience.
+
 ## Where Do Ideas Come From?
 
 So far, I have mentioned that I don't work with partners, I don't do canned programs from textbooks, and I only make new and original software. Where do I get these ideas from?
@@ -163,7 +169,7 @@ If you are an inexperienced programmer in school or university, here are a few i
 - Build a command line utility that makes your life easier ([example](https://github.com/Antrikshy/ignr.py)).
 - Design some sort of framework (design or otherwise) for others to build their own projects on top of ([example](https://github.com/Antrikshy/Tinseltown.js)).
 - Get a Raspberry Pi, set up Arch Linux, [make it accessible over the web]({% post_url 2015-12-13-make-your-raspberry-pi-accessible-over-the-web-an-arch-linux-guide %}) via SSH, connect sensors to it and monitor your room temperature and other things. Even if there isn't much programming involved, there's a lot to learn here.
-- Create a reddit bot! Fulfill someone's request on [/r/RequestABot](https://www.reddit.com/r/RequestABot/), and look at [/r/botwatch](https://www.reddit.com/r/botwatch/) for help and inspiration.
+- Create a Reddit bot! Fulfill someone's request on [/r/RequestABot](https://www.reddit.com/r/RequestABot/), and look at [/r/botwatch](https://www.reddit.com/r/botwatch/) for help and inspiration.
 
 The important thing to do first is to get your ball rolling. **As you work on software projects, you will inevitably find cool things on GitHub that inspire you**. Keep an eye out for what other people do, and try to incorporate those things into your own projects. As a web design hobbyist, I am always on the lookout for interesting approaches to breadcrumb navigation, single-page web apps and other UX elements. If you like designing mobile apps, browse the app store of your choice and find inspiration. Search for languages and technologies of your choice on GitHub to see what others are up to.
 

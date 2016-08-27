@@ -5,11 +5,12 @@ permalink: "/blog/how-i-got-started-with-programming-side-projects"
 description: "My experience with personal open-source projects as a computer science major, and some advice to newcomers in the field, based on my observations of my peers."
 ---
 
-![In-button confirmation](/assets/side-projects-screenshot.png)
+![](/assets/side-projects-screenshot.png)  
+<small>*(Since people asked: Sublime Text 3 with "Spacegray Light" from [Materialize](https://github.com/saadq/Materialize))*</small>
 
 Like most of the other students in the computer science program at UC San Diego, I went through a couple of years simply coasting through classes. I had never been good *nor* bad academically, and my GPA was fairly average. I was enjoying programming classes, with their deliciously challenging assignments; calculus, not so much.
 
-In this non-technical blog post (for a change), I would like to walk through my experience with my open-source projects, which later helped me out immensely in getting internships (including one at Amazon), despite my average grades.
+In this non-technical blog post (for a change), I would like to walk through my experience with my open-source projects. Projects which later helped me out immensely in getting internships (including one at Amazon, which turned into a full-time offer).
 
 If you are a current or prospective CS student, hopefully you will leave with some inspiration.
 
@@ -57,9 +58,9 @@ The **experience I received from my personal projects was invaluable**. No unive
 
 Now that I had a shiny (and growing) portfolio on GitHub, I got accepted for an internship with [Learning Equality](https://learningequality.org/about/internships/), a non-profit software team based on the UC San Diego campus. This internship gave me my first taste of "real-world" software engineering. I even remember that my interviewer called me a "strong candidate" during our brief meeting.
 
-During this time, I was applying everywhere for a summer internship. For a brief time, I was nervous that I wouldn't find anything because of my less-than-stellar GPA of ~2.96. After several phone screens and online challenges with a variety of companies, I got invited to an on-campus interview session with Amazon. Not expecting much to come out of it, I accepted, interviewed, and ended up getting the job.
+During this time, I was applying everywhere for a summer internship. For a brief time, I was nervous that I wouldn't find anything because of my less-than-stellar GPA of 2.96. After several phone screens and online challenges with a variety of companies, I got invited to an on-campus interview session with Amazon. Not expecting much to come out of it, I accepted, interviewed, and ended up getting the job.
 
-This **Amazon internship would later turn into a full-time position** after graduation (I ended up graduating with a ~3.07 GPA). I was ecstatic.
+This **Amazon internship would later turn into a full-time position** after graduation (I later graduated 3.07 GPA). I was ecstatic.
 
 Even after securing the Amazon internship, I continued making stuff. Most notably, [Quibbler](http://quibbler.co).
 

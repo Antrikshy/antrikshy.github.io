@@ -2,6 +2,7 @@
 layout: post
 title: "Make Pushy Off-Canvas Menu Appear From The Right"
 permalink: "/blog/make-pushy-off-canvas-menu-appear-from-the-right"
+description: "Short web front-end tutorial for users of the CSS/JS-based sidebar package, Pushy, on how to make the sidebar appear on the right side."
 ---
 
 I recently discovered Christopher Yee's [Pushy](http://www.christopheryee.ca/pushy/) off-canvas navigation menu. So far, I have found it to be the easiest to implement slide-out menu if you have an existing website. However, it comes with one limitation - it only slides out from the left side of the page. Fortunately, its CSS is pretty easy to modify so that it appears on the right side.

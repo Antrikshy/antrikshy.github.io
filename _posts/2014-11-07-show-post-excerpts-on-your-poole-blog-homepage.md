@@ -2,6 +2,7 @@
 layout: post
 title: "Show Post Excerpts On Your Poole Blog Homepage"
 permalink: "/blog/show-post-excerpts-on-poole-blog-homepage"
+description: "A quick guide for showing just excerpts (instead of entire blog posts) on a Poole-based Jekyll blog site."
 ---
 
 I was happy when I found out about Jekyll and then later Poole (via [Joshua Lande](http://joshualande.com/jekyll-github-pages-poole/)). Poole seemed great! Other than the lack of many themes, Poole fit my needs quite perfectly. The default theme was great, so I rolled with it. But I faced the drawback of using someone else's design: Customizing it requires a lot of poking under the hood. Besides, I was completely new to Jekyll and the Liquid templating engine, and I knew very little about how the internals work.

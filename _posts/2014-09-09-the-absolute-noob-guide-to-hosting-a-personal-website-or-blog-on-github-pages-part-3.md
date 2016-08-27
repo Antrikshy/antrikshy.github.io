@@ -2,6 +2,7 @@
 layout: post
 title: "The Absolute Noob Guide To Hosting A Personal Website Or Blog On GitHub Pages - Part 3"
 permalink: "/blog/noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-3"
+description: "A guide for beginners for creating and hosting a personal website or portfolio using Jekyll, the blog-aware static site generator - Part 3"
 ---
 
 So you have decided to use Jekyll as your website engine of choice. It makes themeable, efficient websites that can be hosted on a traditional web server without the need for computation in the cloud, the hassle of databases etc.

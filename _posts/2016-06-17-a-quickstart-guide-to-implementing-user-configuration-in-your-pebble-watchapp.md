@@ -2,6 +2,7 @@
 layout: post
 title: "A Quickstart Guide To Implementing User Configuration In Your Pebble Watchapp"
 permalink: "/blog/quickstart-guide-implementing-user-configuration-pebble-watchapp-watchface"
+description: "An explanation for C programmers on how to use PebbleKit JS to set up communication between watchapp or watchface and the Pebble phone app, and accept users' configuration variables."
 ---
 
 I recently decided to try my hand at Pebble development in C, with a native watchface. Documentation about accepting user configuration is a bit messy. This is because there is a lot of overlap between user configuration and watch-to-phone communication in general. Even after reading through it all, I needed external help and there were few resources that laid everything out in an easily digestible way.

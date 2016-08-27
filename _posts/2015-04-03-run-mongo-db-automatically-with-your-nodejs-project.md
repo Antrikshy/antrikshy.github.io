@@ -2,6 +2,7 @@
 layout: post
 title: "Run MongoDB Automatically With Your Node.js Project"
 permalink: "/blog/run-mongodb-automatically-nodejs-project"
+description: "Running MondoDB daemon client automatically using Node.js package.json scripts."
 ---
 
 >Update: The database isn't closed properly when tests fail, which causes some issues. I kind of gave up on this.

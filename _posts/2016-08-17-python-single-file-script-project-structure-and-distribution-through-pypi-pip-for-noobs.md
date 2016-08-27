@@ -2,6 +2,7 @@
 layout: post
 title: "Python Single-File Script Project Structure And Distribution Through PyPI/pip For Noobs"
 permalink: "/blog/publish-python-single-file-script-project-structure-pypi-pip-noobs-beginners"
+description: "Some tips, best practices and project directory structure for small Python projects, and guidance on distribution through the new PyPI repository."
 ---
 
 Python may be known for its ease of use, but making my pet projects available through the simple `pip install petprojectinator` command has been a whole different experience. The Python Package Index (PyPI) feels like an antiquated repo with longwinded documentation for developers who want to contribute.

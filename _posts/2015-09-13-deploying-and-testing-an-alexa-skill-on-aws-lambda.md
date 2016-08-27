@@ -2,6 +2,7 @@
 layout: post
 title: "Deploying And Testing An Alexa Skill On AWS Lambda"
 permalink: "/blog/deploying-and-testing-alexa-skill-aws-lambda"
+description: "A tutorial on how to deploy and text JavaScript code powering an Amazon Alexa skill on the Amazon AWS Lambda service."
 ---
 
 I find Amazon's [official documentation](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function) on deploying Alexa Skills a bit hard to follow. After reading through it a few times and finally managing to get it working, I decided to re-word all of that information into this concise blog post that I hope is more digestible. I trust that someone will find it useful.

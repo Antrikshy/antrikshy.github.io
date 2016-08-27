@@ -2,6 +2,7 @@
 layout: post
 title: "Simple In-Button Click Confirmation With jQuery"
 permalink: "/blog/simple-in-button-click-confirmation-with-jquery"
+description: "A web front-end UX tutorial - simple jQuery button with text that changes to verify user intent."
 ---
 
 ![In-button confirmation](/assets/jquery-btn-confirm-gif.gif)

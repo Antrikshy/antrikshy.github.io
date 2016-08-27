@@ -2,6 +2,7 @@
 layout: post
 title: "virtualenv - A Quick, Practical Explanation For Beginners"
 permalink: "/blog/virtualenv-quick-practical-explanation-beginners"
+description: "A practical guide and best practices for virtualenv, the dependency isolation tool for Python developers."
 ---
 
 As a budding Python dev, you must have read about virtualenv all over the place. Despite its popularity, I could not find a good, short explanation, written for beginners when I was getting started. I have figured out how it works, and now I can explain it to you.

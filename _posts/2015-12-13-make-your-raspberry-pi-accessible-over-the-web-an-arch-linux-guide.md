@@ -2,6 +2,7 @@
 layout: post
 title: "Make Your Raspberry Pi Accessible Over The Web - An Arch Linux Guide"
 permalink: "/blog/make-raspberry-pi-accessible-over-web-arch-linux"
+description: "An extensive tutorial on making a Raspberry Pi behind a home network available over SSH from anywhere on the Internet using FreeDNS, static IP addressing and port forwarding."
 ---
 
 After struggling to find a good use for my Raspberry Pi for years, I finally decided to get into hardware projects. I figured I'd set up a fresh installation of Arch Linux on it to learn that as well. Two birds, one stone.

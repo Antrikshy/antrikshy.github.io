@@ -6,7 +6,7 @@ description: "My experience with personal open-source projects as a computer sci
 ---
 
 ![](/assets/side-projects-screenshot.png)  
-<small>*(Since people asked: Sublime Text 3 with "Spacegray Light" from [Materialize](https://github.com/saadq/Materialize))*</small>
+<small>*(Since people asked: Sublime Text 3 with "Spacegray Light" from [Materialize](https://github.com/saadq/Materialize) and the [Ubuntu Mono Bold](http://font.ubuntu.com/#charset-mono-bold) typeface)*</small>
 
 Like most of the other students in the computer science program at UC San Diego, I went through a couple of years simply coasting through classes. I had never been good *nor* bad academically, and my GPA was fairly average. I was enjoying programming classes, with their deliciously challenging assignments; calculus, not so much.
 

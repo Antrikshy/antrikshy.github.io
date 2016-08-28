@@ -153,7 +153,7 @@ Lastly, you should **strive to finish and ship at least one stable version of ev
 
 ### BONUS: Show Your Projects Off
 
-This post got fairly popular after I shared it on a couple of subreddits.
+<div class="reddit-embed" data-embed-media="www.redditmedia.com" data-embed-parent="false" data-embed-live="false" data-embed-uuid="3192b6cc-da0e-4793-badb-e664e58909b9" data-embed-created="2016-08-28T02:28:48.610Z"><a href="https://www.reddit.com/r/cscareerquestions/comments/4zooyv/how_i_got_started_with_programming_side_projects/d6xmlpb">Comment</a> from discussion <a href="https://www.reddit.com/r/cscareerquestions/comments/4zooyv/how_i_got_started_with_programming_side_projects/">&quot;How I Got Started With Programming Side Projects&quot; - my experience and some advice to new/current CS students</a>.</div><script async src="https://www.redditstatic.com/comment-embed.js"></script>
 
 Reddit user [/u/k3q3](https://www.reddit.com/user/k3q3) brought up a very good point [in a response](https://www.reddit.com/r/cscareerquestions/comments/4zooyv/how_i_got_started_with_programming_side_projects/d6xmlpb) to this post. You should **definitely show your projects off prominently, at the top of your resume**, especially if you don't have any work experience. Your projects will make you more employable than pretty much anything else (courses, grades, GPA) that you could put above the fold on your resume, except *relevant* work experience.
 

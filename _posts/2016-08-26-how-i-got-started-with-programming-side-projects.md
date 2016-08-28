@@ -16,6 +16,8 @@ If you are a current or prospective CS student, hopefully you will leave with so
 
 <!--more-->
 
+> EDIT: This post got very popular after I shared it on a few subreddits. There is a lot of interesting followup discussion on [/r/compsci](https://redd.it/4zoftv), [/r/cscareerquestions](https://redd.it/4zooyv) and [/r/programming](https://redd.it/4zugq2) that you may find interesting.
+
 If you enjoy this post, follow me [on Twitter](https://twitter.com/Antrikshy)!
 
 ## Practical Experience, Please
@@ -151,7 +153,7 @@ Lastly, you should **strive to finish and ship at least one stable version of ev
 
 ### BONUS: Show Your Projects Off
 
-This post got fairly popular after I shared it on a couple of subreddits ([/r/compsci](https://redd.it/4zoftv), [/r/cscareerquestions](https://redd.it/4zooyv)).
+This post got fairly popular after I shared it on a couple of subreddits.
 
 Reddit user [/u/k3q3](https://www.reddit.com/user/k3q3) brought up a very good point [in a response](https://www.reddit.com/r/cscareerquestions/comments/4zooyv/how_i_got_started_with_programming_side_projects/d6xmlpb) to this post. You should **definitely show your projects off prominently, at the top of your resume**, especially if you don't have any work experience. Your projects will make you more employable than pretty much anything else (courses, grades, GPA) that you could put above the fold on your resume, except *relevant* work experience.
 

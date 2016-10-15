@@ -116,6 +116,10 @@ p {
   a {
     text-decoration: underline;
   }
+
+  br {
+    line-height: 20px;
+  }
 }
 
 small {
@@ -142,6 +146,14 @@ ul {
 
 .text-indent {
   text-indent: 50px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
 }
 
 /*
@@ -357,7 +369,7 @@ ul {
 
 .projects-list {
   width: 75vw;
-  padding-bottom: 10px;
+  padding-top: 30px;
   margin-left: 5vw;
   background-color: rgba(0,0,0,0.1);
 
@@ -395,7 +407,7 @@ ul {
       margin-bottom: 4rem;
     }
 
-    .about-longform {
+    p.about-longform {
       width: 60vw;
       font-size: 1.2rem;
     }

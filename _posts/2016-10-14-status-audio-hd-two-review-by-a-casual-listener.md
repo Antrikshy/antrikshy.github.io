@@ -67,7 +67,9 @@ Additionally, the padding on the earcups is great. The **cushioning feels like m
 
 ![](/assets/reviews/hd-two-4.jpg)
 
-The detachable cable is a huge bonus, and much appreciated. This will allow you to swap them out for a better color, design, or simply replace a broken cable easily. The fact that **you can plug a cable into either earcup** is a cherry on the cake!
+HD Two comes with not one, but ***two* cables in the box**. One of them has an **in-line mic and single-button remote**. The other one doesn't. Other than picking up and hanging up on phone calls, triggering play/pause, I can confirm that the remote **can be used to invoke and speak to Siri on iOS**. While I appreciate that Status included both these cables when they didn't need to, I'd like to point out that the in-line remote *is* **missing volume control** for some reason.
+
+The detachable cable feature is a huge bonus, and much appreciated. This will allow you to swap them out for a different color, design, or simply replace a broken cable easily if you want/need to. The fact that **you can plug a cable into either earcup** is a cherry on the cake!
 
 ![](/assets/reviews/hd-two-5.jpg)
 
@@ -92,3 +94,9 @@ After making my purchase (via Amazon), I received an automated email from Status
 Now, I didn't have any grievances with their product, but they do seem to have a solid return policy (shipping included) if you purchase from their website.
 
 It's just nice to know when someone cares about your complaints and feedback about a product, and that they won't automatically be sent to a shredder.
+
+## Final Thoughts
+
+I would have liked a higher bass response, volume controls on the remote, and some color variety, I would be lying if I said I wasn't fully satisfied with my purchase.
+
+Even after using the HD Two every single day for three weeks, I have to admit that these headphones are **really worth the money**, and I will be rating them **5 out of 5** on Amazon. Seriously, the **build quality is phenomenal**, and they are **super comfortable**. I say they're worth trying out.

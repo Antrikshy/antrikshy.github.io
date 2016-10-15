@@ -97,6 +97,8 @@ It's just nice to know when someone cares about your complaints and feedback abo
 
 ## Final Thoughts
 
+![](/assets/reviews/hd-two-7.jpg)
+
 I would have liked a higher bass response, volume controls on the remote, and some color variety, I would be lying if I said I wasn't fully satisfied with my purchase.
 
 Even after using the HD Two every single day for three weeks, I have to admit that these headphones are **really worth the money**, and I will be rating them **5 out of 5** on Amazon. Seriously, the **build quality is phenomenal**, and they are **super comfortable**. I say they're worth trying out.

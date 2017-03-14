@@ -102,3 +102,11 @@ It's just nice to know when someone cares about your complaints and feedback abo
 I would have liked a higher bass response, volume controls on the remote, and some color variety, I would be lying if I said I wasn't fully satisfied with my purchase.
 
 Even after using the HD Two every single day for three weeks, I have to admit that these headphones are **really worth the money**, and I will be rating them **5 out of 5** on Amazon. Seriously, the **build quality is phenomenal**, and they are **super comfortable**. I say they're worth trying out.
+
+## Update
+
+I should have done it before, but I have to make an addendum to this review.
+
+About two months in, **the headband snapped**, completely out of the blue. I asked for a replacement, and Status sent me another pair, fulfilled by Amazon. Like clockwork, two months after that, the headband snapped once again. Since I'm new to the world of over-ear headphones, I wanted to try other products anyway, so I bought Sony's classic MDR-7506 headphones as a replacement. I'm sure Status would have replaced the second pair too, but I feel like the HD Two has construction issues in the two joints they have in their headband. If my Sony headphones break after a few months as well, I will concede that there is something wrong with me and update this review.
+
+If you're curious, my Sony MDR-7506 headphones sound surprisingly close to the HD Two, perhaps with *slightly* higher bass. The fact that MDR-7506 have long been heralded as a gold standard in sub-$150 headphones speaks well about the audio quality of the HD Two. It's just unfortunate that I had a poor experience with the HD Two's build quality. I should also mention that the HD Two had about ten times better design compared to the Sony offering.

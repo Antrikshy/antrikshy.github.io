@@ -1,7 +1,7 @@
 # Dependencies
 markdown:         kramdown
 highlighter:      true
-plugins:          [jekyll-paginate, jekyll-seo-tag]
+gems:             [jekyll-paginate, jekyll-seo-tag]
 
 # Permalinks
 permalink:        none

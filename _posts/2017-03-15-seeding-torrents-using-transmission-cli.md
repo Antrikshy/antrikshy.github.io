@@ -97,8 +97,26 @@ transmission-remote -a ~/Downloads/some-torrent-file.torrent
 {% endhighlight %}
 
 {% highlight shell %}
-transmission-remote -a magnet:?xt=urn:sha1:5186f158c170c2b2255a6347e9241bfc9f3b8394
+transmission-remote -a [magnet URL]
 {% endhighlight %}
+
+You'll have to manually start the torrent after this.
+
+#### Pausing And Resuming Torrents
+
+Stop/pause:
+
+{% highlight shell %}
+transmission-remote -t [ID] -S
+{% endhighlight %}
+
+Start/resume:
+
+{% highlight shell %}
+transmission-remote -t [ID] -s
+{% endhighlight %}
+
+Get torrent IDs from the list displayed using the `-l` flag.
 
 #### Checking Current Status
 
@@ -106,30 +124,14 @@ transmission-remote -a magnet:?xt=urn:sha1:5186f158c170c2b2255a6347e9241bfc9f3b8
 transmission-remote -l
 {% endhighlight %}
 
-#### Pausing And Resuming Torrents
-
-Stop/pause:
-
-{% highlight shell %}
-transmission-remote -S [id]
-{% endhighlight %}
-
-Start/resume:
-
-{% highlight shell %}
-transmission-remote -s [id]
-{% endhighlight %}
-
-Get torrent IDs from the list displayed using the `-l` flag.
-
 #### Removing Torrents
 
 {% highlight shell %}
-transmission-remote -r [id]
+transmission-remote -t [ID] -r
 {% endhighlight %}
 
 {% highlight shell %}
-transmission-remote --remove-and-delete [id]
+transmission-remote -t [ID] --remove-and-delete
 {% endhighlight %}
 
 Get torrent IDs from the list displayed using the `-l` flag.

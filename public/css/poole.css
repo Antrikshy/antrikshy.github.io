@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-family: 'Bitter', 'Helvetica Neue' sans-serif;
+  font-family: 'Bitter', 'Helvetica Neue', sans-serif;
   font-size: 1.75rem;
 }
 h2 {
@@ -331,6 +331,7 @@ tbody tr:nth-child(odd) th {
   background-color: rgba(0,0,0,0.10);
 }
 .masthead-title {
+  font-family: 'Bitter', serif;
   padding-top: 2rem;
   color: #505050;
 }

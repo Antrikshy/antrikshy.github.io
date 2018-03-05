@@ -1,4 +1,4 @@
-# Released under MIT License
+# Poole theme released under MIT License
 
 Copyright (c) 2013 Mark Otto.
 

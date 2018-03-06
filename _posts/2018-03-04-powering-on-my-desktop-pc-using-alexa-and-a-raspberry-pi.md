@@ -7,6 +7,8 @@ description: "Build log of a Raspberry Pi and Alexa Skills Kit setup that allows
 
 A few years ago, before setting up my smart home with voice-controlled lights and shades, I used to dream of turning on my gaming PC with a voice command like "battlestation up", like they say in those action movies. A few days ago, I finally achieved it with a bit of elbow grease (and a clunkier voice command).
 
+<img src="{{ site.url }}/assets/alexa-raspberry-pi-wake-on-lan-demo.gif" style="min-width: 100%;">
+
 <!--more-->
 
 ## Proof Of Concept
@@ -39,7 +41,7 @@ I use SQS heavily at work (at Amazon!), and I absolutely love using it as glue b
 
 Conveniently, a typical usage pattern of SQS is having a receiving party query an SQS endpoint in a forever-loop. In this case, the receiving end is my Raspberry Pi, which is perfectly capable of making regular old HTTP requests over my regular old home Internet connection. It's certainly easier than opening it to the entire web and having it wait for requests to come to *it*.
 
-![](/assets/alexa-raspberry-pi-wake-on-lan-architecture.png)  
+![](/assets/alexa-raspberry-pi-wake-on-lan-architecture.png)
 
 Here is the (over-engineered?) solution I had in mind. My intention was to re-use this SQS queue for other smart home utility-type projects in the future.
 

@@ -34,6 +34,8 @@ I was a lot more patient with the research, part selection and shipping times th
 
 Gigabyte deserves a shoutout for being the only Nvidia partner to release RTX GPUs with white coolers at launch. I hope I see a day when more PC part brands have white variants of their parts (or better yet, red and white).
 
+![](/assets/reviews/2018-pc-build-gpu.jpg)
+
 ### Hard Mode Color Scheme
 
 Turns out it's very easy to find parts for *black* and red builds, which I despise (sorry). *White* and red, not very much. There are barely any cases or motherboards that come with that color scheme out of the box, especially in the micro-ATX size.
@@ -54,6 +56,5 @@ There was a small complication related to the 550W PSU I bought not having enoug
 
 ## Links
 
-- [My r/buildapc post](https://redd.it/akp527) with more glam shots of the build.
 - [My r/nvidia post](https://redd.it/9wmjyv) with some glam shots of the GPU, becasue I didn't see enough images of the white Gigabyte RTX cards online at the time.
 - [My advisory](https://redd.it/a24mzj) on the CableMod + Corsair RM550x + RTX 2070 incompatibility issue.

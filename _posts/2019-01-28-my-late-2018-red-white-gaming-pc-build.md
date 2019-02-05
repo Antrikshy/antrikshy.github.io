@@ -32,6 +32,8 @@ I was a lot more patient with the research, part selection and shipping times th
 - **Power Supply:** Corsair RM750x Fully-Modular Power Supply
 - **Additional:** Corsair LL120 RGB 120mm Fan (x2), CableMod ModMesh PSU Cables with Pro upgrade (custom lengths, colors; 24-pin ATX, CPU, 8+6-pin bridged PCI-e)
 
+![](/assets/reviews/2018-pc-build-parts.jpg)
+
 Gigabyte deserves a shoutout for being the only Nvidia partner to release RTX GPUs with white coolers at launch. I hope I see a day when more PC part brands have white variants of their parts (or better yet, red and white).
 
 ![](/assets/reviews/2018-pc-build-gpu.jpg)

@@ -58,5 +58,6 @@ There was a small complication related to the 550W PSU I bought not having enoug
 
 ## Links
 
+- [My r/buildapc post](https://redd.it/am7s9k) with a few more glam shots of the build.
 - [My r/nvidia post](https://redd.it/9wmjyv) with some glam shots of the GPU, becasue I didn't see enough images of the white Gigabyte RTX cards online at the time.
 - [My advisory](https://redd.it/a24mzj) on the CableMod + Corsair RM550x + RTX 2070 incompatibility issue.

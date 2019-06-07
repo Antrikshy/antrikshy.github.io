@@ -9,7 +9,7 @@ permalink:        none
 # Setup
 title:            code.Antrikshy
 tagline:          'Notes, tinkerings, experiments'
-url:              http://antrikshy.com/
+url:              https://antrikshy.com/
 paginate:         3
 paginate_path:    "blog/page:num"
 excerpt_separator: "<!--more-->"

@@ -1,36 +1,61 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      true
-plugins:          [jekyll-paginate, jekyll-seo-tag]
+title: code.Antrikshy
+tagline: "Notes, tinkerings, experiments"
+url: https://antrikshy.com/
+baseurl: /
 
-# Permalinks
-permalink:        none
-
-# Setup
-title:            code.Antrikshy
-tagline:          'Notes, tinkerings, experiments'
-url:              https://antrikshy.com/
+permalink: none
 paginate:         3
 paginate_path:    "blog/page:num"
 excerpt_separator: "<!--more-->"
-baseurl:          /
-highlighter:      rouge
+
 author:
-  name:           Antriksh Yadav
-  url:            https://antrikshy.com
-  email:          antrikshy@gmail.com
-  twitter:        Antrikshy
+  name: Antriksh Yadav
+  url: https://antrikshy.com
+  email: antrikshy@gmail.com
+  twitter: Antrikshy
 
 # Custom vars
 github:
-  repo:           https://github.com/Antrikshy/antrikshy.github.io
+  repo: https://github.com/Antrikshy/antrikshy.github.io
 blog_masthead_pages:       
-  Entries:        '/entries'
-  Feed:           '/atom.xml'
-  About:          '/about'
-  Projects:       '/projects'
-  Resume:         '/resume'
+  Entries: '/entries'
+  Feed: '/atom.xml'
+  About: '/about'
+  Projects: '/projects'
+  Resume: '/resume'
 personal_external_links:
-  linkedin:        'https://www.linkedin.com/profile/view?id=AAIAAAUKQGYBw5-mPuOlHHK_eit5XwiREBrMxzM'
-  twitter:         'https://twitter.com/Antrikshy'
-  github:          'https://github.com/Antrikshy'
+  linkedin: 'https://www.linkedin.com/profile/view?id=AAIAAAUKQGYBw5-mPuOlHHK_eit5XwiREBrMxzM'
+  twitter: 'https://twitter.com/Antrikshy'
+  github: 'https://github.com/Antrikshy'
+
+# Build settings
+# plugins:
+# Listed in the :jekyll_plugins group in the Gemfile.
+# See: https://jekyllrb.com/docs/plugins/installation/
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+# This makes the local preview server accessible over LAN
+host: 0.0.0.0
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+#   - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

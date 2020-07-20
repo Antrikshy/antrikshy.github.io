@@ -7,7 +7,7 @@ description: "Build log of a Raspberry Pi and Alexa Skills Kit setup that allows
 
 A few years ago, before setting up my smart home with voice-controlled lights and shades, I used to dream of turning on my gaming PC with a voice command like "battlestation up", like they say in those action movies. A few days ago, I finally achieved it with a bit of elbow grease (and a clunkier voice command).
 
-<img src="{{ site.url }}/assets/alexa-raspberry-pi-wake-on-lan-demo.gif" style="min-width: 100%;">
+<img src="/assets/alexa-raspberry-pi-wake-on-lan-demo.gif" style="min-width: 100%;">
 
 <!--more-->
 

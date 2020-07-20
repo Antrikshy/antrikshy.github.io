@@ -1,19 +1,35 @@
-
-# Created by https://www.gitignore.io/api/jekyll,macos
+# Created by https://www.toptal.com/developers/gitignore/api/jekyll,macos,linux
+# Edit at https://www.toptal.com/developers/gitignore?templates=jekyll,macos,linux
 
 ### Jekyll ###
 _site/
 .sass-cache/
+.jekyll-cache/
 .jekyll-metadata
 
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
 ### macOS ###
-*.DS_Store
+# General
+.DS_Store
 .AppleDouble
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
@@ -33,3 +49,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# End of https://www.toptal.com/developers/gitignore/api/jekyll,macos,linux
+
+# Generated using ignr.py - github.com/Antrikshy/ignr.py

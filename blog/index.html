@@ -23,15 +23,15 @@ title: Blog
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.url }}/blog/page{{ paginator.next_page }}">Previous</a>
+    <a class="pagination-item older" href="/blog/page{{ paginator.next_page }}">Previous</a>
   {% else %}
     <span class="pagination-item older">Previous</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.url }}/blog">Next</a>
+      <a class="pagination-item newer" href="/blog">Next</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.url }}/blog/page{{ paginator.previous_page }}">Next</a>
+      <a class="pagination-item newer" href="/blog/page{{ paginator.previous_page }}">Next</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Next</span>

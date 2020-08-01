@@ -1,0 +1,16 @@
+<div class="masthead">
+  <nav class="link-to-home">
+    <a href="/"><i class="fa fa-angle-left"></i>&nbsp;&nbsp;&nbsp;<strong>Antriksh</strong>Yadav</a>
+  </nav>
+  <h3 class="masthead-title">
+    <a href="/blog" title="Blog">{{ site.film.title }}</a> | 
+    <small>{{ site.film.tagline }}</small>
+  </h3>
+  <nav class="masthead-links">
+  {% for page in site.film.masthead_pages %}
+    &nbsp;
+    <small><a href="{{ page[1] }}">{{ page[0] }}</a></small>
+    &nbsp;
+  {% endfor %}
+  </nav>
+</div>

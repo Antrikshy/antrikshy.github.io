@@ -1,11 +1,27 @@
-title: code.Antrikshy
-tagline: "Notes, tinkerings, experiments"
-url: https://antrikshy.com/
+code:
+  title: code.Antrikshy
+  tagline: "Notes, tinkerings, experiments"
+  url: https://antrikshy.com/code
+  masthead_pages:
+    Feed: '/code/atom.xml'
+    About: '/about'
+    Projects: '/projects'
+    Resume: '/resume'
+film:
+  title: FilmBlog
+  tagline: "Thoughts on film and games"
+  url: https://antrikshy.com/film
+  masthead_pages:
+    Feed: '/film/atom.xml'
+    About: '/about'
+    Projects: '/projects'
+    Resume: '/resume'
+
 baseurl: /
 
 permalink: none
-paginate:         3
-paginate_path:    "blog/page:num"
+paginate: 3
+paginate_path: "/code/page:num"
 excerpt_separator: "<!--more-->"
 
 author:
@@ -14,17 +30,10 @@ author:
   email: antrikshy@gmail.com
   twitter: Antrikshy
 
-# Custom vars
 github:
   repo: https://github.com/Antrikshy/antrikshy.github.io
-blog_masthead_pages:       
-  Entries: '/entries'
-  Feed: '/atom.xml'
-  About: '/about'
-  Projects: '/projects'
-  Resume: '/resume'
 personal_external_links:
-  linkedin: 'https://www.linkedin.com/profile/view?id=AAIAAAUKQGYBw5-mPuOlHHK_eit5XwiREBrMxzM'
+  linkedin: 'https://www.linkedin.com/in/antriksh-yadav-b9a39924'
   twitter: 'https://twitter.com/Antrikshy'
   github: 'https://github.com/Antrikshy'
 

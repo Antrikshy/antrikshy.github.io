@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include blog_head.html %}
+
+  <body>
+
+    {% include {{ page.blog_name }}_masthead.html %}
+
+    <div class="container content">
+
+      {{ content }}
+
+    <div class="footer">
+      <p>
+        &copy; {{ site.time | date: '%Y' }} Antriksh Yadav. All rights reserved.
+        <span style="float:right;"><a href="http://twitter.com/Antrikshy">@Antrikshy</a></span><br/>
+        <small>You are permitted to reuse any code snippets in personal or commercial projects without attribution.</small><br/>
+        <small><a href="/about/this-site">About this website</a></small>
+      </p>
+    </div>
+  </div>
+
+  </body>
+</html>

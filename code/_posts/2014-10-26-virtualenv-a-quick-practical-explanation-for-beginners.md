@@ -2,6 +2,7 @@
 layout: post
 title: "virtualenv - A Quick, Practical Explanation For Beginners"
 permalink: "/code/virtualenv-quick-practical-explanation-beginners"
+redirect_from: "/blog/virtualenv-quick-practical-explanation-beginners"
 description: "A practical guide and best practices for virtualenv, the dependency isolation tool for Python developers."
 ---
 

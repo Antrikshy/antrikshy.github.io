@@ -2,6 +2,7 @@
 layout: post
 title: "Growing Into Non-Deterministic User Interfaces"
 permalink: "/code/growing-into-non-deterministic-user-interfaces"
+redirect_from: "/blog/growing-into-non-deterministic-user-interfaces"
 description: "Thoughts on the future of graphical and voice user interfaces as they grow more and more unpredictable."
 ---
 
@@ -19,7 +20,7 @@ We are stepping into the world of constantly evolving, and therefore unpredictab
 
 ## Huh?
 
-Think of a popular online service that you use that is developed by a recently founded (~5 years) startup. Now think about the various design and branding changes they have made over time. If you were an early adopter of Snapchat, think about the evolution of the Stories screen.
+Think of a popular online service that you use that is developed by a recently founded (\~5 years) startup. Now think about the various design and branding changes they have made over time. If you were an early adopter of Snapchat, think about the evolution of the Stories screen.
 
 That's the kind of trend I'm getting at.
 

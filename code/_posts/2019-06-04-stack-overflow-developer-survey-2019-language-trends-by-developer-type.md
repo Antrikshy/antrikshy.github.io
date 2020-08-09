@@ -2,6 +2,7 @@
 layout: post
 title: "Language Trends By Developer Type - Stack Overflow Developer Survey 2019"
 permalink: "/code/language-trends-by-dev-type-stack-overflow-dev-survey-2019"
+redirect_from: "/blog/language-trends-by-dev-type-stack-overflow-dev-survey-2019"
 description: "A brief analysis of what technologies (languages, frameworks, platforms) developers of various types work with and what they wish to work with in 2020."
 ---
 

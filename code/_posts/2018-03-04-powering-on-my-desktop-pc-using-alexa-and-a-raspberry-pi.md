@@ -2,6 +2,7 @@
 layout: post
 title: "Powering On My Desktop PC Using Alexa And A Raspberry Pi"
 permalink: "/code/powering-on-my-desktop-pc-using-alexa-and-a-raspberry-pi"
+redirect_from: "/blog/powering-on-my-desktop-pc-using-alexa-and-a-raspberry-pi"
 description: "Build log of a Raspberry Pi and Alexa Skills Kit setup that allows me to turn on my gaming rig by voice commands."
 ---
 

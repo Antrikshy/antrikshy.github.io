@@ -2,6 +2,7 @@
 layout: post
 title: "Pebble.js Tutorial - An In-Depth Guide To Writing Pebble Apps Using JavaScript"
 permalink: "/code/pebble-js-tutorial-a-guide-to-writing-pebble-apps-using-javascript"
+redirect_from: "/blog/pebble-js-tutorial-a-guide-to-writing-pebble-apps-using-javascript"
 description: "An in-depth, definitive guide to designing Pebble apps using JavaScript and the Pebble.js platform, for experienced programmers."
 ---
 

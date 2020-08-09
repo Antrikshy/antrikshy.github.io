@@ -2,6 +2,7 @@
 layout: post
 title: "Safari Extension Development: Capture Keyboard Shortcuts"
 permalink: "/code/safari-extension-development-keyboard-shortcuts"
+redirect_from: "/blog/safari-extension-development-keyboard-shortcuts"
 description: "A tutorial on how to listen for users' keyboard shortcuts from the main JavaScript process in a Safari browser extension."
 ---
 

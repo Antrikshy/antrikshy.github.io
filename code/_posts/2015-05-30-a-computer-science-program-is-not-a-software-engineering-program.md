@@ -2,6 +2,7 @@
 layout: post
 title: "Computer Science Programs Are Not Software Engineering Programs"
 permalink: "/code/computer-science-programs-are-not-software-engineering-programs"
+redirect_from: "/blog/computer-science-programs-are-not-software-engineering-programs"
 description: "An article to dispel any confusion between computer science programs in universities and actual software engineering for students and beginner programmers."
 ---
 

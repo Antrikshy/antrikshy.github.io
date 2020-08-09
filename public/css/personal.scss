@@ -139,9 +139,8 @@ ul {
 
 .link-to-blog {
   position: absolute;
-  top: 5vh;
+  top: 4vh;
   right: 10vw;
-  font-size: 1.2rem;
 }
 
 .text-indent {
@@ -327,7 +326,7 @@ ul {
   a {
     color: $site-intro-color;
     position: relative;
-    top: 30%;
+    top: 25%;
     transform: translateY(-50%);
   }
   background-color: $site-intro-back-fromColor;

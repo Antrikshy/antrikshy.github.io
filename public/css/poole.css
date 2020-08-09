@@ -41,9 +41,21 @@
  */
 
 :root {
+  --body-color: #403F4C;
+}
+body.blog-code {
   --primary-color: #4E1D55;
   --secondary-color: #614385;
-  --body-color: #353535;
+  
+  --title-font-stack: 'Share Tech Mono', monospace;
+  --body-font-stack: 'Alegreya Sans', sans-serif;
+}
+body.blog-film {
+  --primary-color: #7B1E7A;
+  --secondary-color: #D81159;
+
+  --title-font-stack: 'Kanit', sans-serif;
+  --body-font-stack: 'Alegreya', serif;
 }
 
 /*
@@ -65,7 +77,6 @@ body {
 }
 
 html {
-  font-family: "Asap", serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -78,6 +89,7 @@ html {
 body {
   color: var(--body-color);
   background-color: #fff;
+  font-family: var(--body-font-stack);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -94,7 +106,7 @@ a strong {
 a:hover,
 a:focus {
   color: #fff !important;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
@@ -107,6 +119,7 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font-stack);
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
@@ -114,7 +127,6 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-family: 'Bitter', 'Helvetica Neue', sans-serif;
   font-size: 1.75rem;
 }
 h2 {
@@ -134,11 +146,13 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: var(--body-font-stack);
   font-size: 1rem;
+  font-weight: 400;
 }
 
 strong {
-  color: #303030;
+  color: #000;
 }
 
 
@@ -335,32 +349,44 @@ tbody tr:nth-child(odd) th {
 /*
  * Masthead
  *
- * Super small header above the content for site name and short description.
+ * Styling for blog headers, each can be styled individually.
  */
 
 .masthead {
-  font-family: 'Asap', sans-serif;
-  text-align: center;
-  height: 8rem;
-  padding-top:    1rem;
-  padding-bottom: 1rem;
+  height: 7rem;
+  padding: 1rem 0.5rem;
   margin-bottom: 3rem;
+  font-family: var(--title-font-stack);
   background-color: rgba(0,0,0,0.10);
+  border-bottom: 2px solid var(--primary-color);
 }
 .masthead-title {
-  font-family: 'Bitter', serif;
-  padding-top: 2rem;
-  color: var(--primary-color);
+  line-height: 1.5rem;
+  padding-top: 1.2rem;
+  padding-left: 2rem;
+  font-family: var(--title-font-stack);
+  
 }
 .masthead-title small {
-  font-size: 80%;
+  color: var(--secondary-color);
+  font-size: 70%;
   font-weight: 400;
-  letter-spacing: 0;
 }
 .masthead-links {
+  text-align: right;
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+}
+.masthead a {
+  color: var(--primary-color);
+}
+.masthead nav a {
+  color: var(--secondary-color);
+}
+.masthead a:hover {
+  color: var(--primary-color) !important;
+  background-color: transparent;
 }
 @media (max-width: 38em) {
   .masthead-links {
@@ -368,6 +394,12 @@ tbody tr:nth-child(odd) th {
     top: 2rem;
     right: 0.5rem;
   }
+}
+
+.link-to-home {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
 }
 
 /*
@@ -464,7 +496,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: 'Asap', 'Helvetica Neue', Arial, sans-serif;
+  font-family: sans-serif;
   color: #ccc;
   text-align: center;
 }
@@ -518,18 +550,4 @@ a.pagination-item:hover {
 
 .gist-meta {
   background-color: #f4f5f5 !important;
-}
-
-/*
- * Personal site integration
- */
-.link-to-home {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-}
-
-.link-to-home a:hover {
-  color: var(--secondary-color) !important;
-  background-color: transparent;
 }

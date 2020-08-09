@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "Growing Into Non-Deterministic User Interfaces"
 permalink: "/code/growing-into-non-deterministic-user-interfaces"
 description: "Thoughts on the future of graphical and voice user interfaces as they grow more and more unpredictable."

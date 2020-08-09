@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "Simple In-Button Click Confirmation With jQuery"
 permalink: "/code/simple-in-button-click-confirmation-with-jquery"
 description: "A web front-end UX tutorial - simple jQuery button with text that changes to verify user intent."

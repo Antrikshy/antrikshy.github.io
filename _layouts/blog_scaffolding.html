@@ -1,11 +1,13 @@
+{% assign blog_name = page.path | split: "/" | first %}
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
   {% include blog_head.html %}
 
-  <body>
+  <body class="blog-{{ blog_name }}">
 
-    {% include {{ page.blog_name }}_masthead.html %}
+    {% include {{ blog_name }}_masthead.html %}
 
     <div class="container content">
 

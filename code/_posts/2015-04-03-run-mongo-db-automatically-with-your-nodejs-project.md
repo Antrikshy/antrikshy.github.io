@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "Run MongoDB Automatically With Your Node.js Project"
 permalink: "/code/run-mongodb-automatically-nodejs-project"
 description: "Running MondoDB daemon client automatically using Node.js package.json scripts."

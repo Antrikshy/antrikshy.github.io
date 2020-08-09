@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "The Absolute Noob Guide To Hosting A Personal Website Or Blog On GitHub Pages - Part 1"
 permalink: "/code/noob-guide-to-hosting-cheap-website-blog-jekyll-github-pages-1"
 description: "A guide for beginners for creating and hosting a personal website or portfolio using Jekyll, the blog-aware static site generator - Part 1"

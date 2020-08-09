@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "Make Pushy Off-Canvas Menu Appear From The Right"
 permalink: "/code/make-pushy-off-canvas-menu-appear-from-the-right"
 description: "Short web front-end tutorial for users of the CSS/JS-based sidebar package, Pushy, on how to make the sidebar appear on the right side."

@@ -1,16 +1,17 @@
-<div class="masthead">
+<div class="masthead blog-code">
   <nav class="link-to-home">
-    <a href="/"><i class="fa fa-angle-left"></i>&nbsp;&nbsp;&nbsp;<strong>Antriksh</strong>Yadav</a>
+    <a href="/"><i class="fa fa-angle-left"></i>&nbsp;<strong>Antriksh</strong>Yadav</a>
+  </nav>
+  <nav class="masthead-links">
+    {% for page in site.code.masthead_pages %}
+      &nbsp;&nbsp;
+      <small><a href="{{ page[1] }}">{{ page[0] }}</a></small>
+    {% endfor %}
+    <br/>
+    <a href="/film"><strong>film</strong>.Antrikshy&nbsp;<i class="fa fa-angle-right"></i></a>
   </nav>
   <h3 class="masthead-title">
-    <a href="/blog" title="Blog">{{ site.code.title }}</a> | 
+    <a href="/code">{{ site.code.title }}</a> | 
     <small>{{ site.code.tagline }}</small>
   </h3>
-  <nav class="masthead-links">
-  {% for page in site.code.masthead_pages %}
-    &nbsp;
-    <small><a href="{{ page[1] }}">{{ page[0] }}</a></small>
-    &nbsp;
-  {% endfor %}
-  </nav>
 </div>

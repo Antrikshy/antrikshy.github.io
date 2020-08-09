@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "Safari Extension Development: Capture Keyboard Shortcuts"
 permalink: "/code/safari-extension-development-keyboard-shortcuts"
 description: "A tutorial on how to listen for users' keyboard shortcuts from the main JavaScript process in a Safari browser extension."

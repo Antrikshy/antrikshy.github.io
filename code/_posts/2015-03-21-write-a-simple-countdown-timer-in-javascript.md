@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "Write A Simple Countdown Timer In JavaScript"
 permalink: "/code/write-a-simple-countdown-timer-in-javascript"
 description: "A short tutorial on how to design a simple countdown timer on a webpage."

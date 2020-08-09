@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "My Late 2018 Red + White Gaming PC Build"
 permalink: "/code/late-2018-ryzen-rtx-red-white-gaming-pc-build"
 description: "Showcase of the gaming rig I built in December 2018, featuring Ryzen, RTX, and a slick red-and-white color scheme."

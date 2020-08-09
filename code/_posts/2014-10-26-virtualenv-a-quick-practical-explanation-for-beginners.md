@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "virtualenv - A Quick, Practical Explanation For Beginners"
 permalink: "/code/virtualenv-quick-practical-explanation-beginners"
 description: "A practical guide and best practices for virtualenv, the dependency isolation tool for Python developers."

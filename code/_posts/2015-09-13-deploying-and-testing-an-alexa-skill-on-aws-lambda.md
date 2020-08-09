@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "Deploying And Testing An Alexa Skill On AWS Lambda"
 permalink: "/code/deploying-and-testing-alexa-skill-aws-lambda"
 description: "A tutorial on how to deploy and text JavaScript code powering an Amazon Alexa skill on the Amazon AWS Lambda service."

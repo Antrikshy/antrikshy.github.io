@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "Introducing Antriksh's Blog"
 permalink: "/code/introducing-antrikshs-blog"
 description: "An introductory post for Antriksh Yadav's technical blog."

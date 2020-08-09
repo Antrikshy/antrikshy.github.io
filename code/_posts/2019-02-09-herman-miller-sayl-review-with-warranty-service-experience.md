@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "Herman Miller Sayl Review, Plus Warranty Service Experience"
 permalink: "/code/herman-miller-sayl-review-two-years-warranty-experience"
 description: "My review of Hermal Miller's Sayl task chair after two years of use and one use of the 12 year warranty it comes with."

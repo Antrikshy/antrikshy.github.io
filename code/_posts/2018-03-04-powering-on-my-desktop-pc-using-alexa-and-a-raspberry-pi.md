@@ -1,6 +1,5 @@
 ---
 layout: post
-blog_name: code
 title: "Powering On My Desktop PC Using Alexa And A Raspberry Pi"
 permalink: "/code/powering-on-my-desktop-pc-using-alexa-and-a-raspberry-pi"
 description: "Build log of a Raspberry Pi and Alexa Skills Kit setup that allows me to turn on my gaming rig by voice commands."
@@ -14,7 +13,7 @@ A few years ago, before living in a smart home, I used to dream of turning on my
 
 ## Proof Of Concept
 
-A few months ago, I was looking for uses for my Raspberry Pi. I started off by [seeding torrents](/blog/seeding-torrents-using-transmission-cli) for open source projects and running an [IPFS](https://ipfs.io) node.
+A few months ago, I was looking for uses for my Raspberry Pi. I started off by [seeding torrents](/code/seeding-torrents-using-transmission-cli) for open source projects and running an [IPFS](https://ipfs.io) node.
 
 Now that I had my Pi running 24/7, I figured I could use it to add a bit of convenience to my everyday routine. I installed [Awake](https://github.com/cyraxjoe/awake), a simple utility to send Wake-on-LAN magic packets to power on computers that support it. Luckily, the Gigabyte motherboard in my gaming PC was capable of accepting Wake-on-LAN requests. You can read up on the [Wake-on-LAN standard here](https://en.wikipedia.org/wiki/Wake-on-LAN). It's a surprisingly simple spec.
 
@@ -32,7 +31,7 @@ At first, this scenario looks like a 2-step process.
 However, it's not that simple. There are a couple of limitations.
 
 1. Alexa skills run in the cloud. Because of Amazon's security precautions, it's much easier to implement a skill as an AWS Lambda function. The other option is to run it on a self-hosted server, but that requires SSL setup. Running HTTP requests from Echo devices over a local network is not an option. While I would like that to be possible, Alexa seems to have a closer relationship with an Amazon account than the devices it runs on.
-2. Even if I were to implement the skill using the Raspberry Pi as the self-hosted server, I'd have to get around the fact that it is connected to my home Internet connection and not deployed in a server farm with a static IP address. I have made my [Raspberry Pi accessible over the web](/blog/make-raspberry-pi-accessible-over-web-arch-linux) before. It's not the easiest thing to set up, and feels a bit sketchy, security-wise.
+2. Even if I were to implement the skill using the Raspberry Pi as the self-hosted server, I'd have to get around the fact that it is connected to my home Internet connection and not deployed in a server farm with a static IP address. I have made my [Raspberry Pi accessible over the web](/code/make-raspberry-pi-accessible-over-web-arch-linux) before. It's not the easiest thing to set up, and feels a bit sketchy, security-wise.
 
 So the main limitation ends up being the interaction between the Alexa skill (in the cloud), and my Raspberry Pi (in my home). Enter Simple Queue Service from AWS!
 

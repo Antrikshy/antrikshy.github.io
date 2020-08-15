@@ -7,7 +7,10 @@
 
   <body class="blog-{{ blog_name }}">
 
-    {% include {{ blog_name }}_masthead.html %}
+    <!-- Conditional only required for the /blog/ redirect stubs -->
+    {% if blog_name != "blog" %}
+      {% include {{ blog_name }}_masthead.html %}
+    {% endif %}
 
     <div class="container content">
 

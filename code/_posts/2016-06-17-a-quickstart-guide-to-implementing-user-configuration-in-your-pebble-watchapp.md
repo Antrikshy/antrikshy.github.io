@@ -2,7 +2,6 @@
 layout: post
 title: "A Quickstart Guide To Implementing User Configuration In Your Pebble Watchapp"
 permalink: "/code/quickstart-guide-implementing-user-configuration-pebble-watchapp-watchface"
-redirect_from: "/blog/quickstart-guide-implementing-user-configuration-pebble-watchapp-watchface"
 description: "An explanation for C programmers on how to use PebbleKit JS to set up communication between watchapp or watchface and the Pebble phone app, and accept users' configuration variables."
 ---
 

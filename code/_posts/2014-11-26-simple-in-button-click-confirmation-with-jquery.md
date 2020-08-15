@@ -2,7 +2,6 @@
 layout: post
 title: "Simple In-Button Click Confirmation With jQuery"
 permalink: "/code/simple-in-button-click-confirmation-with-jquery"
-redirect_from: "/blog/simple-in-button-click-confirmation-with-jquery"
 description: "A web front-end UX tutorial - simple jQuery button with text that changes to verify user intent."
 ---
 

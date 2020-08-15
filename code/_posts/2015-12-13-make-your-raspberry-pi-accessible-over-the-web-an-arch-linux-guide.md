@@ -2,7 +2,6 @@
 layout: post
 title: "Make Your Raspberry Pi Accessible Over The Web - An Arch Linux Guide"
 permalink: "/code/make-raspberry-pi-accessible-over-web-arch-linux"
-redirect_from: "/blog/make-raspberry-pi-accessible-over-web-arch-linux"
 description: "An extensive tutorial on making a Raspberry Pi behind a home network available over SSH from anywhere on the Internet using FreeDNS, static IP addressing and port forwarding."
 ---
 

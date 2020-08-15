@@ -2,7 +2,6 @@
 layout: post
 title: "Seeding Torrents Using Transmission CLI"
 permalink: "/code/seeding-torrents-using-transmission-cli"
-redirect_from: "/blog/seeding-torrents-using-transmission-cli"
 description: "How to seed and download torrents completely over a Linux command line using Transmission, and optionally a Raspberry Pi"
 ---
 

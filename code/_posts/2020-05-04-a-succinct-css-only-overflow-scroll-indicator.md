@@ -2,7 +2,6 @@
 layout: post
 title: "A Succinct, CSS-Only Overflow Scroll Indicator"
 permalink: "/code/a-succinct-css-only-overflow-scroll-indicator"
-redirect_from: "/blog/a-succinct-css-only-overflow-scroll-indicator"
 description: "There is no visual indicator of the presence of an overflow: scroll property on an HTML element by default. Here's a CSS-only solution that doesn't look like a wall of text."
 ---
 

@@ -2,7 +2,6 @@
 layout: post
 title: "Show Post Excerpts On Your Poole Blog Homepage"
 permalink: "/code/show-post-excerpts-on-poole-blog-homepage"
-redirect_from: "/blog/show-post-excerpts-on-poole-blog-homepage"
 description: "A quick guide for showing just excerpts (instead of entire blog posts) on a Poole-based Jekyll blog site."
 ---
 

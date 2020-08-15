@@ -2,7 +2,6 @@
 layout: post
 title: "Deploy Express.js On Digital Ocean (Ubuntu) - A Complete, Mostly Succinct Guide"
 permalink: "/code/deploy-an-expressjs-app-on-digital-ocean-complete-succinct-guide"
-redirect_from: "/blog/deploy-an-expressjs-app-on-digital-ocean-complete-succinct-guide"
 description: "A complete guide on how to deploy and run an Express.js based JavaScript application using Node.js on a Digital Ocean server via SSH."
 ---
 

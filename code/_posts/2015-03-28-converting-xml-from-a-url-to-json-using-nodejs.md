@@ -2,7 +2,6 @@
 layout: post
 title: "Converting XML From A URL To JSON Using Node.js"
 permalink: "/code/fetch-xml-url-convert-to-json-nodejs"
-redirect_from: "/blog/fetch-xml-url-convert-to-json-nodejs"
 description: "How to convert XML data from an HTTP response to JSON in Node.js based JavaScript application."
 ---
 

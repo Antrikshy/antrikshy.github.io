@@ -2,7 +2,6 @@
 layout: post
 title: "Python Single-File Script Project Structure And Distribution Through PyPI/pip For Noobs"
 permalink: "/code/publish-python-single-file-script-project-structure-pypi-pip-noobs-beginners"
-redirect_from: "/blog/publish-python-single-file-script-project-structure-pypi-pip-noobs-beginners"
 description: "Some tips, best practices and project directory structure for small Python projects, and guidance on distribution through the new PyPI repository."
 ---
 

@@ -2,7 +2,6 @@
 layout: post
 title: "Safari Extension Development: Set-Up Automatic Updates For Your Extension"
 permalink: "/code/safari-extension-development-automatic-updates"
-redirect_from: "/blog/safari-extension-development-automatic-updates"
 description: "A tutorial on setting up the scaffolding required to push updates to a Safari browser extension."
 ---
 

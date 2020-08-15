@@ -2,7 +2,6 @@
 layout: post
 title: "Status Audio HD Two Review By A Casual Listener"
 permalink: "/code/status-audio-hd-two-review-casual-listener"
-redirect_from: "/blog/status-audio-hd-two-review-casual-listener"
 description: "A casual user's review of one of Status Audio's zero-marketing, low-price, quality headphones"
 ---
 

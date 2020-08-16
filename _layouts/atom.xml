@@ -15,9 +15,9 @@
   {% for post in site.categories[blog_name] %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="{{ site[blog_name].url }}{{ post.url }}"/>
+    <link href="{{ site.url }}{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>{{ site[blog_name].url }}{{ post.id }}</id>
+    <id>{{ site.url }}{{ post.id }}</id>
     <content type="html">{{ post.excerpt | xml_escape }}</content>
   </entry>
   {% endfor %}

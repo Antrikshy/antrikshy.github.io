@@ -27,7 +27,7 @@ If you have the skills to design a website on your own, you can still use this g
 * No, you **cannot host a WordPress blog** on GitHub Pages, since it is a webapp.
 * You can only host static websites on GitHub Pages. No dynamic content, like traditional blog engines go on Pages. **This does not mean that you cannot blog on GitHub Pages.** This blog, powered by Jekyll, is hosted on GitHub Pages. I will cover the details in a later section.
 
-### Who these posts are for
+### Whom Are These Posts For?
 
 * I have tried my very best to make this guide easy to follow for almost everybody, Git-whiz programmers or not. While you don't have to know your way around the command line, you will need to use it at one point. So I am assuming you are not afraid of it.
 * This post is not for you if you want to make a webapp or host a WordPress blog. Jekyll is a nice WordPress alternative that won't cost you hosting fees.

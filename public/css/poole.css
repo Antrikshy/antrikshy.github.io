@@ -171,10 +171,8 @@ dd {
 
 /* Misc */
 hr {
-  position: relative;
-  /*margin: 1.5rem 0;*/
+  position: relative;\
   border-top: 1px solid var(--primary-color);
-  /*border-bottom: 1px solid #fff;*/
 }
 
 abbr {
@@ -378,6 +376,9 @@ tbody tr:nth-child(odd) th {
   top: 0.5rem;
   right: 0.5rem;
 }
+.masthead-links small {
+  margin-left: 1rem;
+}
 .masthead a {
   color: var(--primary-color);
 }
@@ -389,10 +390,24 @@ tbody tr:nth-child(odd) th {
   background-color: transparent;
 }
 @media (max-width: 38em) {
+  .masthead {
+    height: 6rem;
+    margin-bottom: 1.5rem;
+  }
+  .masthead-title {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    line-height: 1rem;
+  }
   .masthead-links {
     position: absolute;
-    top: 2rem;
+    top: 0.5rem;
     right: 0.5rem;
+  }
+  /* This hides additional links in the masthead on narrow viewports */
+  .masthead-links small,
+  .masthead-links br {
+    display: none;
   }
 }
 
@@ -543,11 +558,9 @@ a.pagination-item:hover {
 .gist-file {
   border: none !important;
 }
-
 .gist-data {
   border: none !important;
 }
-
 .gist-meta {
   background-color: #f4f5f5 !important;
 }

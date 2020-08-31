@@ -22,7 +22,7 @@ If you enjoy this post, follow me [on Twitter](https://twitter.com/Antrikshy)!
 
 ## Practical Experience, Please
 
-It wasn't until three years in university that I realized that there is a **disconnect between computer science and practical programming** and software development. I've been over this [previously]({% post_url 2015-05-30-a-computer-science-program-is-not-a-software-engineering-program %}).
+It wasn't until three years in university that I realized that there is a **disconnect between computer science and practical programming** and software development. I've been over this [previously](/code/computer-science-programs-are-not-software-engineering-programs).
 
 Over time, I felt a lack of practical programming lessons in my computer science courses. I was **passively waiting to be taught things like web design and mobile app development**. The fact that I was unable to visualize a software stack for the simplest of ideas made the whole experience feel unfulfilling.
 
@@ -100,7 +100,7 @@ Additionally, **it's nice to show off your code to prospective employers**.
 
 In fact, I suggest intentionally picking small projects. **Smaller projects are easier to finish and maintain**. Focus on just what you need in order to pick up specific skills. Don't start working on the next big social network or *the* definitive find-a-study-buddy app. Some ideas do not sound as daunting as they should.
 
-Getting started with JavaScript? Make a browser extension. Want to pick up Python? Make a small command line utility and [publish it]({% post_url 2016-08-17-python-single-file-script-project-structure-and-distribution-through-pypi-pip-for-noobs %}). Sometimes, even deployment is its own challenge.
+Getting started with JavaScript? Make a browser extension. Want to pick up Python? Make a small command line utility and [publish it](/code/publish-python-single-file-script-project-structure-pypi-pip-noobs-beginners). Sometimes, even deployment is its own challenge.
 
 Especially as a beginner, fill your portfolio with bit-sized (heh) projects. You will soon get a feel for what is achievable (without burning out) and what isn't.
 
@@ -170,7 +170,7 @@ If you are an inexperienced programmer in school or university, here are a few i
 - Make a wrapper library around an API using a language of your choice. The world can always use more API wrappers ([example](https://github.com/Antrikshy/NetflixRoulette_NodeJS)).
 - Build a command line utility that makes your life easier ([example](https://github.com/Antrikshy/ignr.py)).
 - Design some sort of framework (design or otherwise) for others to build their own projects on top of ([example](https://github.com/Antrikshy/Tinseltown.js)).
-- Get a Raspberry Pi, set up Arch Linux, [make it accessible over the web]({% post_url 2015-12-13-make-your-raspberry-pi-accessible-over-the-web-an-arch-linux-guide %}) via SSH, connect sensors to it and monitor your room temperature and other things. Even if there isn't much programming involved, there's a lot to learn here.
+- Get a Raspberry Pi, set up Arch Linux, [make it accessible over the web](/code/make-raspberry-pi-accessible-over-web-arch-linux) via SSH, connect sensors to it and monitor your room temperature and other things. Even if there isn't much programming involved, there's a lot to learn here.
 - Create a Reddit bot! Fulfill someone's request on [/r/RequestABot](https://www.reddit.com/r/RequestABot/), and look at [/r/botwatch](https://www.reddit.com/r/botwatch/) for help and inspiration.
 
 The important thing to do first is to get your ball rolling. **As you work on software projects, you will inevitably find cool things on GitHub that inspire you**. Keep an eye out for what other people do, and try to incorporate those things into your own projects. As a web design hobbyist, I am always on the lookout for interesting approaches to breadcrumb navigation, single-page web apps and other UX elements. If you like designing mobile apps, browse the app store of your choice and find inspiration. Search for languages and technologies of your choice on GitHub to see what others are up to.

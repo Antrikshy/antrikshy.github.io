@@ -111,6 +111,8 @@ So far, you may have been running the Jekyll server directly in your Raspberry P
 
 There are other ways to run background processes on Linux, but I have two recommendations.
 
+With either of these in place, you should be able to access your preview server by navigating to your Pi's IP address, followed by `:<port>` (4000 by default). For convenience, I have set up Bonjour access on my Pi, but that's a different topic. [Here's a tutorial](https://www.howtogeek.com/167190/how-and-why-to-assign-the-.local-domain-to-your-raspberry-pi/) for that.
+
 ### Quick And Dirty - `screen`
 
 I frequently run background processes for projects that I am actively working on. In my workflow, I consider my local Jekyll server such a project. I don't mind tinkering with if it gets interrupted for any reason.
@@ -136,6 +138,30 @@ Many Linux systems, including Raspbian, come with `systemd` pre-installed. It's 
 It may be more work to set up your preview server as a system service the first time, but if configured properly, it can be a true set-and-forget solution across reboots, including handy commands to stop, start or restart the process.
 
 I have not set this up for a Jekyll session myself, so I do not have the required configurations handy, but here's a [very concise guide](https://www.raspberrypi.org/documentation/linux/usage/systemd.md) for getting started with that.
+
+## The Workflow
+
+I run my server using the `screen` tool. I almost never shut my Raspberry Pi down. I use it for other things, like [booting up my gaming PC using Alexa](/code/powering-on-my-desktop-pc-using-alexa-and-a-raspberry-pi).
+
+So all I need to do in order to work on my blog is open up a web browser, point it to the preview server, and edit the project on the Raspberry Pi.
+
+"How do I edit the project files," you ask? There are numerous ways.
+
+### File Sharing
+
+You can use built in tools in Windows, macOS and Linux distros to log into the Raspberry Pi and access its files. However, you may need to set up the Pi to share its files and directories first, using a package like Samba, which implements a protocol called CIFS to share files. Here's [some documentation](https://www.raspberrypi.org/documentation/remote-access/samba.md) to get started, courtesy of the Raspberry Pi Foundation. [This may](https://ubuntu.com/tutorials/install-and-configure-samba) also be a helpful resource.
+
+I use this method, and am able to use local installations of Sublime Text on my Mac and Windows PCs to "live" edit files remotely.
+
+### SFTP
+
+If you already have functional SSH to your Raspberry Pi, you should be able to access files over the SFTP protocol without much initial setup on the Pi side. You *will* need to set up some access method in your client machines, however. Here are [some recommendations](https://www.raspberrypi.org/documentation/remote-access/ssh/sftp.md) from the Raspberry Pi Foundation.
+
+There may also be an SFTP client available for the text editor of your choice. Here are ones for [Sublime Text](https://packagecontrol.io/packages/SFTP), [Atom](https://atom.io/packages/remote-ftp), and [VS Code](https://marketplace.visualstudio.com/items?itemName=suntobright.vscode-sftp).
+
+### SSHFS
+
+This is yet another protocol for serving files from a server over the SSH protocol. I have not tried this with Raspbian myself, but have used it very successfully between a Linux server and my work Mac for years. Here's the [official documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/sshfs.md) for that.
 
 ## Reference Material
 

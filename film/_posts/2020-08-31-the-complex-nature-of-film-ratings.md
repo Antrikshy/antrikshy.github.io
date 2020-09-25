@@ -141,7 +141,7 @@ Judging films objectively will always be clouded by ambiguity. The argument that
 
 1. Art is inherently subjective. Everyone has different tastes. It is simply disrespectful to call somebody else's preferences, worse.
 2. Audiences across cultural boundaries have different expectations about what makes an enjoyable film.
-3. There is always the *tiniest* amount of ambiguity in what a movie was intended to be during production.
+3. There is always the *tiniest* amount of ambiguity around what a movie was intended to be during production. You can't tell with utmost certainly if any "badness" was intentional or not.
 4. If someone receives enjoyment from watching *any* movie, no one else can deny them that. Let's retire the concept of guilty pleasures.
 
 If you are a film critic, or otherwise disagree with my opinions, your thoughts are welcome in the comments section!

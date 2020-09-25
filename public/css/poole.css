@@ -294,11 +294,11 @@ tbody tr:nth-child(odd) th {
 /* Text selection */
 ::selection {
   color: #fff;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 ::-moz-selection {
   color: #fff;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 

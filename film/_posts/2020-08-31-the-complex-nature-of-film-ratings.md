@@ -19,13 +19,13 @@ As I've mentioned earlier, I have watched and rated [over 1000 movies](/film/int
 
 Naturally, I have developed quite a few opinions about movie quality over time.
 
-### So What?
+## So What?
 
 We have limited time to point our eyeballs at all the content produced in the world. I think it's safe to say that no single person could realistically watch all the movies ever released in a lifetime.
 
 That's why movie ratings are important. Whether you watch 5 movies a year or 3 a week, you probably base your movie choices on *something* in order to optimize your time. If you watch movies based on a random number generator, please get in touch with me. I would love to chat about that experience!
 
-### The Good, The Bad
+## The Good, The Bad
 
 **For one, I believe that no film is objectively good or bad. And it doesn't matter anyway.**
 
@@ -57,7 +57,7 @@ Unless the world decides to agree upon scoring criteria for *objectively* judgin
 
 I wish this pressure to conform to the supposed "right" opinions about films simply didn't exist, and everyone could just enjoy what they naturally get enjoyment out of.
 
-#### Scoping It Down
+### Scoping It Down
 
 I don't mean to imply that there should *never* be criteria for judging film (or other art forms). It's completely fair to have personal criteria. However, if you do come up with a hard rubric, try broadening your movie-watching horizons. Watch movies from cultures or regions that you typically don't. See if the rubric holds up.
 
@@ -69,7 +69,7 @@ If I compare filmmaking styles, acting performances, and plot strucutres of well
 
 Audiences across regions are often "used to" seeing different things in their movies, and walk into the theater with different expectations. It's not at all uncommon for the same movie to not perform well in one region, but break records in other countries. It doesn't seem correct to chalk this up to entire movie-watching audiences in other countries not "knowing" good vs bad art. It all just highlights the subjectivity of opinions.
 
-#### So Bad It's Good
+### So Bad It's Good
 
 Many people find pleasure in movies that they would otherwise consider to be of poor quality. Sure, this one can usually be explained away as people enjoying film that was not produced in line with the original intention. But what if the original intent *was* a veiled, outwardly low-quality film?
 
@@ -79,13 +79,13 @@ Besides, avant-garde film exists. So does parody. So do movies with multiple int
 
 But then not all of them are willing to answer clearly. See *2001: A Space Odyssey*, the entire [Wikipedia article](https://en.wikipedia.org/wiki/Interpretations_of_2001:_A_Space_Odyssey), and Stanley Kubrick's [intentional open-endedness](https://en.wikipedia.org/wiki/Interpretations_of_2001:_A_Space_Odyssey#Openness_to_interpretation) around it. Or see *The Room*, which has gone down in history as a poster child of so-bad-its-good films. Originally sold as a drama, showrunner Tommy Wiseau as retrospectively [described it](https://www.portlandmercury.com/portland/interview-with-tommy-wiseau/Content?oid=1573119) as a black comedy. He may not be fooling anyone, but on the other hand, who are to challenge him? We cannot *conclusively* say that the film was *never* intended to be an unconventionally written, surreally produced comedy.
 
-### Rated 4.8 / 5
+## Rated 4.8 / 5
 
 **If you truly insist on labeling movies as good or bad, consider community opinions.**
 
 A *larger* audience base does not mean better movie. But a larger pool of ratings makes for better what-to-watch decision making in my opinion. It may be more important to consider opinions from the right audience (aka people the movie was made *for*), though that's not always easy to isolate without digging deep into online communities.
 
-#### Panned By Critics
+### Panned By Critics
 
 I have never been the kind of person to follow critics' interpretations. I do occasionally look at them, but take them with a grain of salt.
 
@@ -99,7 +99,7 @@ Diluting critic opinions into numerical scores is risky. Numbers must be compare
 
 Be very careful of critic rating aggregators. At least in the US, the general audience seems to weigh Rotten Tomatoes scores very highly. Yet, I feel that *incredibly* few people understand that the number is not what it seems. It dilutes nuanced critic reviews as much as humanly possible, into upvotes and downvotes, simply indicating the proportion of "positive" critic reviews, rather than aggregating critic scores into a mega-score. See RT's [own explanation here](https://www.rottentomatoes.com/about). If this comes as a surprise, [Metacritic](https://www.metacritic.com/about-metacritic) may be what you are looking for.
 
-#### Praised By Audiences
+### Praised By Audiences
 
 There are two main reasons I take community ratings much more seriously than critic scores.
 
@@ -118,7 +118,7 @@ After many years of regularly looking at IMDb ratings for movies, I have noticed
 
 My observations here are limited to the kinds of titles I tend to watch and look up on IMDb (predominantly western and English-language movies). There may be more nuance to it all that I am not aware of.
 
-### How I Rate Movies
+## How I Rate Movies
 
 Being well aware that I am just a small cog in a large machine, I still take pride in contributing my own film opinions on the Internet. It also happens to work as a personal journal.
 
@@ -133,7 +133,7 @@ Roughly, my personal rating philosophy breaks down into:
 
 These may sound complicated, but I have just attempted to put into words what I think comes into my mind semi-consciously when I am about to rate a movie from 1-10.
 
-### Concluding Thoughts
+## Concluding Thoughts
 
 Movie ratings are way more complicated than you may think.
 

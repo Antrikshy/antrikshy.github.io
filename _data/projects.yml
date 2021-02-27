@@ -1,3 +1,27 @@
+- name: Unsubber
+  description: "Web app that allows users to log in via Reddit, analyzes their list of subreddit subscriptions, uses heuristics to surface ones that are inactive, and provides convenient controls to unsubscribe."
+  repository: https://github.com/Antrikshy/Unsubber
+  weblink: https://unsubber.antrikshy.com
+  featured: yes
+
+- name: Rackfocus
+  description: "Schedulable command line utility to download and compile IMDb datasets in a highly browsable SQLite database file."
+  repository: https://github.com/Antrikshy/Rackfocus
+  weblink:
+  featured: yes
+
+- name: Tinseltown.js
+  description: "Tinseltown.js is a very lightweight front-end CSS/JS library that allows designers to add faux flashy loading effects that we see in Hollywood movies and hacker TV shows. Requires minimal code, animations are CSS-based, and timings are flexible through Sass variables."
+  repository: https://github.com/Antrikshy/Tinseltown.js
+  weblink: https://antrikshy.com/Tinseltown.js
+  featured: yes
+
+- name: LokiShuffle
+  description: Front-end web art piece that infinitely shuffles the L-O-K-I lettering in the promotional logo for Marvel Studios' Loki Disney+ original show.
+  repository: https://github.com/Antrikshy/LokiShuffle
+  weblink: https://antrikshy.com/LokiShuffle
+  featured: yes
+
 - name: Quibbler
   description: "Quibbler is an experimental Node.js web app powered by Socket.IO. People type messages anonymously, see them flash on the screen for a moment, only to permanently disappear forever. All messages are randomly inserted into a cloud of text, in real-time sync between all users."
   repository: https://github.com/Antrikshy/Quibbler
@@ -14,19 +38,13 @@
   description: "A simple and smart-looking watchface that aims to help pick up habits. It allows users to use their Pebble app to type up to five reminders, which will rotate throughout the day, so they glance at them whenever they check the time or date."
   repository: https://github.com/Antrikshy/Habitual-for-Pebble
   weblink: https://apps.getpebble.com/applications/576783f03feaee4aa30002e0
-  featured: yes
+  featured: no
 
 - name: The MCU Index
   description: "The MCUi is a React-based, static, single-page website that uses The Movie Database to find actors who have appeared in the Marvel Cinematic Universe."
   repository: https://github.com/Antrikshy/The-MCU-Index
-  weblink: http://antrikshy.com/The-MCU-Index/
-  featured: yes
-
-- name: Tinseltown.js
-  description: "Tinseltown.js is a very lightweight front-end CSS/JS library that allows designers to add faux flashy loading effects that we see in Hollywood movies and hacker TV shows. Requires minimal code, animations are CSS-based, and timings are flexible through Sass variables."
-  repository: https://github.com/Antrikshy/Tinseltown.js
-  weblink: http://antrikshy.com/Tinseltown.js
-  featured: yes
+  weblink: https://antrikshy.com/The-MCU-Index/
+  featured: no
 
 - name: ignr.py
   description: "ignr is a Python-based command line utility that allows programmers to download .gitignore templates from gitignore.io. Also supports .gitignore previews, backing up of existing file and listing all available templates via the API."
@@ -44,7 +62,7 @@
   description: "An implementation of a much sought after feature in Safari for OS X. Other browsers come with the Cmd+Shift+T shortcut to reopen previously closed tabs. Safari only comes with a mediocre counterpart and only reopens one closed tab. RecoverTabs is an extension that keeps track of multiple closed tabs and reopens them with the same familiar shortcut."
   repository: http://github.com/Antrikshy/RecoverTabs
   weblink: https://extensions.apple.com/details/?id=com.Antrikshy.safari.RecoverTabs-37LH9G9R9R
-  featured: yes
+  featured: no
 
 - name: node-google-search-trends
   description: "A small module to fetch Google Search Trends data (available via Atom feed) in JSON format through a Node.js app. Also allows the user to request various localized versions of Google's trends."
@@ -59,9 +77,9 @@
   featured: no
 
 - name: CringeType
-  description: "Front-end web app that does some simple text modification to make input text look like it was typed by an annoying 12-year old in Twitch chat."
+  description: "Front-end web art piece that does some simple text modification to make input text look like it was typed by an annoying 12-year old in Twitch chat."
   repository: https://github.com/Antrikshy/CringeType
-  weblink: http://antrikshy.com/CringeType
+  weblink: https://antrikshy.com/CringeType
   featured: no
 
 - name: nwjr

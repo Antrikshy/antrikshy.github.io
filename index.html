@@ -71,8 +71,7 @@ title: Home
               <h2 class="project-name">{{ project.name }}&nbsp;
                 <br class="hide-for-medium-up" />
                 <small>
-                  Type:&nbsp;{{ project.type }}
-                  {% if project.repository %}| <a href="{{ project.repository }}">Repo</a>{% endif %}
+                  {% if project.repository %}<a href="{{ project.repository }}">Repo</a>{% endif %}
                   {% if project.weblink %}| <a href="{{ project.weblink }}">Link</a>{% endif %}
                 </small>
               </h2>

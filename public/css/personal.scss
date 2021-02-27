@@ -101,7 +101,7 @@ hr {
 
 a {
   color: $link-color;
-  @include transition(all, 0.3s, ease-out);
+  @include transition(all, 0.3s, ease-in);
 
   &:hover {
     color: $link-hover-color;
@@ -167,7 +167,7 @@ ul {
   top: 4vh;
   right: 4vw;
 
-  @include transition(all, 0.2s, ease-out);
+  @include transition(all, 0.2s, ease-in);
 
   &:hover {
     color: $main-color;
@@ -298,10 +298,11 @@ ul {
 }
 
 .featured-project-box {
-  @include transition(box-shadow, 0.3s, ease-out);
+  @include transition(box-shadow, 0.3s, ease-in);
 
-  a:hover {
+  a {
     color: #fff;
+    text-decoration: underline;
   }
 
   h2.project-name {
@@ -330,10 +331,9 @@ ul {
     transform: translateY(-50%);
   }
   background-color: $site-intro-back-fromColor;
-  height: 30vh;
+  height: 17rem;
   text-align: center;
-  font-size: 4rem;
-  margin-bottom: 10vh;
+  font-size: 3rem;
 }
 
 /* Scroll prompter arrow bounce */

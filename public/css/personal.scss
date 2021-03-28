@@ -36,9 +36,12 @@ body {
   color: var(--main-text-color);
   border-top: 0.5rem solid;
   border-image: var(--brand-gradient) 1;
+  border-image-width: 0.5rem 0 0 0;
   a {
     color: inherit;
-    text-decoration: underline solid 2px var(--brand-color-2);
+    text-decoration-line: underline;
+    text-decoration-width: 2px;
+    text-decoration-color: var(--brand-color-2);
     transition: 0.1s;
     &:hover {
       text-decoration-color: var(--brand-color-1);
@@ -46,7 +49,10 @@ body {
     }
   }
   h1, h2 {
-    text-decoration: underline double 2px var(--brand-color-2);
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-width: 2px;
+    text-decoration-color: var(--brand-color-2);
     &.section-head {
       margin-top: 5rem;
     }
@@ -58,8 +64,8 @@ body {
   small a {
     text-decoration-thickness: 1px;
   }
-  picture.social-icon img {
-    height: 3rem;
+  a br {
+    text-decoration: none;
   }
 }
 @media (max-width: 801px) {
@@ -87,11 +93,11 @@ header.hero {
     background: var(--brand-gradient);
     background-size: 600% 600%;
     background-clip: text;
+    -webkit-background-clip: text;
     text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
     word-break: keep-all;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     animation: move-background-image 10s linear infinite;
   }
   @media (max-width: 801px) {
@@ -124,6 +130,7 @@ nav.top-nav {
   }
   div:last-child {
     float: right;
+    text-align: right;
   }
 }
 
@@ -153,6 +160,10 @@ section.projects {
       font-size: smaller;
     }
   }
+}
+
+.social-icon img {
+  height: 3rem;
 }
 
 footer {

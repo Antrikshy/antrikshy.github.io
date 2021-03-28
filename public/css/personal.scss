@@ -67,21 +67,13 @@ body {
   a br {
     text-decoration: none;
   }
-}
-@media (max-width: 801px) {
-  body {
+  @media (max-width: 501px) {
     font-size: 16px;
-  }
-}
-@media (max-width: 501px) {
-  body {
-    font-size: 14px;
     ul, ol {
       margin-left: 0;
     }
   }
 }
-
 header.hero {
   min-height: 20rem;
   padding: 5rem 3rem 0;
@@ -135,7 +127,7 @@ nav.top-nav {
 }
 
 main {
-  padding: 0 3rem;
+  padding: 0 1rem;
 }
 
 nav.blog-links {
@@ -143,6 +135,10 @@ nav.blog-links {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
+  @media (max-width: 501px) {
+    font-size: initial;
+    grid-gap: 1rem;
+  }
 }
 
 section.projects {

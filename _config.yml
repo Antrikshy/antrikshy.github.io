@@ -3,20 +3,10 @@ code:
   title: code.Antrikshy
   tagline: "Notes, tinkerings, experiments"
   url: https://antrikshy.com/code
-  masthead_pages:
-    Feed: '/code/atom.xml'
-    About: '/about'
-    Projects: '/projects'
-    Resume: '/resume'
 film:
   title: film.Antrikshy
   tagline: "Thoughts on film and games"
   url: https://antrikshy.com/film
-  masthead_pages:
-    Feed: '/film/atom.xml'
-    About: '/about'
-    Projects: '/projects'
-    Resume: '/resume'
 
 baseurl: /
 

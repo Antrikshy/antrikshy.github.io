@@ -5,17 +5,19 @@ title: About This Site
 
 # About This Site
 
-Curious how this site is built? First of all, I'm flattered! :)
+First of all, I'm flattered that you'd like to know how this site works. :)
 
-tl;dr: It's built using [Jekyll](https://jekyllrb.com) and served via [GitHub Pages](https://pages.github.com). You can see the [full source](https://github.com/Antrikshy/antrikshy.github.io) for this site on GitHub.
+**tl;dr: It's built using [Jekyll](https://jekyllrb.com) and served via [GitHub Pages](https://pages.github.com). You can see the [full source](https://github.com/Antrikshy/antrikshy.github.io) for this site on GitHub.**
 
-This site started off as a blog, which I built using the Jekyll [Poole theme](http://getpoole.com/) by [@mdo](https://twitter.com/mdo). The site has since deviated from that base structure, but a significant portion of my blogs are still styled by old Poole CSS, again, further modified by me.
+The flashy animations on the homepage are powered by [Tinseltown.js](https://antrikshy.com/Tinseltown.js), a library of my own design. Some additional help comes from [Google Fonts](https://fonts.google.com), [sanitize.css](https://github.com/csstools/sanitize.css), and possibly other things that I'll add over time but forget to add to this list.
+
+This site started off as a blog, which I built using the Jekyll [Poole theme](http://getpoole.com) by [@mdo](https://twitter.com/mdo). The site has since deviated from that base structure, but a significant portion of my blogs are still styled by old, but heavily modified, Poole CSS.
 
 ## Unfamiliar With Jekyll?
 
 [Jekyll](https://jekyllrb.com) is a static site generator, which also happens to be blog-aware.
 
-You may think of Jekyll as a CMS, like WordPress, except it's not hosted, running 24/7 in the cloud. Instead, it's a command line build tool that you run *locally* on your own computer. It takes an opinionated directory structure as input, and spits out a different directory of pure HTML pages and accompanying CSS, JavaScript and other files. This output directory can be slapped onto an inexpensive file server.
+You may think of Jekyll as a CMS, like WordPress, except it's not hosted to run 24/7 in the cloud. Instead, it's a command line build tool that you run *locally* on your own computer. It takes an opinionated directory structure as input, and spits out a different directory of pure HTML pages and accompanying CSS, JavaScript and other files. This output directory can be slapped onto an inexpensive file server.
 
 Just run this generator every time you make edits to the source files. It handles things like:
 
@@ -26,7 +28,7 @@ Just run this generator every time you make edits to the source files. It handle
 * applying code styling (if applicable)
 * other things I am surely forgetting
 
-The result is a site (optionally with a blog) that gives you the convenience of templates and Markdown, which can be hosted for very cheap or for free, and performs *super* snappily.
+The result is a site (optionally with a blog) that gives you the convenience of templates and Markdown, which can be hosted for very cheap or for free, and performs *super* snappily since all the pages are pre-rendered.
 
 ## Unfamiliar With GitHub Pages?
 

@@ -12,30 +12,38 @@
   <meta name="google-site-verification" content="OeXzt5t60mfwuJkxhV5Bx0szL1OpQxNlioXceMXXOXQ" />
 
   <!-- Site description -->
-  <meta name="description" content="Portfolio and blog of Antriksh Yadav, software developer at Amazon; previously computer science student at UC San Diego.">
-
-  <!-- Open Graph image -->
-  <!-- TODO -->
+  <meta name="description" content="Antriksh Yadav, software developer at Amazon Music, previously at UC San Diego. See my projects, blogs, and more.">
 
   <title>
     {% if page.title == "Home" %}
-      Antriksh Yadav &middot; Software Developer
+      Antriksh Yadav - Software Developer
     {% else %}
-      {{ page.title }} &middot; Antriksh Yadav
+      {{ page.title }} - Antriksh Yadav
     {% endif %}
   </title>
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Antriksh Yadav - Software Developer" />
+  <meta property="og:description" content="Antriksh Yadav, software developer at Amazon Music, previously at UC San Diego. See my projects, blogs, and more." />
+  <meta property="og:image" content="{{ site.url }}/public/og-image.png" />
+
   <!-- Third-party stuff -->
-  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/public/css/personal.css">
   <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Tinseltown.js -->
+  <link rel="stylesheet" href="/public/css/tinseltown.min.css">
+  <script type="text/javascript" src="/public/js/tinseltown.min.js"></script>
+  <script type="text/javascript">window.onload = function() { tnslInit(0.5); }</script>
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="/public/favicon.ico">
 
   <!-- Google Fonts -->
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Cousine:wght@400;700&family=Overpass+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>

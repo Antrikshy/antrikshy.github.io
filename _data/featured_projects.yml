@@ -1,0 +1,14 @@
+- name: Unsubber
+  description: "Web app to help clean out inactive subreddits from your Reddit subscriptions."
+  source: https://github.com/Antrikshy/Unsubber
+  weblink: https://unsubber.antrikshy.com
+
+- name: Tinseltown.js
+  description: "A lightweight CSS/JS library for faux hacker-movie-style page loading effects."
+  source: https://github.com/Antrikshy/Tinseltown.js
+  weblink: https://antrikshy.com/Tinseltown.js
+
+- name: Quibbler
+  description: "An experimental website powered by Socket.IO where anonymous chat messages are beautifully visualized in real time."
+  source: https://github.com/Antrikshy/Quibbler
+  weblink: https://quibbler.co

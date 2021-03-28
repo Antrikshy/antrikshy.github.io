@@ -4,6 +4,23 @@
   {% include personal_head.html %}
 
   <body>
-    {{ content }}
+    {% unless page.title == "Home" %}
+      <nav class="top-nav">
+        <div>←&nbsp;<a href="/">Home</a></div>
+        <div>
+          <a href="/code">code.Antrikshy</a>&nbsp;→
+          <br/>
+          <a href="/film">film.Antrikshy</a>&nbsp;→
+        </div>
+      </nav>
+    {% endunless %}
+    <main>{{ content }}</main>
   </body>
+  <footer>
+    <p>
+      &copy; {{ site.time | date: '%Y' }} Antriksh Yadav. All rights reserved.<br/>
+      <small>You are permitted to reuse any code snippets on this site in personal or commercial projects without attribution.<br/>
+      Curious about this site? <a href="/about-this-site">Here's how it works!</a></small><br/>
+    </p>
+  </footer>
 </html>

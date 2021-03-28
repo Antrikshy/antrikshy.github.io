@@ -3,4 +3,51 @@ layout: personal
 title: Home
 ---
 
-
+<header class="hero tnsl-flickerQuick">
+  <h1>Antriksh Yadav</h1>
+  <p>Compulsively curious, with a desire to learn everything.</p>
+  <p>Software developer at Amazon Music. Designing great experiences.</p>
+</header>
+<h2 class="section-head tnsl-flickerQuick">Blogs</h2>
+<nav class="blog-links tnsl-flicker">
+  <a href="/code" class="blog-tile">code.Antrikshy</a>
+  <a href="/film" class="blog-tile">film.Antrikshy</a>
+</nav>
+<h2 class="section-head tnsl-flickerQuick">Projects</h2>
+<section class="projects tnsl-flicker">
+  <div>
+    {% for project in site.data.featured_projects %}
+      <div class="featured-project">
+        <h3>
+          {% if project.weblink %}
+            <a href="{{ project.weblink }}">{{ project.name }}</a>
+          {% else %}
+            {{ project.name }}
+          {% endif %}
+          <small>(<a href={{ project.source }}>source</a>)</small>
+        </h3>
+        <p>{{ project.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <br/>
+  <a href="https://github.com/Antrikshy">
+    <picture>
+      <source srcset="/assets/personal-site-assets/github-mark-dark.png" media="(prefers-color-scheme: light)">
+      <source srcset="/assets/personal-site-assets/github-mark-light.png" media="(prefers-color-scheme: dark)">
+      <img src="/assets/personal-site-assets/github-mark-dark.png">
+    </picture>
+    <br/>
+    <small>More on GitHub</small>
+  </a>
+</section>
+<h2 class="section-head tnsl-flickerQuick">Social</h2>
+<section class="tnsl-flicker">
+  <a href="https://twitter.com/Antrikshy">
+    <picture class="social-icon">
+      <source srcset="/assets/personal-site-assets/twitter-logo-dark.png" media="(prefers-color-scheme: light)">
+      <source srcset="/assets/personal-site-assets/twitter-logo-light.png" media="(prefers-color-scheme: dark)">
+      <img src="/assets/personal-site-assets/twitter-logo-dark.png">
+    </picture>
+  </a>
+</section>

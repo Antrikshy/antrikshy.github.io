@@ -18,7 +18,10 @@
     --brand-color-3: #d53369;
   }
 }
-::selection,
+::selection {
+  background-color: var(--brand-color-2);
+  color: #000;
+}
 ::-moz-selection {
   background-color: var(--brand-color-2);
   color: #000;
@@ -27,6 +30,7 @@
 body {
   font-size: 20px;
   font-family: 'Overpass Mono', monospace;
+  text-underline-offset: 3px;
   text-align: center;
   background-color: var(--main-background-color);
   color: var(--main-text-color);
@@ -34,18 +38,25 @@ body {
   border-image: var(--brand-gradient) 1;
   a {
     color: inherit;
-    text-decoration-color: var(--brand-color-2);
+    text-decoration: underline solid 2px var(--brand-color-2);
+    transition: 0.1s;
+    &:hover {
+      text-decoration-color: var(--brand-color-1);
+      text-decoration-style: wavy;
+    }
   }
   h1, h2 {
+    text-decoration: underline double 2px var(--brand-color-2);
     &.section-head {
       margin-top: 5rem;
     }
-    text-decoration: underline double 2px var(--brand-color-2);
-    text-underline-offset: 3px;
   }
   ul, ol {
     text-align: left;
     margin-left: 3rem;
+  }
+  small a {
+    text-decoration-thickness: 1px;
   }
   picture.social-icon img {
     height: 3rem;
@@ -121,6 +132,7 @@ main {
 }
 
 nav.blog-links {
+  font-size: x-large;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;

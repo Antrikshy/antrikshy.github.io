@@ -139,3 +139,5 @@ All I pay for is the minuscule amount of electricity that my Raspberry Pi, my de
 I have created a GitHub repo with all the code involved along with some documentation. If you're reading this years from now, first of all, I hope you have hoverboards, and second, the repo may have grown to include other everyday utility type stuff using the same infrastructure I described here.
 
 **Find the GitHub repo here: [Antrikshy/Assisted-Living](https://github.com/Antrikshy/Assisted-Living)**
+
+**Update (mid-2021):** The project *has*, in fact, grown a bit. This [follow up post](/code/launching-apps-games-on-windows-10-desktop-pc-using-alexa) describes another slice of functionality - how I use this stack to open apps on the Windows PC.

@@ -46,7 +46,7 @@
 body.blog-code {
   --primary-color: #4E1D55;
   --secondary-color: #614385;
-  
+
   --title-font-stack: 'Share Tech Mono', monospace;
   --body-font-stack: 'Alegreya Sans', sans-serif;
 }
@@ -171,7 +171,7 @@ dd {
 
 /* Misc */
 hr {
-  position: relative;\
+  position: relative;
   border-top: 1px solid var(--primary-color);
 }
 
@@ -363,7 +363,7 @@ tbody tr:nth-child(odd) th {
   padding-top: 1.2rem;
   padding-left: 2rem;
   font-family: var(--title-font-stack);
-  
+
 }
 .masthead-title small {
   color: var(--secondary-color);
@@ -482,8 +482,6 @@ tbody tr:nth-child(odd) th {
 .related-posts li small {
   font-size: 75%;
   color: #999;
-}
-.related-posts li a:hover {
 }
 .related-posts li a:hover small {
   color: inherit;

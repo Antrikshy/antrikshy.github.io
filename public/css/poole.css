@@ -466,11 +466,23 @@ tbody tr:nth-child(odd) th {
   color: var(--secondary-color);
 }
 
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+.post-footer img {
+  width: 3rem;
+  display: inline;
+  margin: 0.5rem 0;
+  float: none;
+}
+
 /* Related posts */
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #eee;
 }
 .related-posts {
   padding-left: 0;
@@ -558,6 +570,10 @@ a.pagination-item:hover {
 }
 .gist-data {
   border: none !important;
+}
+.gist-data .js-line-number {
+  cursor: default;
+  border: none;
 }
 .gist-meta {
   background-color: #f4f5f5 !important;

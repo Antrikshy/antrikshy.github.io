@@ -8,8 +8,9 @@ excerpt_separator: <!--more-->
   <span class="post-date">{{ page.date | date_to_string }}</span>
   <hr>
   {{ content }}
-  {% capture post_footer %}{% include post_footer.md %}{% endcapture %}
-  {{ post_footer | markdownify }}
+  <div class="post-footer">
+    {% include post_footer.html %}
+  </div>
 </div>
 
 <div class="related">

@@ -17,7 +17,7 @@ Find entries in this diary here:
 
 1. [Introduction](/film/2023-mcu-rewatch-diary-introduction)
 2. Phase One *(you are here!)*
-3. Phase Two
+3. [Phase Two](/film/2023-mcu-rewatch-diary-phase-two)
 4. Phase Three
 
 ## Poking Holes

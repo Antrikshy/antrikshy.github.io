@@ -5,7 +5,7 @@ permalink: "/code/late-2018-ryzen-rtx-red-white-gaming-pc-build"
 description: "Showcase of the gaming rig I built in December 2018, featuring Ryzen, RTX, and a slick red-and-white color scheme."
 ---
 
-I finished this build in December, and didn't get around to posting it online until now. It's a pretty fine looking build, so I decided I must share. The aesthetic took some work. Fitting the self-imposed constraints around the form factor and the color scheme was not an easy task.
+I finished this build in December, just didn't get around to posting it online until now. The aesthetic took some work. My form factor and the color scheme constraints were not easy to build in.
 
 ![](/assets/reviews/2018-pc-build-hero.jpg)
 
@@ -59,5 +59,5 @@ There was a small complication related to the 550W PSU I bought not having enoug
 ## Links
 
 - [My r/buildapc post](https://redd.it/am7s9k) with a few more glam shots of the build.
-- [My r/nvidia post](https://redd.it/9wmjyv) with some glam shots of the GPU, becasue I didn't see enough images of the white Gigabyte RTX cards online at the time.
+- [My r/nvidia post](https://redd.it/9wmjyv) with some glam shots of the GPU, because I didn't see enough images of the white Gigabyte RTX cards online at the time.
 - [My advisory](https://redd.it/a24mzj) on the CableMod + Corsair RM550x + RTX 2070 incompatibility issue.

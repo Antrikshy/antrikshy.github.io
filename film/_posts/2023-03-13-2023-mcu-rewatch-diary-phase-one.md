@@ -18,7 +18,7 @@ Find entries in this diary here:
 1. [Introduction](/film/2023-mcu-rewatch-diary-introduction)
 2. Phase One *(you are here!)*
 3. [Phase Two](/film/2023-mcu-rewatch-diary-phase-two)
-4. Phase Three
+4. [Phase Three](/film/2023-mcu-rewatch-diary-phase-three)
 
 ## Poking Holes
 
@@ -58,7 +58,7 @@ Before *The Avengers*, there are some pretty notable incidents. They manage to k
 
 Here's a rundown of major superhuman events that the general public would have learned of (and cared about) in Phase One.
 
-**IR = Intensity Rating, on a 5-point scale.** I might need to return to older posts and adjust the scale as things ramp up.
+**IR = Intensity Rating, on a 5-point scale.**
 
 ### *Iron Man*
 

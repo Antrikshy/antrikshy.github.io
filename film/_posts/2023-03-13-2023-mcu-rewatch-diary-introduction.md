@@ -28,4 +28,4 @@ Find entries in this diary here:
 1. Introduction *(you are here!)*
 2. [Phase One](/film/2023-mcu-rewatch-diary-phase-one)
 3. [Phase Two](/film/2023-mcu-rewatch-diary-phase-two)
-4. Phase Three
+4. [Phase Three](/film/2023-mcu-rewatch-diary-phase-three)

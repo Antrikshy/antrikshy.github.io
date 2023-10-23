@@ -20,7 +20,7 @@ Find entries in this diary here:
 1. [Introduction](/film/2023-mcu-rewatch-diary-introduction)
 2. [Phase One](/film/2023-mcu-rewatch-diary-phase-one)
 3. Phase Two *(you are here!)*
-4. Phase Three
+4. [Phase Three](/film/2023-mcu-rewatch-diary-phase-three)
 
 ## Poking Holes
 
@@ -50,7 +50,7 @@ This issue is more of a concern with *Iron Man 3* and *The Winter Soldier*.
 
 *Iron Man 3* explores the Battle of New York's aftermath pretty well while lowering the stakes and forcing Tony to go "back to basics" by stripping him from his suit and having him solve a good old fashioned mystery. It's one of my favorite MCU movies. However, his character development through this movie is completely undermined by *Avengers: Age of Ultron*. By the end of *Iron Man 3*, he pretty much gives up being Iron Man and blows up his prototype suits. His next appearance is in the *Age of Ultron* opening scene, where he is inexplicably operating yet another suit. He proceeds to never address his change of heart anywhere in this film. In real life, this may have been due to a contract renewal with Robert Downey Jr. In the MCU, I guess we can chalk it up to off-screen events.
 
-*Captain America: The Winter Soldier* is a much bigger offender. Don't get me wrong. It's among my all time favorite movies. It sets up some great storylines for the future of the MCU - bringing Bucky back from the dead, introducing Sam Wilson. Yet, it also sets up some very strange tone shifts in *Age of Ultron*. The movie ends by dismantling the MCU SHIELD (in my opinion, very prematurely). Each main character goes their separate ways; Maria Hill interviews for a Stark Industries HR position, Nick Fury changes his wardrobe and goes into hiding, Steve and Sam decide to hunt down Bucky, and Nat appears in a Senate hearing. There is a major "going their separate ways" type of finality in this ending. Okay, *Age of Ultron* picked up some of these threads passably well; Maria working with the Avengers implies that Stark Industries HR runs the Avengers' operations, Steve and Sam discuss their missing person at the (awesome) Avengers party scene. Fury's appearance at the end, back in his trench coat, felt hamfisted. And something about Nat, Steve and Sam going their own ways, then partying together in New York feels premature. 
+*Captain America: The Winter Soldier* is a much bigger offender. Don't get me wrong. It's among my all time favorite movies. It sets up some great storylines for the future of the MCU - bringing Bucky back from the dead, introducing Sam Wilson. Yet, it also sets up some very strange tone shifts in *Age of Ultron*. The movie ends by dismantling the MCU SHIELD (in my opinion, very prematurely). Each main character goes their separate ways; Maria Hill interviews for a Stark Industries HR position, Nick Fury changes his wardrobe and goes into hiding, Steve and Sam decide to hunt down Bucky, and Nat appears in a Senate hearing. There is a major "going their separate ways" type of finality in this ending. Okay, *Age of Ultron* picked up some of these threads passably well; Maria working with the Avengers implies that Stark Industries HR runs the Avengers' operations, Steve and Sam discuss their missing person at the (awesome) Avengers party scene. Fury's appearance at the end, back in his trench coat, felt hamfisted. And something about Nat, Steve and Sam going their own ways, then partying together in New York feels premature.
 
 In reality, Joss Whedon has confirmed that these two tone shifts were intentional choices to keep the Avengers sequel more accessible. In retrospect, *Age of Ultron* comes across a film written as a sequel to *The Avengers*, then edited to handle the endings of *Iron Man 3* and *The Winter Soldier*.
 
@@ -74,7 +74,7 @@ It's the age of miracles after all!
 
 Here’s a rundown of major superhuman events that the general public would have learned of (and cared about) in Phase Two.
 
-**IR = Intensity Rating, on a 5-point scale.** I might need to return to older posts and adjust the scale as things ramp up.
+**IR = Intensity Rating, on a 5-point scale.**
 
 ### *Iron Man 3*
 
@@ -121,6 +121,6 @@ Movies of this Phase reflect this as well. They became bolder and braver - intro
 
 At the same time, Phase Two was merely a stepping stone towards the uber-interconnected Phases Three, Four and beyond. They didn't dare test their audience *too* much. No storylines that splash across half a movie, like T'Challa in *Civil War*. No wild character introductions, like Riri Williams in *Black Panther: Wakanda Forever*. No storylines that span across movies and TV shows, like Wanda Maximoff's storyline through *WandaVision* and *Doctor Strange in the Multiverse of Madness*. No multiverse stories. They compromised on character continuity in the *Avengers* sequel, like I described earlier. Sam Wilson, the one to-be-spun-off character who did get introduced was written deeply into a story as any other supporting cast member. Thinking back, they may not have considered giving him a spin-off at the time.
 
-This Phase also included the first two MCU comedy titles - *Guardians of the Galaxy* and *Ant-Man*. Fine, they were action-sci-fi-comedies, but comedies nonetheless, if you compare to earlier titles. Perhaps the success of the *Guardians* franchise is what inspired future MCU productions to take themselves less seriously (sometimes less than they should have... *Thor: Love & Thunder*). That said, has the MCU really become funnier over time? They have certainly released more movies in each Phase than the one prior, so there's more room for playing around with genres. I'll keep an eye out for this in my Phase Three rewatch. 
+This Phase also included the first two MCU comedy titles - *Guardians of the Galaxy* and *Ant-Man*. Fine, they were action-sci-fi-comedies, but comedies nonetheless, if you compare to earlier titles. Perhaps the success of the *Guardians* franchise is what inspired future MCU productions to take themselves less seriously (sometimes less than they should have... *Thor: Love & Thunder*). That said, has the MCU really become funnier over time? They have certainly released more movies in each Phase than the one prior, so there's more room for playing around with genres. I'll keep an eye out for this in my Phase Three rewatch.
 
 I'll end with a funny observation I made: The exterior of the Chinese Theater in Hollywood is heavily damaged in a terrorist attack in *Iron Man 3*. We see this location again in *The Guardians of the Galaxy Holiday Special*, confirming it was rebuilt and is a tourist attraction once again.

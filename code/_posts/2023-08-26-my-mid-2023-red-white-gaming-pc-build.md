@@ -30,12 +30,14 @@ I really like the red and white color combo, but I like switching things up more
 - **CPU:** AMD Ryzen 7 7700X 4.5 GHz 8-Core Processor
 - **CPU Cooler:** Asus ROG Strix LC II Liquid CPU Cooler
 - **Motherboard:** Asus ROG Strix B650-A Gaming WiFi
-- **Memory:** Teamgroup T-Force Vulcan 32GB (2x16GB) DDR5-6000 CL38 Memory (Red)
+- **Memory:** G.Skill Trident Z5 Neo RGB 32GB (2x16GB) DDR5-6000
 - **Storage:** Samsung 980 Pro 2TB M.2 NVMe SSD
 - **Video Card:** Asus Dual OC GeForce RTX 4070
 - **Case:** Fractal Design North ATX Mid Tower Case
 - **Power Supply:** Corsair RM750x (2018) Fully-Modular Power Supply
 - **Additional:** Fractal Design Flex 2 Vertical GPU Riser, CableMod ModMesh PSU Cables with Pro upgrade (custom lengths, colors; 24-pin ATX, CPU, 8+6-pin bridged PCI-e)
+
+**Here's the [PCPartPicker completed build](https://pcpartpicker.com/b/tsCzK8) with links to all the parts.**
 
 ![](/assets/reviews/2023-pc-build-gpu.jpg)
 
@@ -60,8 +62,20 @@ Seeing the case sit on my desk only reaffirms that I'll return to a smaller form
 
 Unfortunately, my CableMod cables were custom cut to my smaller Corsair 280X case. This caused a lot of pain during the build process. I almost gave up on them, especially trying to get the CPU power cable to reach. It worked out in the end, but the CPU cable is stretched to its limit and completely hidden behind the AIO radiator and mostly in the back compartment. This also eliminates any red accents towards the back side of the case, making the build significantly less red and white overall.
 
-I like Asus's hardware aesthetic, especially under their ROG brand. Their Armoury Crate software could be better. While it's an improvement over Corsair's iCue (though I have limited exprience with the recent redesign), I wish it was more performant. I can't figure out any way to position my components in my case for the LED gradients to sync. Apparently, this was possible with the recently discontinued Aura Sync app. I hope they focus on this feature parity. Also after much trying, I haven't been able to get the AIO cooler pump to turn its LED off when the system is powered down. I'll update this section if support is able to resolve these issues for me.
+I like Asus's hardware aesthetic, especially under their ROG brand. Their Armoury Crate software could be better. While it's an improvement over Corsair's iCue (though I have limited exprience with the recent redesign), I wish it was more performant. I can't figure out any way to position my components in my case for the LED gradients to sync. Apparently, this was possible with the recently discontinued Aura Sync app. I hope they focus on this feature parity. Also after much trying, I haven't been able to get the AIO cooler pump to turn its LED off when the system is powered down. I'll update this section if support is able to resolve these issues for me. **Update: I did; scroll down.**
 
 ![](/assets/reviews/2023-pc-build-controller.jpg)
 
 I'm also glad I kept the color scheme, or my [Xbox Design Lab](https://xboxdesignlab.xbox.com/) controller would have become totally unfashionable.
+
+### Update (Late-2023)
+
+I had a *lot* of back and forth with Asus over being able to turn off the AIO pump LED while the system is off. The only solution was to disable fast boot in Windows, then set a BIOS preference to power off USB headers when the system is in S5 (shutdown) state. The usual LED control settings don't work because this AIO cooler is USB-powered.
+
+I wasn't happy about this at first, but later learned that this is also required for wake-on-LAN to function. As [we've established](/code/powering-on-my-desktop-pc-using-alexa-and-a-raspberry-pi), I'm a heavy user of that feature, so I had to disable fast boot anyway. And this motherboard is incredibly slow to boot.
+
+Asus support was some of the worse I've experienced in recent memory. They were not only unknowledgeable about their own products and BIOS settings, but also appeared to use atrocious ticket management software. Every email reply I wrote to them went to a different person who wouldn't bother to read our previous exchange for context and kept recommending solutions that we'd already established didn't work. Often, they would contradict help pages on their own website.
+
+Obviously, I will neither buy nor recommend Asus PC components going forward.
+
+I also had compatibility issues with [T-Force RAM](https://www.newegg.com/team-32gb/p/N82E16820331993) that I bought earlier. It wouldn't overclock on this motherboard, although it would work at base clock speed just fine. In all fairness, Asus didn't list that model in their compatibility chart, and did *add* compatibility in a later BIOS revision. However, that BIOS update caused other issues. If I disabled USB power when in shutdown state (see above), it would disable USB input devices on every alternate boot. So, I decided to replace the RAM with a compatible model (the G.Skill listed earlier in this post), sold the T-Force sticks, and elected to stay on an older BIOS version. There have been subsequent BIOS revisions, but I haven't tried updating to them as I write this update.

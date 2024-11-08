@@ -1,14 +1,23 @@
+- name: Total Runtime
+  description: "Web app to find and compare total runtimes of TV series, by season or from start to end."
+  source: https://github.com/Antrikshy/TotalRuntime
+  weblink: https://totalruntime.antrikshy.com
+
 - name: Unsubber
   description: "Web app to help clean out inactive subreddits from your Reddit subscriptions."
   source: https://github.com/Antrikshy/Unsubber
   weblink: https://unsubber.antrikshy.com
 
+- name: Quibbler
+  description: "Experimental website powered by Socket.IO where anonymous chat messages are beautifully visualized in real time."
+  source: https://github.com/Antrikshy/Quibbler
+  weblink: https://quibbler.antrikshy.com
+
+- name: Rackfocus
+  description: "Schedulable command line utility to download and compile IMDb datasets in a highly browsable SQLite database file."
+  source: https://github.com/Antrikshy/Rackfocus
+
 - name: Tinseltown.js
-  description: "A lightweight CSS/JS library for faux hacker-movie-style page loading effects."
+  description: "Lightweight CSS/JS library for faux hacker-movie-style page loading effects."
   source: https://github.com/Antrikshy/Tinseltown.js
   weblink: https://antrikshy.com/Tinseltown.js
-
-- name: Quibbler
-  description: "An experimental website powered by Socket.IO where anonymous chat messages are beautifully visualized in real time."
-  source: https://github.com/Antrikshy/Quibbler
-  weblink: https://quibbler.co

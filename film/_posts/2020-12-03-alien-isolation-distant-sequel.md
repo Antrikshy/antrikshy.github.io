@@ -92,6 +92,6 @@ When it comes to my own taste, there are some tenets I like to see in continuati
 
 *Alien: Isolation* hits all these and gets even more bonus points from me for staying extremely respectful to the original film.
 
-It doesn't compare with some of the best single player gaming experiences I've ever had, mainly because I prefer other genres, but it's a commendable one.
+It doesn't compare with some of the best singleplayer gaming experiences I've ever had, mainly because I prefer other genres, but it's a commendable one.
 
 **tl;dr: *Alien: Isolation* on its own is good, and even better if you enjoy stealth and/or horror games. *Alien: Isolation* played just before or after watching the original *Alien* movie is excellent.**

@@ -20,10 +20,10 @@ At the time of this writing, I have genuinely just finished watching (and rating
 
 **Just to etch this in stone somewhere:**
 
-**Film 997:** Frozen II  
-**Film 998:** Onward  
-**Film 999:** Toy Story 4  
-**Film 1000:** 2001: A Space Odyssey  
-**Film 1001:** Hamilton
+**Film 997:** *Frozen II*  
+**Film 998:** *Onward*  
+**Film 999:** *Toy Story 4*  
+**Film 1000:** *2001: A Space Odyssey*  
+**Film 1001:** *Hamilton*
 
 <small>\* Feature films. Except any I may have genuinely forgotten to rate, but there are likely only a handful of those.</small>

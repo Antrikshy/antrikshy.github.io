@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Micro Review: Seven Samurai (1954), The Magnificent Seven (1960)"
+title: "Micro Review: \"Seven Samurai\" (1954), \"The Magnificent Seven\" (1960)"
 permalink: "/film/micro-review-seven-samurai-the-magnificent-seven"
 description: "Some quick thoughts on the film \"Seven Samurai\" (1954) and \"The Magnificent Seven\" (1960)."
 ---

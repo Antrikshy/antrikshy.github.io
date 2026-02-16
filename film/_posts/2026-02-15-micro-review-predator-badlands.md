@@ -3,6 +3,7 @@ layout: post
 title: "Micro Review: \"Predator: Badlands\" (2025)"
 permalink: "/film/micro-review-predator-badlands"
 description: "Some quick thoughts on the film \"Predator: Badlands\" (2025)."
+category: micro-review
 ---
 
 During the marketing and release cycle of this movie, I didn’t have high hopes. A Predator movie with a non-English-speaking alien as the protagonist? I had doubts.

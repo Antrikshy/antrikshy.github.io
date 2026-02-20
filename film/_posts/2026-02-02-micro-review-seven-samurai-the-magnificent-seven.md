@@ -6,7 +6,7 @@ description: "Some quick thoughts on the film \"Seven Samurai\" (1954) and \"The
 category: micro-review
 ---
 
-This is a first in my new series, Micro Reviews. I won't review every film I watch; that would get tedious and make movies un-fun quick. However, the occasional movie comes along that's thought-provoking enough to justify jotting down a few of them.
+This is a first in my new series, Micro Reviews. I won't review every film I watch; that would get tedious and make movies un-fun quick. However, the occasional movie comes along that provokes enough thought to justify jotting down a few of them. See all my [micro reviews here](/film/micro-reviews).
 
 I've been thinking of doing this for a while. Why not start with the [2,000th movie](/film/two-thousand-movies) that I recently rated on IMDb? I have bonus thoughts on the American remake from 6 years later. Double-feature micro reviews will be uncommon, I think, but let's bend the rules this one time.
 

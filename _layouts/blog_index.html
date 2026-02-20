@@ -7,11 +7,9 @@ layout: blog_scaffolding
 <div class="posts">
   {% for post in site.categories[blog_name] limit:5 %}
   <div class="post">
-    <div class="post-categories">
-      {% for category in post.categories %}
-        <span class="post-category-label" data-category="{{ category }}" title="Category: {{ category | capitalize }}"></span>
-      {% endfor %}
-    </div>
+    {% if post.categories contains "micro-review" and blog_name == "film" %}
+      <a href="/film/micro-reviews" class="micro-reviews-label" title="See all micro reviews">MR</a>
+    {% endif %}
     <h1 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}

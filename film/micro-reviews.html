@@ -1,0 +1,14 @@
+---
+layout: blog_scaffolding
+title: Micro Reviews
+---
+
+<h1>Micro Reviews</h1>
+<p>I've rated every movie I've watched since I was about 16. I don't write reviews to avoid turning it into a chore. Nevertheless, occasionally, I come across a movie that provokes enough thought to justify jotting a few of them down.</p>
+<ul>
+  {% for post in site.categories["micro-review"] %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

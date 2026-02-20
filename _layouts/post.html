@@ -4,6 +4,11 @@ excerpt_separator: <!--more-->
 ---
 
 <div class="post">
+  <div class="post-categories">
+    {% for category in page.categories %}
+      <span class="post-category-label" data-category="{{ category }}" title="Category: {{ category | capitalize }}"></span>
+    {% endfor %}
+  </div>
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   <hr>

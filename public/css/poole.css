@@ -457,6 +457,18 @@ tbody tr:nth-child(odd) th {
 .post-title {
   margin-top: 0;
 }
+.post-categories {
+  .post-category-label {
+    font-weight: bold;
+    font-family: var(--title-font-stack);
+    position: absolute;
+    transform: translateX(-2.5rem) translateY(0.3rem);
+  }
+  .post-category-label[data-category="micro-review"]::before {
+    border-bottom: 3px solid var(--secondary-color);
+    content: "MR";
+  }
+}
 
 /* Meta data line below post title */
 .post-date {

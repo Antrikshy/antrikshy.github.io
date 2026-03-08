@@ -44,11 +44,11 @@
   --body-color: #403F4C;
 }
 body.blog-code {
-  --primary-color: #4E1D55;
-  --secondary-color: #614385;
+  --primary-color: #297045;
+  --secondary-color: #444554;
 
-  --title-font-stack: 'Share Tech Mono', monospace;
-  --body-font-stack: 'Alegreya Sans', sans-serif;
+  --title-font-stack: 'Bitter', monospace;
+  --body-font-stack: 'Asap', sans-serif;
 }
 body.blog-film {
   --primary-color: #7B1E7A;

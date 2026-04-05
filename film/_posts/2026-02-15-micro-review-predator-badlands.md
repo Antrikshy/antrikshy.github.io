@@ -14,4 +14,4 @@ The inclusion of Wayland-Yutani was icing on the cake.
 
 Dan Trachtenberg is leading a Renaissance era for this franchise.
 
-**9/10 ★★★★★★★★★★**
+**9/10 ★★★★★★★★★☆**
